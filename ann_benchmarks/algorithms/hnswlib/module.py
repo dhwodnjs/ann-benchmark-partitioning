@@ -14,15 +14,20 @@ class HnswLib(BaseANN):
 
     def fit(self, X):
         # Only l2 is supported currently
+        print("metric: ", self.metric)
         self.p = hnswlib.Index(space=self.metric, dim=len(X[0]))
-        self.p.init_index(
-            max_elements=len(X), ef_construction=self.method_param["efConstruction"], M=self.method_param["M"]
-        )
-        data_labels = np.arange(len(X))
-        self.p.add_items(np.asarray(X), data_labels)
+        # self.p.init_index(
+        #     max_elements=len(X), ef_construction=self.method_param["efConstruction"], M=self.method_param["M"]
+        # )
+        # data_labels = np.arange(len(X))
+        # self.p.add_items(np.asarray(X), data_labels)
+        path = "/home/snu-vldb/workspace/hnswlib/examples/openai-1536-1M-hnsw.bin";
+        self.p.load_index(path)
+        print("loaded from ", path)
         self.p.set_num_threads(1)
 
     def set_query_arguments(self, ef):
+        print("ef: ", ef)
         self.p.set_ef(ef)
 
     def query(self, v, n):
@@ -32,3 +37,4 @@ class HnswLib(BaseANN):
 
     def freeIndex(self):
         del self.p
+

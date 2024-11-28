@@ -11,21 +11,29 @@ def epsilon_threshold(data, count, epsilon):
     return data[count - 1] * (1 + epsilon)
 
 
+recall_k=3
 def get_recall_values(dataset_distances, run_distances, count, threshold, epsilon=1e-3):
+    # epsilon = 0
+    print("count: ", count)
+    print("recall@k: ", recall_k)
+
     recalls = np.zeros(len(run_distances))
     for i in range(len(run_distances)):
-        t = threshold(dataset_distances[i], count, epsilon)
+        t = threshold(dataset_distances[i], recall_k, epsilon)
         actual = 0
         for d in run_distances[i][:count]:
+            # if i == 0:
+            #     print("run distance: ", run_distances[i])
             if d <= t:
                 actual += 1
-        recalls[i] = actual
+        recalls[i] = actual * (count/recall_k)
+        # print(actual)
     return (np.mean(recalls) / float(count), np.std(recalls) / float(count), recalls)
 
 
 def knn(dataset_distances, run_distances, count, metrics, epsilon=1e-3):
     if "knn" not in metrics:
-        print("Computing knn metrics")
+        # print("Computing knn metrics")
         knn_metrics = metrics.create_group("knn")
         mean, std, recalls = get_recall_values(dataset_distances, run_distances, count, knn_threshold, epsilon)
         knn_metrics.attrs["mean"] = mean
@@ -204,3 +212,4 @@ all_metrics = {
         "worst": float("inf"),
     },
 }
+
