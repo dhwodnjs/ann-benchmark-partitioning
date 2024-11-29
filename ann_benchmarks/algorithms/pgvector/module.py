@@ -37,7 +37,7 @@ class PGVector(BaseANN):
         conn = psycopg.connect(host="localhost", user="ann", password="ann", dbname="ann", autocommit=True)
         pgvector.psycopg.register_vector(conn)
         cur = conn.cursor()
-
+        """
         # cur.execute("DROP TABLE IF EXISTS items")
         cur.execute("CREATE TABLE items (id int, embedding vector(%d))" % X.shape[1])
         cur.execute("ALTER TABLE items ALTER COLUMN embedding SET STORAGE PLAIN")
@@ -58,7 +58,7 @@ class PGVector(BaseANN):
         else:
             raise RuntimeError(f"unknown metric {self._metric}")
         print("done!")
-        # """
+        """
         print("skip insert and create")
         self._cur = cur
 

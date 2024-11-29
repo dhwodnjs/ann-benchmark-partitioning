@@ -8,7 +8,7 @@ fi
 
 # Define the server control commands and the configuration file path
 
-CONFIG_FILE="/home/snu-vldb/workspace/ann-benchmarks/ann_benchmarks/algorithms/hnswlib/config.yml"
+CONFIG_FILE="/home/smrc/workspace/ann-benchmark/ann_benchmarks/algorithms/hnswlib/config.yml"
 ALGORITHM="hnswlib"
 
 #DATA="gist-960-euclidean"
@@ -33,7 +33,7 @@ DEFAULT_COUNT=40
 ADD_PARAM=''
 # Run Test
 run_ann_benchmark() {
-  cd /home/snu-vldb/workspace/ann-benchmarks
+  cd /home/smrc/workspace/ann-benchmark
   rm -rf results/*;
   python3 run.py --algorithm $ALGORITHM --dataset $DATA --runs 4 --local $ADD_PARAM;
   echo "python3 run.py --algorithm hnswlib --dataset $DATA --runs 4 --local $ADD_PARAM;"

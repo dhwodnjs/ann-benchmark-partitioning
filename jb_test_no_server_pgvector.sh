@@ -7,10 +7,10 @@ if [ "$#" -lt 1 ]; then
 fi
 
 # Define the server control commands and the configuration file path
-PG_BIN="/home/snu-vldb/workspace/pg_out/bin"
-PG_CTL= $PG_BIN + "/bin"
-PG_DATA="/home/snu-vldb/workspace/pg_out/pgdb"
-CONFIG_FILE="/home/snu-vldb/workspace/ann-benchmarks/ann_benchmarks/algorithms/pgvector/config.yml"
+PG_BIN="/home/smrc/workspace/pg_out/bin"
+PG_CTL="$PG_BIN/pg_ctl"
+PG_DATA="/home/smrc/workspace/pg_out/pgdb"
+CONFIG_FILE="/home/smrc/workspace/ann-benchmark/ann_benchmarks/algorithms/pgvector/config.yml"
 #DATA="gist-960-euclidean"
 #DATA="dbpedia-openai-100k-angular"
 DATA="dbpedia-openai-1000k-angular"
@@ -51,7 +51,7 @@ ADD_PARAM=''
 #ADD_PARAM=' --count 40'
 # Run Test
 run_ann_benchmark() {
-  cd /home/snu-vldb/workspace/ann-benchmarks
+  cd /home/smrc/workspace/ann-benchmark
   rm -rf results/*;
   python3 run.py --algorithm pgvector --dataset $DATA --runs 1 --local $ADD_PARAM;
   echo "python3 run.py --algorithm pgvector --dataset $DATA --runs 1 --local $ADD_PARAM;"
