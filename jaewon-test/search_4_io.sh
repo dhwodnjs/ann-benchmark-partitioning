@@ -54,7 +54,7 @@ DATA_NAMES=(
 BUILD_RATIOS=(100)
 POOL_RATIOS=(30)
 PARTITION_SIZES=(64)
-BUFFER_RATIOS=(10 30 50)
+BUFFER_RATIOS=(50)
 
 
 BASE_SHARED_BUFFERS_VALUES=(
@@ -76,7 +76,7 @@ PG_OUT_DIRS=(
 PG_OUT_SIZE=("io_32")
 
 
-LOG_FILE="/home/jaewonoh/workspace/ann-benchmark/jaewon-test/final/4_test_page_size.log"
+LOG_FILE="/home/jaewonoh/workspace/ann-benchmark/jaewon-test/final/7_test_page_size.log"
 
 
 
@@ -112,38 +112,58 @@ for i in "${!PG_OUT_DIRS[@]}"; do
                     POOL_RATIO_LOG="pool_$POOL_RATIO"
 
 #                    TABLE_NAME="${DATA_NAME}_${DATA_SIZE}_${BUILD_RATIO_LOG}_${PARTITION_LOG}_${POOL_RATIO_LOG}_${PG_SIZE}kb"
-                    TABLE_NAME="${DATA_NAME}_${DATA_SIZE}_${BUILD_RATIO_LOG}_${PARTITION_LOG}_${POOL_RATIO_LOG}_${PG_SIZE}kb_v"
+#                    TABLE_NAME="${DATA_NAME}_${DATA_SIZE}_${BUILD_RATIO_LOG}_${PARTITION_LOG}_${POOL_RATIO_LOG}_${PG_SIZE}kb_v"
 
-                    echo "Search ${TABLE_NAME} ..." >> $LOG_FILE
+                    TABLE_NAME_D="${DATA_NAME}_${DATA_SIZE}_${BUILD_RATIO_LOG}_${PARTITION_LOG}_${POOL_RATIO_LOG}_${PG_SIZE}kb"
+                    TABLE_NAME_V="${TABLE_NAME_D}_v"
 
-                    for BUFFER_RATIO in "${BUFFER_RATIOS[@]}"; do
-                        SHARED_BUFFERS=$(($BASE_SHARED_BUFFERS * $BUFFER_RATIO / 100))
+                    for TABLE_NAME in "$TABLE_NAME_V" "$TABLE_NAME_D"; do
 
-                #        echo "Setting shared_buffers to ${SHARED_BUFFERS}B"
-                        sudo sed -i "s/^shared_buffers = .*/shared_buffers = ${SHARED_BUFFERS}B/" $PG_OUT/pgdb/postgresql.conf
-                        restart_postgres
+                        echo "Search ${TABLE_NAME} ..." >> $LOG_FILE
 
-                        $PG_OUT/bin/psql -U $PG_USER -p $PG_PORT -d $PG_DB -c "select pg_stat_reset();"
-                        SEARCH_RESULTS=$(python3 ~/workspace/ann-benchmark/jaewon-test/sh_search.py --table_name $TABLE_NAME --data_path $DATA_PATH --port $PG_PORT)
-                        echo "$SEARCH_RESULTS" >> $LOG_FILE
+                        for BUFFER_RATIO in "${BUFFER_RATIOS[@]}"; do
+                            SHARED_BUFFERS=$(($BASE_SHARED_BUFFERS * $BUFFER_RATIO / 100))
 
-                        HIT_RATIO=$($PG_OUT/bin/psql -p $PG_PORT -U $PG_USER -d $PG_DB -t -c "
-                            SELECT relname AS items_embedding_idx, idx_blks_hit, idx_blks_read,
-                                   ROUND(100.0 * idx_blks_hit / NULLIF(idx_blks_hit + idx_blks_read, 0), 2) AS index_hit_ratio
-                            FROM pg_statio_user_indexes
-                            WHERE relname = '${TABLE_NAME}'
-                            ORDER BY index_hit_ratio DESC;
-                        ")
+                    #        echo "Setting shared_buffers to ${SHARED_BUFFERS}B"
+                            sudo sed -i "s/^shared_buffers = .*/shared_buffers = ${SHARED_BUFFERS}B/" $PG_OUT/pgdb/postgresql.conf
+                            restart_postgres
 
-                        echo "Index Hit Ratio for shared_buffers=${SHARED_BUFFERS}B ($BUFFER_RATIO%), Build Ratio=${BUILD_RATIO}%, Pool Ratio=${POOL_RATIO_LOG}:" >> $LOG_FILE
-                        echo "$HIT_RATIO" >> $LOG_FILE
+                            $PG_OUT/bin/psql -U $PG_USER -p $PG_PORT -d $PG_DB -c "select pg_stat_reset();"
+                            SEARCH_RESULTS=$(python3 ~/workspace/ann-benchmark/jaewon-test/sh_search.py --table_name $TABLE_NAME --data_path $DATA_PATH --port $PG_PORT)
+                            echo "$SEARCH_RESULTS" >> $LOG_FILE
+
+                            HIT_RATIO=$($PG_OUT/bin/psql -p $PG_PORT -U $PG_USER -d $PG_DB -t -c "
+                                SELECT relname AS items_embedding_idx, idx_blks_hit, idx_blks_read,
+                                       ROUND(100.0 * idx_blks_hit / NULLIF(idx_blks_hit + idx_blks_read, 0), 2) AS index_hit_ratio
+                                FROM pg_statio_user_indexes
+                                WHERE relname = '${TABLE_NAME}'
+                                ORDER BY index_hit_ratio DESC;
+                            ")
+
+                            echo "Index Hit Ratio for shared_buffers=${SHARED_BUFFERS}B ($BUFFER_RATIO%), Build Ratio=${BUILD_RATIO}%, Pool Ratio=${POOL_RATIO_LOG}:" >> $LOG_FILE
+                            echo "$HIT_RATIO" >> $LOG_FILE
 
 
-                        echo "---------------------------------" >> $LOG_FILE
+                            $PG_OUT/bin/psql -U $PG_USER -p $PG_PORT -d $PG_DB -c "select pg_stat_reset();"
+                            SEARCH_RESULTS=$(python3 ~/workspace/ann-benchmark/jaewon-test/sh_search.py --table_name $TABLE_NAME --data_path $DATA_PATH --port $PG_PORT)
+                            echo "$SEARCH_RESULTS" >> $LOG_FILE
 
+                            HIT_RATIO=$($PG_OUT/bin/psql -p $PG_PORT -U $PG_USER -d $PG_DB -t -c "
+                                SELECT relname AS items_embedding_idx, idx_blks_hit, idx_blks_read,
+                                       ROUND(100.0 * idx_blks_hit / NULLIF(idx_blks_hit + idx_blks_read, 0), 2) AS index_hit_ratio
+                                FROM pg_statio_user_indexes
+                                WHERE relname = '${TABLE_NAME}'
+                                ORDER BY index_hit_ratio DESC;
+                            ")
+
+                            echo "Index Hit Ratio for shared_buffers=${SHARED_BUFFERS}B ($BUFFER_RATIO%), Build Ratio=${BUILD_RATIO}%, Pool Ratio=${POOL_RATIO_LOG}:" >> $LOG_FILE
+                            echo "$HIT_RATIO" >> $LOG_FILE
+
+                            echo "---------------------------------" >> $LOG_FILE
+
+                        done
+                        echo "" >> $LOG_FILE
                     done
-                    echo "" >> $LOG_FILE
-
                 done
             done
         done

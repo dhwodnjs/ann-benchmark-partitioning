@@ -8,8 +8,11 @@ PG_PORT=8008
 PG_USER="ann"
 PG_DB="ann"
 PG_NAMESPACE=2200
-PG_OUT=~/mnt/samsung-nvme/jaewonoh/workspace/pg_out
-PG_DIR=$PG_OUT/pgdb_revision
+#PG_OUT=~/mnt/samsung-nvme/jaewonoh/workspace/pg_out_final_io
+#PG_DIR=$PG_OUT/pgdb_0716
+
+PG_OUT=~/mnt/samsung-nvme/jaewonoh/workspace/pg_out_final_io
+PG_DIR=$PG_OUT/pgdb_0716
 
 SOURCE_FILE="/home/jaewonoh/workspace/git/pgpgpg/pgvector/src/hnsw.h"
 SOURCE_BUILD_FILE="/home/jaewonoh/workspace/git/pgpgpg/pgvector/src/hnswbuild.c"
@@ -40,7 +43,7 @@ DATA_SIZE="100k"
 #HEAP_TUPLE=3000000
 #DATA_SIZE="30m"
 #
-#
+
 #HEAP_TUPLE=1000000
 #DATA_SIZE="1m"
 
@@ -56,8 +59,9 @@ DATA_SIZE="100k"
 
 # 데이터셋별 설정을 배열로 정의
 DATA_PATHS=(
-    "/home/jaewonoh/workspace/data/deep-image-96-angular.hdf5"
-#    "/home/jaewonoh/workspace/data/openai-1536-5m.hdf5"
+#    "/home/jaewonoh/workspace/data/deep-image-96-angular.hdf5"
+    "/home/jaewonoh/workspace/data/openai-1536-5m.hdf5"
+#    "/home/jaewonoh/workspace/data/dbpedia-openai-1000k-angular.hdf5"
 #    "/home/jaewonoh/workspace/data/glove-200-angular.hdf5"
 )
 #"/home/jaewonoh/workspace/data/sift-128-euclidean.hdf5"
@@ -78,8 +82,9 @@ DATA_PATHS=(
 
 
 DATA_NAMES=(
-    "deep"
+#    "deep"
 #    "c4"
+    "dbp"
 #    "glove"
 )
 
@@ -94,12 +99,12 @@ DATA_NAMES=(
 
 
 
-BUILD_RATIOS=(100)
+BUILD_RATIOS=(90)
 POOL_RATIOS=(30)
 PARTITION_SIZES=(64)
 
 
-LOG_FILE="/home/jaewonoh/workspace/ann-benchmark/jaewon-test/final/0_build_summer.log"
+LOG_FILE="/home/jaewonoh/workspace/ann-benchmark/jaewon-test/final/0_build_final.log"
 
 for i in "${!DATA_PATHS[@]}"; do
     DATA_PATH="${DATA_PATHS[$i]}"
@@ -118,7 +123,7 @@ for i in "${!DATA_PATHS[@]}"; do
             for POOL_RATIO in "${POOL_RATIOS[@]}"; do
                 POOL_RATIO_LOG="pool_$POOL_RATIO"
 
-                TABLE_NAME="${DATA_NAME}_${DATA_SIZE}_${BUILD_RATIO_LOG}_${PARTITION_LOG}_${POOL_RATIO_LOG}_stv1" ## v: vanilla, p: partitioning, s: shuffle, i: initial, t: test
+                TABLE_NAME="${DATA_NAME}_${DATA_SIZE}_${BUILD_RATIO_LOG}_${PARTITION_LOG}_${POOL_RATIO_LOG}_t1" ## origin 아무것도 안한거  ## v: vanilla, p: pca, s: shuffle, i: initial, t: test
 
                 echo "Build ${TABLE_NAME} ..." >> $LOG_FILE
 
@@ -126,9 +131,9 @@ for i in "${!DATA_PATHS[@]}"; do
                 sed -i "s/#define INSERT_PAGE_PER_PARTITION [0-9]\+\(\.[0-9]\+\)\?/#define INSERT_PAGE_PER_PARTITION $POOL_SIZE/" $SOURCE_FILE
 
                 cd /home/jaewonoh/workspace/git/pgpgpg/pgvector
-                make PG_CONFIG=/home/jaewonoh/mnt/samsung-nvme/jaewonoh/workspace/pg_out/bin/pg_config clean;
-                make PG_CONFIG=/home/jaewonoh/mnt/samsung-nvme/jaewonoh/workspace/pg_out/bin/pg_config -j 32;
-                make install PG_CONFIG=/home/jaewonoh/mnt/samsung-nvme/jaewonoh/workspace/pg_out/bin/pg_config;
+                make PG_CONFIG=$PG_OUT/bin/pg_config clean;
+                make PG_CONFIG=$PG_OUT/bin/pg_config -j 32;
+                make install PG_CONFIG=$PG_OUT/bin/pg_config;
 
                 restart_postgres
 

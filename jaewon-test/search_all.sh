@@ -7,56 +7,27 @@ PG_DB="ann"
 PG_NAMESPACE=2200
 
 
+PG_OUT_4=~/mnt/samsung-nvme/jaewonoh/workspace/pg_out_4
 PG_OUT_8=~/mnt/samsung-nvme/jaewonoh/workspace/pg_out
 PG_OUT_16=~/mnt/samsung-nvme/jaewonoh/workspace/pg_out_16
 PG_OUT_32=~/mnt/samsung-nvme/jaewonoh/workspace/pg_out_32
-PG_OUT_IO_32=~/mnt/samsung-nvme/jaewonoh/workspace/pg_out_io_32
 
 
 SOURCE_FILE="/home/jaewonoh/workspace/git/pgpgpg/pgvector/src/hnsw.h"
 SOURCE_BUILD_FILE="/home/jaewonoh/workspace/git/pgpgpg/pgvector/src/hnswbuild.c"
 SOURCE_INSERT_FILE="/home/jaewonoh/workspace/git/pgpgpg/pgvector/src/hnswinsert.c"
 
-function restart_postgres() {
-    $PG_OUT/bin/pg_ctl -D $PG_DB_INDEX stop -o "-p $PG_PORT"
-    sleep 3
 
-    while $PG_OUT/bin/pg_ctl -D $PG_DB_INDEX status > /dev/null 2>&1; do
-        echo "Waiting for PostgreSQL to stop..."
-        sleep 1
-    done
+HEAP_TUPLE=100000
+DATA_SIZE="100k"
 
-    $PG_OUT/bin/pg_ctl -D $PG_DB_INDEX start -o "-p $PG_PORT" -l $LOG_FILE_COUNT
-    sleep 3
-}
-
-
-HEAP_TUPLE=10000
-DATA_SIZE="10k"
-
-
-# 데이터셋별 설정을 배열로 정의
 DATA_PATHS=(
-    "/home/jaewonoh/workspace/data/deep-image-96-angular.hdf5"
-    "/home/jaewonoh/workspace/data/nytimes-256-angular.hdf5"
-    "/home/jaewonoh/workspace/data/glove-200-angular.hdf5"
-    "/home/jaewonoh/workspace/data/coco-i2i-512-angular.hdf5"
-    "/home/jaewonoh/workspace/data/dbpedia-openai-1000k-angular.hdf5"
+#    "/home/jaewonoh/workspace/data/deep-image-96-angular.hdf5"
+    "/home/jaewonoh/workspace/data/openai-1536-5m.hdf5"
 )
-
-#"/home/jaewonoh/workspace/data/deep-image-96-angular.hdf5"
-#    "/home/jaewonoh/workspace/data/nytimes-256-angular.hdf5"
-#    "/home/jaewonoh/workspace/data/glove-200-angular.hdf5"
-#    "/home/jaewonoh/workspace/data/coco-i2i-512-angular.hdf5"
-#
-
-
 DATA_NAMES=(
-    "deep"
-    "nyt"
-    "glove"
-    "coco"
-    "dbp"
+#    "deep"
+    "c4"
 )
 
 BUILD_RATIOS=(100)
@@ -67,10 +38,6 @@ BUFFER_RATIOS=(10)
 
 
 BASE_SHARED_BUFFERS_VALUES=(
-    82034688  # deep-image-96-angular
-    152895488
-    136552448
-    273055744
     819208192
 )
 
@@ -81,16 +48,16 @@ BASE_SHARED_BUFFERS_VALUES=(
 
 
 
-# PG_OUT 경로를 배열로 저장
 PG_OUT_DIRS=(
+#    "$PG_OUT_4"
+    "$PG_OUT_8"
+    "$PG_OUT_16"
     "$PG_OUT_32"
 )
-  #    "$PG_OUT_32"
-
-PG_OUT_SIZE=(32)
+PG_OUT_SIZE=(8 16 32)
 
 
-LOG_FILE="/home/jaewonoh/workspace/ann-benchmark/jaewon-test/final/4_test_page_size.log"
+LOG_FILE="/home/jaewonoh/workspace/ann-benchmark/jaewon-test/final/15_search_revision.log"
 
 
 
@@ -98,7 +65,13 @@ for i in "${!PG_OUT_DIRS[@]}"; do
 
     PG_OUT="${PG_OUT_DIRS[$i]}";
     PG_SIZE="${PG_OUT_SIZE[$i]}";
-    PG_DB_INDEX="${PG_OUT}/pgdb"
+
+
+    if [ "$PG_SIZE" -eq 8 ]; then
+        PG_DB_DIR="$PG_OUT/pgdb_revision"
+    else
+        PG_DB_DIR="$PG_OUT/pgdb"
+    fi
 
 
 #
@@ -119,7 +92,7 @@ for i in "${!PG_OUT_DIRS[@]}"; do
         DATA_NAME="${DATA_NAMES[$i]}"
 
 
-        LOG_FILE_COUNT="/home/jaewonoh/workspace/ann-benchmark/jaewon-test/final/5_visit_node_${DATA_NAME}_${PG_SIZE}kb.log"
+#        LOG_FILE_COUNT="/home/jaewonoh/workspace/ann-benchmark/jaewon-test/final/5_visit_node_${DATA_NAME}_${PG_SIZE}kb.log"
 
 
         for BUILD_RATIO in "${BUILD_RATIOS[@]}"; do
@@ -132,7 +105,7 @@ for i in "${!PG_OUT_DIRS[@]}"; do
                     POOL_RATIO_LOG="pool_$POOL_RATIO"
 
 #                    TABLE_NAME="${DATA_NAME}_${DATA_SIZE}_${BUILD_RATIO_LOG}_${PARTITION_LOG}_${POOL_RATIO_LOG}_${PG_SIZE}kb"
-                    TABLE_NAME="${DATA_NAME}_${DATA_SIZE}_${BUILD_RATIO_LOG}_${PARTITION_LOG}_${POOL_RATIO_LOG}_${PG_SIZE}kb"
+                    TABLE_NAME="${DATA_NAME}_${DATA_SIZE}_${BUILD_RATIO_LOG}_${PARTITION_LOG}_${POOL_RATIO_LOG}_${PG_SIZE}kb_t"
 
                     echo "Search ${TABLE_NAME} ..." >> $LOG_FILE
 
@@ -140,11 +113,18 @@ for i in "${!PG_OUT_DIRS[@]}"; do
                         SHARED_BUFFERS=$(($BASE_SHARED_BUFFERS * $BUFFER_RATIO / 100))
 
                 #        echo "Setting shared_buffers to ${SHARED_BUFFERS}B"
-                        sudo sed -i "s/^shared_buffers = .*/shared_buffers = ${SHARED_BUFFERS}B/" $PG_DB_INDEX/postgresql.conf
-                        restart_postgres
+                        sudo sed -i "s/^shared_buffers = .*/shared_buffers = ${SHARED_BUFFERS}B/" $PG_DB_DIR/postgresql.conf
+
+                        # Stop PostgreSQL after loop ends
+                        $PG_OUT/bin/pg_ctl -D "$PG_DB_DIR" stop -o "-p $PG_PORT"
+                        sleep 3
+
+                        # Start PostgreSQL once per PG_OUT
+                        $PG_OUT/bin/pg_ctl -D "$PG_DB_DIR" start -o "-p $PG_PORT"
+                        sleep 3
 
                         $PG_OUT/bin/psql -U $PG_USER -p $PG_PORT -d $PG_DB -c "select pg_stat_reset();"
-                        SEARCH_RESULTS=$(python3 ~/workspace/ann-benchmark/jaewon-test/sh_search.py --table_name $TABLE_NAME --data_path $DATA_PATH --port $PG_PORT)
+                        SEARCH_RESULTS=$(python3 ~/workspace/ann-benchmark/jaewon-test/sh_search.py --table_name $TABLE_NAME --data_path $DATA_PATH --port $PG_PORT --num 0)
                         echo "$SEARCH_RESULTS" >> $LOG_FILE
 
                         HIT_RATIO=$($PG_OUT/bin/psql -p $PG_PORT -U $PG_USER -d $PG_DB -t -c "
@@ -168,10 +148,12 @@ for i in "${!PG_OUT_DIRS[@]}"; do
             done
         done
     done
+
+
+    # Stop PostgreSQL after loop ends
+    $PG_OUT/bin/pg_ctl -D "$PG_DB_DIR" stop -o "-p $PG_PORT"
+    sleep 3
 done
 
-
-$PG_OUT/bin/pg_ctl -D $PG_DB_INDEX stop -o "-p $PG_PORT"
-sleep 3
 
 echo "Experiment completed. Results saved in $LOG_FILE."

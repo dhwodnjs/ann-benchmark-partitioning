@@ -29,6 +29,9 @@ DATA_SIZE="100k"
 # 데이터셋별 설정을 배열로 정의
 DATA_PATHS=(
     "/home/jaewonoh/workspace/data/deep-image-96-angular.hdf5"
+    "/home/jaewonoh/workspace/data/nytimes-256-angular.hdf5"
+    "/home/jaewonoh/workspace/data/glove-200-angular.hdf5"
+    "/home/jaewonoh/workspace/data/coco-i2i-512-angular.hdf5"
 )
 #"/home/jaewonoh/workspace/data/sift-128-euclidean.hdf5"
 #    "/home/jaewonoh/workspace/data/deep-image-96-angular.hdf5"
@@ -50,9 +53,13 @@ DATA_PATHS=(
 
 DATA_NAMES=(
     "deep"
+    "nyt"
+    "glove"
+    "coco"
 )
 
 #
+#    "deep"
 #    "nyt"
 #    "glove"
 #    "coco"
@@ -80,14 +87,14 @@ for i in "${!DATA_PATHS[@]}"; do
         for PARTITION_SIZE in "${PARTITION_SIZES[@]}"; do
             PARTITION_LOG="prt_$PARTITION_SIZE"
 
-            LOG_FILE_COUNT="/home/jaewonoh/workspace/ann-benchmark/jaewon-test/final/13_select_partition_${DATA_NAME}_${DATA_SIZE}_${PARTITION_LOG}_no_limit.log"
+            LOG_FILE_COUNT="/home/jaewonoh/workspace/ann-benchmark/jaewon-test/final/13_select_partition_${DATA_NAME}_${DATA_SIZE}_${PARTITION_LOG}.log"
 
             sed -i "s/#define MAX_NODES_PER_PARTITION [0-9]\+/#define MAX_NODES_PER_PARTITION $PARTITION_SIZE/" $SOURCE_FILE
 
             for POOL_RATIO in "${POOL_RATIOS[@]}"; do
                 POOL_RATIO_LOG="pool_$POOL_RATIO"
 
-                TABLE_NAME="${DATA_NAME}_${DATA_SIZE}_${BUILD_RATIO_LOG}_${PARTITION_LOG}_${POOL_RATIO_LOG}" ## v: vanilla
+                TABLE_NAME="${DATA_NAME}_${DATA_SIZE}_${BUILD_RATIO_LOG}_${PARTITION_LOG}_${POOL_RATIO_LOG}_l" ## v: vanilla
 
                 echo "Build ${TABLE_NAME} ..." >> $LOG_FILE
 

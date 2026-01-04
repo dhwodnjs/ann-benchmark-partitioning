@@ -9,7 +9,7 @@ PG_USER="ann"
 PG_DB="ann"
 PG_NAMESPACE=2200
 
-
+PG_OUT_4=~/mnt/samsung-nvme/jaewonoh/workspace/pg_out_4
 PG_OUT_8=~/mnt/samsung-nvme/jaewonoh/workspace/pg_out
 PG_OUT_16=~/mnt/samsung-nvme/jaewonoh/workspace/pg_out_16
 PG_OUT_32=~/mnt/samsung-nvme/jaewonoh/workspace/pg_out_32
@@ -20,17 +20,16 @@ SOURCE_FILE="/home/jaewonoh/workspace/git/pgpgpg/pgvector/src/hnsw.h"
 SOURCE_BUILD_FILE="/home/jaewonoh/workspace/git/pgpgpg/pgvector/src/hnswbuild.c"
 SOURCE_INSERT_FILE="/home/jaewonoh/workspace/git/pgpgpg/pgvector/src/hnswinsert.c"
 
-
 function restart_postgres() {
-    $PG_OUT/bin/pg_ctl -D $PG_OUT/pgdb stop -o "-p $PG_PORT"
+    $PG_OUT/bin/pg_ctl -D "$PG_DB_DIR" stop -o "-p $PG_PORT"
     sleep 3
 
-    while $PG_OUT/bin/pg_ctl -D $PG_OUT/pgdb status > /dev/null 2>&1; do
+    while $PG_OUT/bin/pg_ctl -D "$PG_DB_DIR" status > /dev/null 2>&1; do
         echo "Waiting for PostgreSQL to stop..."
         sleep 1
     done
 
-    $PG_OUT/bin/pg_ctl -D $PG_OUT/pgdb start -o "-p $PG_PORT"
+    $PG_OUT/bin/pg_ctl -D "$PG_DB_DIR" start -o "-p $PG_PORT"
     sleep 3
 }
 
@@ -38,7 +37,11 @@ HEAP_TUPLE=100000
 DATA_SIZE="100k"
 
 DATA_PATHS=(
-    "/home/jaewonoh/workspace/data/dbpedia-openai-1000k-angular.hdf5"
+    "/home/jaewonoh/workspace/data/deep-image-96-angular.hdf5"
+#    "/home/jaewonoh/workspace/data/nytimes-256-angular.hdf5"
+#    "/home/jaewonoh/workspace/data/glove-200-angular.hdf5"
+#    "/home/jaewonoh/workspace/data/coco-i2i-512-angular.hdf5"
+#    "/home/jaewonoh/workspace/data/dbpedia-openai-1000k-angular.hdf5"
 )
 
 #    "/home/jaewonoh/workspace/data/nytimes-256-angular.hdf5"
@@ -47,7 +50,11 @@ DATA_PATHS=(
 #
 
 DATA_NAMES=(
-    "dbp"
+    "deep"
+#    "nyt"
+#    "glove"
+#    "coco"
+#    "dbp"
 )
 
 BUILD_RATIOS=(100)
@@ -57,15 +64,18 @@ PARTITION_SIZES=(64)
 
 # PG_OUT 경로를 배열로 저장
 PG_OUT_DIRS=(
-    "$PG_OUT_IO_32"
+    "$PG_OUT_4"
+    "$PG_OUT_8"
+    "$PG_OUT_16"
+    "$PG_OUT_32"
 )
   #    "$PG_OUT_32"
 
-PG_OUT_SIZE=("io_32")
+PG_OUT_SIZE=(4 8 16 32)
 
 
 
-LOG_FILE="/home/jaewonoh/workspace/ann-benchmark/jaewon-test/final/0_build.log"
+LOG_FILE="/home/jaewonoh/workspace/ann-benchmark/jaewon-test/final/0_build_rebuttal.log"
 
 
 for i in "${!PG_OUT_DIRS[@]}"; do
@@ -73,8 +83,14 @@ for i in "${!PG_OUT_DIRS[@]}"; do
     PG_OUT="${PG_OUT_DIRS[$i]}";
     PG_SIZE="${PG_OUT_SIZE[$i]}";
 
-#    PAGE_LOG="page_$PG_SIZE"
 
+    if [ "$PG_SIZE" -eq 8 ]; then
+        PG_DB_DIR="$PG_OUT/pgdb_revision"
+    else
+        PG_DB_DIR="$PG_OUT/pgdb"
+    fi
+
+#    PAGE_LOG="page_$PG_SIZE"
 
     for i in "${!DATA_PATHS[@]}"; do
         DATA_PATH="${DATA_PATHS[$i]}"
@@ -132,7 +148,8 @@ for i in "${!PG_OUT_DIRS[@]}"; do
     done
 done
 
-$PG_OUT/bin/pg_ctl -D $PG_OUT/pgdb stop -o "-p $PG_PORT"
+$PG_OUT/bin/pg_ctl -D "$PG_DB_DIR" stop -o "-p $PG_PORT"
 sleep 3
+
 
 echo "Experiment completed. Results saved in $LOG_FILE."

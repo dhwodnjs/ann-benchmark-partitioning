@@ -88,18 +88,18 @@ if __name__ == "__main__":
     # Perform search for each query
     t0 = time.time()
     
-    # if args.num < 900:
-    #     results = [query(cur, args.table_name, x, 5) for x in tqdm(X_test[:args.num])]
-    # else:
-    #     results = [query(cur, args.table_name, x, 5) for x in tqdm(X_test[args.num:args.num+1])]
-
-    if args.num == 1:
-        query(cur, args.table_name, X_test[10], 5)
+    if args.num < 900:
+        results = [query(cur, args.table_name, x, 5) for x in tqdm(X_test[:args.num])]
     else:
+        results = [query(cur, args.table_name, x, 5) for x in tqdm(X_test[args.num:args.num+1])]
 
-        results = [query(cur, args.table_name, x, 5) for x in tqdm(X_test)]
-
-        search_time = time.time() - t0  # 종료 시간 기록
-        print(f"Search completed in {search_time:.2f} seconds.")
-
-        print(results[:10])
+    # if args.num == 1:
+    #     query(cur, args.table_name, X_test[10], 5)
+    # else:
+    #
+    #     results = [query(cur, args.table_name, x, 5) for x in tqdm(X_test)]
+    #
+    #     search_time = time.time() - t0  # 종료 시간 기록
+    #     print(f"Search completed in {search_time:.2f} seconds.")
+    #
+    #     print(results[:10])

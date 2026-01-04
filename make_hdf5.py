@@ -5,8 +5,9 @@ import numpy
 import h5py
 from ann_benchmarks.algorithms.bruteforce.module import BruteForceBLAS
 
-data_path = "/home/jaewonoh/workspace/data/deep-image-96-angular.hdf5"
-size = 100000
+# data_path = "/home/jaewonoh/workspace/data/deep-image-96-angular.hdf5"
+data_path = "/home/jaewonoh/workspace/data/openai-1536-5m.hdf5"
+size = 90000
 
 
 
@@ -79,6 +80,8 @@ X_train, X_test = load_and_transform_dataset(data_path)
 seed = 42
 np.random.seed(seed)
 X_train = X_train[np.random.choice(X_train.shape[0], size, replace=False)]
+X_test = X_test[np.random.choice(X_test.shape[0], 1000, replace=False)]
 
 
-write_output(X_train, X_test, "deep_100k.hdf5", "angular")
+
+write_output(X_train, X_test, "dbp_90k_2000.hdf5", "angular")

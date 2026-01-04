@@ -8,8 +8,8 @@ PG_PORT=8008
 PG_USER="ann"
 PG_DB="ann"
 PG_NAMESPACE=2200
-PG_OUT=~/mnt/samsung-nvme/jaewonoh/workspace/pg_out_final_io
-PG_DIR=$PG_OUT/pgdb_0716
+PG_OUT=~/mnt/samsung-nvme/jaewonoh/workspace/pg_out_bq
+PG_DIR=$PG_OUT/pgdb
 
 SOURCE_FILE="/home/jaewonoh/workspace/git/pgpgpg/pgvector/src/hnsw.h"
 SOURCE_BUILD_FILE="/home/jaewonoh/workspace/git/pgpgpg/pgvector/src/hnswbuild.c"
@@ -56,9 +56,12 @@ DATA_SIZE="100k"
 
 # 데이터셋별 설정을 배열로 정의
 DATA_PATHS=(
-#    "/home/jaewonoh/workspace/data/deep-image-96-angular.hdf5"
-    "/home/jaewonoh/workspace/data/openai-1536-5m.hdf5"
+#    "/home/jaewonoh/workspace/data/coco-i2i-512-angular.hdf5"
+    "/home/jaewonoh/workspace/data/deep-image-96-angular.hdf5"
+#    "/home/jaewonoh/workspace/data/nytimes-256-angular.hdf5"
+#    "/home/jaewonoh/workspace/data/glove-200-angular.hdf5"
 #    "/home/jaewonoh/workspace/data/dbpedia-openai-1000k-angular.hdf5"
+#    "/home/jaewonoh/workspace/data/openai-1536-5m.hdf5"
 #    "/home/jaewonoh/workspace/data/glove-200-angular.hdf5"
 )
 #"/home/jaewonoh/workspace/data/sift-128-euclidean.hdf5"
@@ -79,9 +82,13 @@ DATA_PATHS=(
 
 
 DATA_NAMES=(
-#    "deep"
+#    "coco"
+    "deep"
+#    "nyt"
+#    "glove"
+#    "dbp"
 #    "c4"
-    "dbp"
+#    "dbp"
 #    "glove"
 )
 
@@ -99,9 +106,10 @@ DATA_NAMES=(
 BUILD_RATIOS=(90)
 POOL_RATIOS=(30)
 PARTITION_SIZES=(64)
+#PARTITION_SIZES=(1)
 
 
-LOG_FILE="/home/jaewonoh/workspace/ann-benchmark/jaewon-test/final/0_build_final.log"
+LOG_FILE="/home/jaewonoh/workspace/ann-benchmark/jaewon-test/final/0_build_bq.log"
 
 for i in "${!DATA_PATHS[@]}"; do
     DATA_PATH="${DATA_PATHS[$i]}"
@@ -120,7 +128,7 @@ for i in "${!DATA_PATHS[@]}"; do
             for POOL_RATIO in "${POOL_RATIOS[@]}"; do
                 POOL_RATIO_LOG="pool_$POOL_RATIO"
 
-                TABLE_NAME="${DATA_NAME}_${DATA_SIZE}_${BUILD_RATIO_LOG}_${PARTITION_LOG}_${POOL_RATIO_LOG}_t1" ## origin 아무것도 안한거  ## v: vanilla, p: pca, s: shuffle, i: initial, t: test
+                TABLE_NAME="${DATA_NAME}_${DATA_SIZE}_${BUILD_RATIO_LOG}_${PARTITION_LOG}_${POOL_RATIO_LOG}_p_1" ## origin 아무것도 안한거  ## v: vanilla, p: pca, s: shuffle, i: initial, t: test
 
                 echo "Build ${TABLE_NAME} ..." >> $LOG_FILE
 
@@ -134,7 +142,7 @@ for i in "${!DATA_PATHS[@]}"; do
 
                 restart_postgres
 
-                BUILD_TIME=$(python3 ~/workspace/ann-benchmark/jaewon-test/sh_build.py --size $HEAP_TUPLE --ratio $BUILD_RATIO --table_name $TABLE_NAME --data_path $DATA_PATH --port $PG_PORT)
+                BUILD_TIME=$(python3 ~/workspace/ann-benchmark/jaewon-test/sh_build_bq.py --size $HEAP_TUPLE --ratio $BUILD_RATIO --table_name $TABLE_NAME --data_path $DATA_PATH --port $PG_PORT)
 
                 echo "Build Time: $BUILD_TIME" >> $LOG_FILE
 
@@ -143,7 +151,7 @@ for i in "${!DATA_PATHS[@]}"; do
                            relfilenode, reltablespace, relpages, reltuples, reltoastrelid, relhasindex
                     FROM pg_class
                     WHERE relnamespace = $PG_NAMESPACE
-                    AND (relname = '$TABLE_NAME' OR relname = '${TABLE_NAME}_embedding_idx');
+                    AND (relname = '$TABLE_NAME' OR relname = '${TABLE_NAME}_binary_quantize_idx');
                 ")
 
                 echo "$INDEX_STATS" >> $LOG_FILE

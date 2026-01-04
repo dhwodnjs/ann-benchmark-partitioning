@@ -38,7 +38,7 @@ DATA_SIZE="100k"
 
 # 데이터셋별 설정을 배열로 정의
 DATA_PATHS=(
-    "/home/jaewonoh/workspace/data/coco-i2i-512-angular.hdf5"
+#    "/home/jaewonoh/workspace/data/coco-i2i-512-angular.hdf5"
 #    "/home/jaewonoh/workspace/data/deep-image-96-angular.hdf5"
 #    "/home/jaewonoh/workspace/data/glove-200-angular.hdf5"
 )
@@ -54,13 +54,90 @@ DATA_PATHS=(
 #    "/home/jaewonoh/workspace/data/coco-i2i-512-angular.hdf5"
 #
 
+
+# 데이터셋별 설정을 배열로 정의
+DATA_PATHS=(
+    "/home/jaewonoh/workspace/data/coco-i2i-512-angular.hdf5"
+#    "/home/jaewonoh/workspace/data/deep-image-96-angular.hdf5"
+#    "/home/jaewonoh/workspace/data/nytimes-256-angular.hdf5"
+#    "/home/jaewonoh/workspace/data/glove-200-angular.hdf5"
+#    "/home/jaewonoh/workspace/data/dbpedia-openai-1000k-angular.hdf5"
+)
+
+DATA_NAMES=(
+    "coco"
+#    "deep"
+#    "nyt"
+#    "glove"
+#    "dbp"
+#    "c4"
+#    "dbp"
+#    "glove"
+)
+
 BASE_SHARED_BUFFERS_VALUES=(
+273055744
 #    819208192  # deep-image-96-angular
 #    73842688
 #    28663808 # deep
-    33832960 # coco
+#    33832960 # coco
 #    136552448
+#    28663808 # full
+#    31719424
+#    33832960
+#    33841152
+#    194688
+#    46194688 ## full (15) dbp
+#    245776384 ## 3
+#    147472384 ## 5
+#    73744384 ## 10
+#    737296384 ## 1
+#    28655616 ## full (25) deep
+#    147390464 # 5
+#    49143808 ## 15
+#    73711616 ## 10 FP
+
+
 )
+
+#BASE_SHARED_BUFFERS_VALUES=(
+##    245760000 # 3:
+##    147464192 # 5:
+##    105332736 # 7:
+##    73744384 # 10:
+##    56729600 # 13:
+##    43384832 # 17:
+##    33832960 # full:
+#    28663808 # full
+#    31719424
+#    33832960
+#    33841152
+#    245653504 # 3
+#    230457344
+#    245776384
+#    245776384
+#    105291776 # 7
+#    105291776
+#    105349120
+#    105349120
+#    56705024 # 13
+#    56705024
+#    56737792
+#    56737792
+#    43368448 # 17
+#    43368448
+#    43393024
+#    43393024
+#
+#)
+
+# 3: 245760000
+# 5: 147464192
+# 7: 105332736
+# 10: 73744384
+# 13: 56729600
+# 17: 43384832
+# full: 33832960
 
 # deep-image-96-angular 100k : 82026496
 # deep-image-96-angular 1m : 820027392
@@ -97,23 +174,25 @@ BASE_SHARED_BUFFERS_VALUES=(
 #)
 
 
-
-DATA_NAMES=(
-    "coco"
-#    "deep"
-#    "glove"
-)
-#    "sift"
-#    "nyt"
-#    "glove"
+#
+#DATA_NAMES=(
 #    "coco"
-#    "dbp"
+##    "deep"
+##    "glove"
+#)
+##    "sift"
+##    "nyt"
+##    "glove"
+##    "coco"
+##    "dbp"
 
 
 BUILD_RATIOS=(90)
 POOL_RATIOS=(30)
 PARTITION_SIZES=(64)
-BUFFER_RATIOS=(5 10 30 50 70 90)
+BUFFER_RATIOS=(5 10 20)
+#BUFFER_RATIOS=(10)
+#PARTITION_SIZES=(1)
 #
 #
 #BASE_SHARED_BUFFERS_VALUES=(
@@ -126,7 +205,7 @@ BUFFER_RATIOS=(5 10 30 50 70 90)
 #    273055744
 #    819208192
 
-LOG_FILE="/home/jaewonoh/workspace/ann-benchmark/jaewon-test/final/20_search_bq.log"
+LOG_FILE="/home/jaewonoh/workspace/ann-benchmark/jaewon-test/final/22_search_bq_limit.log"
 
 for i in "${!DATA_PATHS[@]}"; do
     BASE_SHARED_BUFFERS="${BASE_SHARED_BUFFERS_VALUES[$i]}"
@@ -163,7 +242,7 @@ for i in "${!DATA_PATHS[@]}"; do
                     echo "$SEARCH_RESULTS" >> $LOG_FILE
 
                     HIT_RATIO=$($PG_OUT/bin/psql -p $PG_PORT -U $PG_USER -d $PG_DB -t -c "
-                        SELECT relname AS items_embedding_idx, idx_blks_hit, idx_blks_read,
+                        SELECT indexrelname AS index_name,  idx_blks_hit, idx_blks_read,
                                ROUND(100.0 * idx_blks_hit / NULLIF(idx_blks_hit + idx_blks_read, 0), 2) AS index_hit_ratio
                         FROM pg_statio_user_indexes
                         WHERE relname = '${TABLE_NAME}'

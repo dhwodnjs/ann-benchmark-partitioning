@@ -11,33 +11,43 @@ PG_OUT_8=~/mnt/samsung-nvme/jaewonoh/workspace/pg_out
 PG_OUT_16=~/mnt/samsung-nvme/jaewonoh/workspace/pg_out_16
 PG_OUT_32=~/mnt/samsung-nvme/jaewonoh/workspace/pg_out_32
 PG_OUT_IO_32=~/mnt/samsung-nvme/jaewonoh/workspace/pg_out_io_32
+PG_OUT_FINAL=~/mnt/samsung-nvme/jaewonoh/workspace/pg_out_final
+PG_OUT_FINAL_IO=~/mnt/samsung-nvme/jaewonoh/workspace/pg_out_final_io
 
 
 SOURCE_FILE="/home/jaewonoh/workspace/git/pgpgpg/pgvector/src/hnsw.h"
 SOURCE_BUILD_FILE="/home/jaewonoh/workspace/git/pgpgpg/pgvector/src/hnswbuild.c"
 SOURCE_INSERT_FILE="/home/jaewonoh/workspace/git/pgpgpg/pgvector/src/hnswinsert.c"
 
+
 function restart_postgres() {
-    $PG_OUT/bin/pg_ctl -D $PG_OUT/pgdb stop -o "-p $PG_PORT"
+    $PG_OUT/bin/pg_ctl -D $PG_DB_INDEX stop -o "-p $PG_PORT"
     sleep 3
 
-    while $PG_OUT/bin/pg_ctl -D $PG_OUT/pgdb status > /dev/null 2>&1; do
+    while $PG_OUT/bin/pg_ctl -D $PG_DB_INDEX status > /dev/null 2>&1; do
         echo "Waiting for PostgreSQL to stop..."
         sleep 1
     done
 
-    $PG_OUT/bin/pg_ctl -D $PG_OUT/pgdb start -o "-p $PG_PORT"
+    $PG_OUT/bin/pg_ctl -D $PG_DB_INDEX start -o "-p $PG_PORT"
     sleep 3
 }
-
+# -l $LOG_FILE_COUNT
 
 HEAP_TUPLE=100000
 DATA_SIZE="100k"
 
+#
+#HEAP_TUPLE=1000000
+#DATA_SIZE="1m"
+
+#HEAP_TUPLE=9990000
+#DATA_SIZE="10m"
 
 # 데이터셋별 설정을 배열로 정의
 DATA_PATHS=(
-    "/home/jaewonoh/workspace/data/dbpedia-openai-1000k-angular.hdf5"
+#    "/home/jaewonoh/workspace/data/deep-image-96-angular.hdf5"
+    "/home/jaewonoh/workspace/data/openai-1536-5m.hdf5"
 )
 
 #"/home/jaewonoh/workspace/data/deep-image-96-angular.hdf5"
@@ -48,35 +58,47 @@ DATA_PATHS=(
 
 
 DATA_NAMES=(
+#    "deep"
     "dbp"
 )
+#
+#BUILD_RATIOS=(100)
+#POOL_RATIOS=(30)
+#PARTITION_SIZES=(64)
 
-BUILD_RATIOS=(100)
+
+BUILD_RATIOS=(90)
 POOL_RATIOS=(30)
 PARTITION_SIZES=(64)
-BUFFER_RATIOS=(10 30 50)
+
+# (5, 64) 추가 실험 + vanilla pgdb 바꿔서 실험
+
+#BUFFER_RATIOS=(20)
+
+BUFFER_RATIO=20
 
 
 BASE_SHARED_BUFFERS_VALUES=(
-    819208192
+    82034688
 )
 
+#82034688
 #152887296
 #136552448
 #273055744
-
+#819208192
 
 
 # PG_OUT 경로를 배열로 저장
 PG_OUT_DIRS=(
-    "$PG_OUT_IO_32"
+    "$PG_OUT_FINAL_IO"
 )
   #    "$PG_OUT_32"
 
-PG_OUT_SIZE=("io_32")
+PG_OUT_SIZE=(8)
 
 
-LOG_FILE="/home/jaewonoh/workspace/ann-benchmark/jaewon-test/final/4_test_page_size.log"
+LOG_FILE="/home/jaewonoh/workspace/ann-benchmark/jaewon-test/final/0_insert.log"
 
 
 
@@ -84,6 +106,7 @@ for i in "${!PG_OUT_DIRS[@]}"; do
 
     PG_OUT="${PG_OUT_DIRS[$i]}";
     PG_SIZE="${PG_OUT_SIZE[$i]}";
+    PG_DB_INDEX="${PG_OUT}/pgdb_0707"
 
 #
 #    cd /home/jaewonoh/workspace/git/pgpgpg/postgres
@@ -108,40 +131,56 @@ for i in "${!PG_OUT_DIRS[@]}"; do
             for PARTITION_SIZE in "${PARTITION_SIZES[@]}"; do
                 PARTITION_LOG="prt_$PARTITION_SIZE" ## prt / partition 이름 주의
 
+                sed -i "s/#define MAX_NODES_PER_PARTITION [0-9]\+/#define MAX_NODES_PER_PARTITION $PARTITION_SIZE/" $SOURCE_FILE
+
                 for POOL_RATIO in "${POOL_RATIOS[@]}"; do
                     POOL_RATIO_LOG="pool_$POOL_RATIO"
 
-#                    TABLE_NAME="${DATA_NAME}_${DATA_SIZE}_${BUILD_RATIO_LOG}_${PARTITION_LOG}_${POOL_RATIO_LOG}_${PG_SIZE}kb"
-                    TABLE_NAME="${DATA_NAME}_${DATA_SIZE}_${BUILD_RATIO_LOG}_${PARTITION_LOG}_${POOL_RATIO_LOG}_${PG_SIZE}kb_v"
+                    TABLE_NAME="${DATA_NAME}_${DATA_SIZE}_${BUILD_RATIO_LOG}_${PARTITION_LOG}_${POOL_RATIO_LOG}_t3"
+                    LOG_FILE_COUNT="/home/jaewonoh/workspace/ann-benchmark/jaewon-test/final/19_insert_io_${DATA_NAME}_${DATA_SIZE}_${PARTITION_LOG}_t3.log"
 
-                    echo "Search ${TABLE_NAME} ..." >> $LOG_FILE
+                    POOL_SIZE=$(awk "BEGIN {print $POOL_RATIO / 100}")
+                    sed -i "s/#define INSERT_PAGE_PER_PARTITION [0-9]\+\(\.[0-9]\+\)\?/#define INSERT_PAGE_PER_PARTITION $POOL_SIZE/" $SOURCE_FILE
 
-                    for BUFFER_RATIO in "${BUFFER_RATIOS[@]}"; do
-                        SHARED_BUFFERS=$(($BASE_SHARED_BUFFERS * $BUFFER_RATIO / 100))
-
-                #        echo "Setting shared_buffers to ${SHARED_BUFFERS}B"
-                        sudo sed -i "s/^shared_buffers = .*/shared_buffers = ${SHARED_BUFFERS}B/" $PG_OUT/pgdb/postgresql.conf
-                        restart_postgres
-
-                        $PG_OUT/bin/psql -U $PG_USER -p $PG_PORT -d $PG_DB -c "select pg_stat_reset();"
-                        SEARCH_RESULTS=$(python3 ~/workspace/ann-benchmark/jaewon-test/sh_search.py --table_name $TABLE_NAME --data_path $DATA_PATH --port $PG_PORT)
-                        echo "$SEARCH_RESULTS" >> $LOG_FILE
-
-                        HIT_RATIO=$($PG_OUT/bin/psql -p $PG_PORT -U $PG_USER -d $PG_DB -t -c "
-                            SELECT relname AS items_embedding_idx, idx_blks_hit, idx_blks_read,
-                                   ROUND(100.0 * idx_blks_hit / NULLIF(idx_blks_hit + idx_blks_read, 0), 2) AS index_hit_ratio
-                            FROM pg_statio_user_indexes
-                            WHERE relname = '${TABLE_NAME}'
-                            ORDER BY index_hit_ratio DESC;
-                        ")
-
-                        echo "Index Hit Ratio for shared_buffers=${SHARED_BUFFERS}B ($BUFFER_RATIO%), Build Ratio=${BUILD_RATIO}%, Pool Ratio=${POOL_RATIO_LOG}:" >> $LOG_FILE
-                        echo "$HIT_RATIO" >> $LOG_FILE
+                    cd /home/jaewonoh/workspace/git/pgpgpg/pgvector
+                    make PG_CONFIG=$PG_OUT/bin/pg_config clean;
+                    make PG_CONFIG=$PG_OUT/bin/pg_config -j 32;
+                    make install PG_CONFIG=$PG_OUT/bin/pg_config;
 
 
-                        echo "---------------------------------" >> $LOG_FILE
+                    SHARED_BUFFERS=$(($BASE_SHARED_BUFFERS * $BUFFER_RATIO / 100))
+                    sudo sed -i "s/^shared_buffers = .*/shared_buffers = ${SHARED_BUFFERS}B/" $PG_DB_INDEX/postgresql.conf
 
-                    done
+                    restart_postgres
+
+                    echo "Insert ${TABLE_NAME} ..." >> $LOG_FILE
+                    INSERT_TIME=$(python3 ~/workspace/ann-benchmark/jaewon-test/sh_insert.py --size $HEAP_TUPLE --ratio $BUILD_RATIO --table_name $TABLE_NAME --data_path $DATA_PATH --port $PG_PORT)
+
+                    echo "Insert Time: $INSERT_TIME" >> $LOG_FILE
+
+                    INDEX_STATS=$($PG_OUT/bin/psql -p $PG_PORT -U $PG_USER -d $PG_DB -t -c "
+                        SELECT oid, pg_table_size(oid), relname, relnamespace, reltype, relowner,
+                               relfilenode, reltablespace, relpages, reltuples, reltoastrelid, relhasindex
+                        FROM pg_class
+                        WHERE relnamespace = $PG_NAMESPACE
+                        AND (relname = '$TABLE_NAME' OR relname = '${TABLE_NAME}_embedding_idx');
+                    ")
+
+                    echo "$INDEX_STATS" >> $LOG_FILE
+
+                    HIT_RATIO=$($PG_OUT/bin/psql -p $PG_PORT -U $PG_USER -d $PG_DB -t -c "
+                        SELECT relname AS items_embedding_idx, idx_blks_hit, idx_blks_read,
+                               ROUND(100.0 * idx_blks_hit / NULLIF(idx_blks_hit + idx_blks_read, 0), 2) AS index_hit_ratio
+                        FROM pg_statio_user_indexes
+                        WHERE relname = '${TABLE_NAME}'
+                        ORDER BY index_hit_ratio DESC;
+                    ")
+
+                    echo "Index Hit Ratio for shared_buffers=${SHARED_BUFFERS}B ($BUFFER_RATIO%), Build Ratio=${BUILD_RATIO}%, Pool Ratio=${POOL_RATIO_LOG}:" >> $LOG_FILE
+                    echo "$HIT_RATIO" >> $LOG_FILE
+
+
+                    echo "---------------------------------" >> $LOG_FILE
                     echo "" >> $LOG_FILE
 
                 done
@@ -151,7 +190,7 @@ for i in "${!PG_OUT_DIRS[@]}"; do
 done
 
 
-$PG_OUT/bin/pg_ctl -D $PG_OUT/pgdb stop -o "-p $PG_PORT"
+$PG_OUT/bin/pg_ctl -D $PG_DB_INDEX stop -o "-p $PG_PORT"
 sleep 3
 
 echo "Experiment completed. Results saved in $LOG_FILE."

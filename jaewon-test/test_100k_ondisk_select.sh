@@ -2,9 +2,9 @@
 
 
 
-BUILD_RATIOS=(80 60 50 40 20)
+BUILD_RATIOS=(100 80 60 50 40 20)
 BUFFER_RATIOS=(10 20 30 40 50)
-POOL_RATIOS=(5 10 20 30 40)
+POOL_RATIOS=(30)
 #PARTITION_SIZES=(64)
 
 PG_USER="ann"
@@ -77,10 +77,106 @@ for i in "${!DATA_PATHS[@]}"; do
 
         BUILD_RATIO_LOG="build_$BUILD_RATIO"
 
+#        for POOL_RATIO in "${POOL_RATIOS[@]}"; do
+#
+#
+#            POOL_RATIO_LOG="pool_$POOL_RATIO"
+#
+#            LOG_FILE="/home/jaewonoh/workspace/ann-benchmark/jaewon-test/insert/${LOG_NAME}_${BUILD_RATIO_LOG}_${POOL_RATIO_LOG}.log"
+#
+#
+#            if [ -f "$LOG_FILE" ]; then
+#                echo "Skipping experiment: Log file already exists -> $LOG_FILE"
+#                continue
+#            fi
+#
+#
+#            echo "Starting experiment with Build Ratio=${BUILD_RATIO}%, Pool Ratio=${POOL_RATIO_LOG} ..." > $LOG_FILE
+#
+#
+#
+#    #        POOL_SIZE=$(($HEAP_TUPLE * $BUILD_RATIO / 100 / $PARTITION_SIZE * $POOL_RATIO / 100))
+#            POOL_SIZE=$(( ($HEAP_TUPLE * $BUILD_RATIO * $POOL_RATIO) / (100 * $PARTITION_SIZE * 100) ))
+#
+#
+#            echo "Modifying source code to set max_insert_pool_size = $POOL_SIZE"
+#            sed -i "s/#define MAX_INSERT_POOL_SIZE [0-9]\+/#define MAX_INSERT_POOL_SIZE $POOL_SIZE/" $SOURCE_FILE
+#
+#            cd /home/jaewonoh/workspace/git/pgpgpg/pgvector
+#
+#            make PG_CONFIG=/home/jaewonoh/mnt/samsung-nvme/jaewonoh/workspace/pg_out/bin/pg_config clean;
+#            make PG_CONFIG=/home/jaewonoh/mnt/samsung-nvme/jaewonoh/workspace/pg_out/bin/pg_config -j 32;
+#            make install PG_CONFIG=/home/jaewonoh/mnt/samsung-nvme/jaewonoh/workspace/pg_out/bin/pg_config;
+#
+#            restart_postgres
+#
+#            echo "Running build.py with data ratio $BUILD_RATIO%..."
+#            BUILD_TIME=$(python3 ~/workspace/ann-benchmark/jaewon-test/sh_build.py --size $HEAP_TUPLE --ratio $BUILD_RATIO --table_name $TABLE_NAME --data_path $DATA_PATH)
+#
+#
+#            echo "Running insert.py with pool ratio $POOL_RATIO%..."
+#            INSERT_TIME=$(python3 ~/workspace/ann-benchmark/jaewon-test/sh_insert.py --size $HEAP_TUPLE --ratio $BUILD_RATIO --table_name $TABLE_NAME --data_path $DATA_PATH)
+#
+#            echo "Running ANALYZE..."
+#            $PG_OUT/bin/psql -p 8000 -U $PG_USER -d $PG_DB -c "ANALYZE;"
+#
+#            echo "Fetching index and page statistics..."
+#            INDEX_STATS=$($PG_OUT/bin/psql -p 8000 -U $PG_USER -d $PG_DB -t -c "
+#                SELECT oid, pg_table_size(oid), relname, relnamespace, reltype, relowner,
+#                       relfilenode, reltablespace, relpages, reltuples, reltoastrelid, relhasindex
+#                FROM pg_class
+#                WHERE relnamespace = $PG_NAMESPACE;
+#            ")
+#
+#            echo "Index Stats for Build Ratio=${BUILD_RATIO}%, Pool Ratio=${POOL_RATIO_LOG}:" >> $LOG_FILE
+#            echo "$INDEX_STATS" >> $LOG_FILE
+#            echo "Build Time: $BUILD_TIME, Insert Time: $INSERT_TIME" >> $LOG_FILE
+#
+#
+#            for BUFFER_RATIO in "${BUFFER_RATIOS[@]}"; do
+#
+#                SHARED_BUFFERS=$(($BASE_SHARED_BUFFERS * $BUFFER_RATIO / 100))
+#
+#
+#                echo "Testing with shared_buffers = ${SHARED_BUFFERS}B ($BUFFER_RATIO%), Build Ratio=${BUILD_RATIO}%, Pool Ratio=${POOL_RATIO_LOG}" >> $LOG_FILE
+#
+#
+#        #        echo "Setting shared_buffers to ${SHARED_BUFFERS}B"
+#                sudo sed -i "s/^shared_buffers = .*/shared_buffers = ${SHARED_BUFFERS}B/" $PG_OUT/pgdb/postgresql.conf
+#                restart_postgres
+#
+#                $PG_OUT/bin/psql -U $PG_USER -p 8000 -d $PG_DB -c "select pg_stat_reset();"
+#
+#        #        echo "Running search.py..."
+#                SEARCH_RESULTS=$(python3 ~/workspace/ann-benchmark/jaewon-test/sh_search.py --table_name $TABLE_NAME --data_path $DATA_PATH)
+#
+#                echo "$SEARCH_RESULTS" >> $LOG_FILE
+#
+#
+#        #        echo "Fetching Index Hit Ratio..."
+#                HIT_RATIO=$($PG_OUT/bin/psql -p 8000 -U $PG_USER -d $PG_DB -t -c "
+#                    SELECT relname AS items_embedding_idx, idx_blks_hit, idx_blks_read,
+#                           ROUND(100.0 * idx_blks_hit / NULLIF(idx_blks_hit + idx_blks_read, 0), 2) AS index_hit_ratio
+#                    FROM pg_statio_user_indexes
+#                    ORDER BY index_hit_ratio DESC;
+#                ")
+#
+#                echo "Index Hit Ratio for shared_buffers=${SHARED_BUFFERS}B ($BUFFER_RATIO%), Build Ratio=${BUILD_RATIO}%, Pool Ratio=${POOL_RATIO_LOG}:" >> $LOG_FILE
+#                echo "$HIT_RATIO" >> $LOG_FILE
+#
+#
+#                echo "---------------------------------" >> $LOG_FILE
+#            done
+#        done
+
         for POOL_RATIO in "${POOL_RATIOS[@]}"; do
 
+            echo "Running build.py with data ratio $BUILD_RATIO%..."
+            BUILD_TIME=$(python3 ~/workspace/ann-benchmark/jaewon-test/sh_build.py --size $HEAP_TUPLE --ratio $BUILD_RATIO --table_name $TABLE_NAME --data_path $DATA_PATH)
 
-            POOL_RATIO_LOG="pool_$POOL_RATIO"
+
+
+            POOL_RATIO_LOG="pool_static_$POOL_RATIO"
 
             LOG_FILE="/home/jaewonoh/workspace/ann-benchmark/jaewon-test/insert/${LOG_NAME}_${BUILD_RATIO_LOG}_${POOL_RATIO_LOG}.log"
 
@@ -90,95 +186,8 @@ for i in "${!DATA_PATHS[@]}"; do
                 continue
             fi
 
-
             echo "Starting experiment with Build Ratio=${BUILD_RATIO}%, Pool Ratio=${POOL_RATIO_LOG} ..." > $LOG_FILE
-
-
-
-    #        POOL_SIZE=$(($HEAP_TUPLE * $BUILD_RATIO / 100 / $PARTITION_SIZE * $POOL_RATIO / 100))
-            POOL_SIZE=$(( ($HEAP_TUPLE * $BUILD_RATIO * $POOL_RATIO) / (100 * $PARTITION_SIZE * 100) ))
-
-
-            echo "Modifying source code to set max_insert_pool_size = $POOL_SIZE"
-            sed -i "s/#define MAX_INSERT_POOL_SIZE [0-9]\+/#define MAX_INSERT_POOL_SIZE $POOL_SIZE/" $SOURCE_FILE
-
-            cd /home/jaewonoh/workspace/git/pgpgpg/pgvector
-
-            make PG_CONFIG=/home/jaewonoh/mnt/samsung-nvme/jaewonoh/workspace/pg_out/bin/pg_config clean;
-            make PG_CONFIG=/home/jaewonoh/mnt/samsung-nvme/jaewonoh/workspace/pg_out/bin/pg_config -j 32;
-            make install PG_CONFIG=/home/jaewonoh/mnt/samsung-nvme/jaewonoh/workspace/pg_out/bin/pg_config;
-
-            restart_postgres
-
-            echo "Running build.py with data ratio $BUILD_RATIO%..."
-            BUILD_TIME=$(python3 ~/workspace/ann-benchmark/jaewon-test/sh_build.py --size $HEAP_TUPLE --ratio $BUILD_RATIO --table_name $TABLE_NAME --data_path $DATA_PATH)
-
-
-            echo "Running insert.py with pool ratio $POOL_RATIO%..."
-            INSERT_TIME=$(python3 ~/workspace/ann-benchmark/jaewon-test/sh_insert.py --size $HEAP_TUPLE --ratio $BUILD_RATIO --table_name $TABLE_NAME --data_path $DATA_PATH)
-
-            echo "Running ANALYZE..."
-            $PG_OUT/bin/psql -p 8000 -U $PG_USER -d $PG_DB -c "ANALYZE;"
-
-            echo "Fetching index and page statistics..."
-            INDEX_STATS=$($PG_OUT/bin/psql -p 8000 -U $PG_USER -d $PG_DB -t -c "
-                SELECT oid, pg_table_size(oid), relname, relnamespace, reltype, relowner,
-                       relfilenode, reltablespace, relpages, reltuples, reltoastrelid, relhasindex
-                FROM pg_class
-                WHERE relnamespace = $PG_NAMESPACE;
-            ")
-
-            echo "Index Stats for Build Ratio=${BUILD_RATIO}%, Pool Ratio=${POOL_RATIO_LOG}:" >> $LOG_FILE
-            echo "$INDEX_STATS" >> $LOG_FILE
-            echo "Build Time: $BUILD_TIME, Insert Time: $INSERT_TIME" >> $LOG_FILE
-
-
-            for BUFFER_RATIO in "${BUFFER_RATIOS[@]}"; do
-
-                SHARED_BUFFERS=$(($BASE_SHARED_BUFFERS * $BUFFER_RATIO / 100))
-
-
-                echo "Testing with shared_buffers = ${SHARED_BUFFERS}B ($BUFFER_RATIO%), Build Ratio=${BUILD_RATIO}%, Pool Ratio=${POOL_RATIO_LOG}" >> $LOG_FILE
-
-
-        #        echo "Setting shared_buffers to ${SHARED_BUFFERS}B"
-                sudo sed -i "s/^shared_buffers = .*/shared_buffers = ${SHARED_BUFFERS}B/" $PG_OUT/pgdb/postgresql.conf
-                restart_postgres
-
-                $PG_OUT/bin/psql -U $PG_USER -p 8000 -d $PG_DB -c "select pg_stat_reset();"
-
-        #        echo "Running search.py..."
-                SEARCH_RESULTS=$(python3 ~/workspace/ann-benchmark/jaewon-test/sh_search.py --table_name $TABLE_NAME --data_path $DATA_PATH)
-
-                echo "$SEARCH_RESULTS" >> $LOG_FILE
-
-
-        #        echo "Fetching Index Hit Ratio..."
-                HIT_RATIO=$($PG_OUT/bin/psql -p 8000 -U $PG_USER -d $PG_DB -t -c "
-                    SELECT relname AS items_embedding_idx, idx_blks_hit, idx_blks_read,
-                           ROUND(100.0 * idx_blks_hit / NULLIF(idx_blks_hit + idx_blks_read, 0), 2) AS index_hit_ratio
-                    FROM pg_statio_user_indexes
-                    ORDER BY index_hit_ratio DESC;
-                ")
-
-                echo "Index Hit Ratio for shared_buffers=${SHARED_BUFFERS}B ($BUFFER_RATIO%), Build Ratio=${BUILD_RATIO}%, Pool Ratio=${POOL_RATIO_LOG}:" >> $LOG_FILE
-                echo "$HIT_RATIO" >> $LOG_FILE
-
-
-                echo "---------------------------------" >> $LOG_FILE
-            done
-        done
-
-        for POOL_RATIO in "${POOL_RATIOS[@]}"; do
-
-
-
-            echo "Running build.py with data ratio $BUILD_RATIO%..."
-            BUILD_TIME=$(python3 ~/workspace/ann-benchmark/jaewon-test/sh_build.py --size $HEAP_TUPLE --ratio $BUILD_RATIO --table_name $TABLE_NAME --data_path $DATA_PATH)
-
-
-
-            POOL_RATIO_LOG="pool_static_$POOL_RATIO"
+#
     #        POOL_SIZE=$(($HEAP_TUPLE / $PARTITION_SIZE * $POOL_RATIO / 100))
             POOL_SIZE=$(( ($HEAP_TUPLE * $POOL_RATIO) / ($PARTITION_SIZE * 100) ))
 
@@ -208,9 +217,6 @@ for i in "${!DATA_PATHS[@]}"; do
                 FROM pg_class
                 WHERE relnamespace = $PG_NAMESPACE;
             ")
-
-            LOG_FILE="/home/jaewonoh/workspace/ann-benchmark/jaewon-test/insert/${LOG_NAME}_${BUILD_RATIO_LOG}_${POOL_RATIO_LOG}.log"
-
 
             echo "Index Stats for Build Ratio=${BUILD_RATIO}%, Pool Ratio=${POOL_RATIO_LOG}:" >> $LOG_FILE
             echo "$INDEX_STATS" >> $LOG_FILE
@@ -257,84 +263,85 @@ for i in "${!DATA_PATHS[@]}"; do
         done
 
 
-
-        echo "Running build.py with data ratio $BUILD_RATIO%..."
-        BUILD_TIME=$(python3 ~/workspace/ann-benchmark/jaewon-test/sh_build.py --size $HEAP_TUPLE --ratio $BUILD_RATIO --table_name $TABLE_NAME --data_path $DATA_PATH)
-
-
-        POOL_RATIO_LOG="pool_vanilla"
-        echo "Modifying source code to set vanilla insert"
-
-        sed -i 's|^\(\s*\)//\s*\(HnswInsertTupleOnDisk(index, &support, value, heaptid, false);\)|\2|; s|^\(\s*\)\(HnswInsertTupleOnDiskWithPartition(index, &support, value, heaptid, false);\)|\1// \2|' $SOURCE_INSERT_FILE
-
-        cd /home/jaewonoh/workspace/git/pgpgpg/pgvector
-
-        make install PG_CONFIG=/home/jaewonoh/mnt/samsung-nvme/jaewonoh/workspace/pg_out/bin/pg_config;
-
-        restart_postgres
-
-        echo "Running insert.py with pool ratio $POOL_RATIO%..."
-        INSERT_TIME=$(python3 ~/workspace/ann-benchmark/jaewon-test/sh_insert.py --size $HEAP_TUPLE --ratio $BUILD_RATIO --table_name $TABLE_NAME --data_path $DATA_PATH)
-
-        echo "Running ANALYZE..."
-        $PG_OUT/bin/psql -p 8000 -U $PG_USER -d $PG_DB -c "ANALYZE;"
-
-        echo "Fetching index and page statistics..."
-        INDEX_STATS=$($PG_OUT/bin/psql -p 8000 -U $PG_USER -d $PG_DB -t -c "
-            SELECT oid, pg_table_size(oid), relname, relnamespace, reltype, relowner,
-                   relfilenode, reltablespace, relpages, reltuples, reltoastrelid, relhasindex
-            FROM pg_class
-            WHERE relnamespace = $PG_NAMESPACE;
-        ")
-
-        LOG_FILE="/home/jaewonoh/workspace/ann-benchmark/jaewon-test/insert/${LOG_NAME}_${BUILD_RATIO_LOG}_${POOL_RATIO_LOG}.log"
-
-
-        echo "Index Stats for Build Ratio=${BUILD_RATIO}%, Pool Ratio=${POOL_RATIO_LOG}:" >> $LOG_FILE
-        echo "$INDEX_STATS" >> $LOG_FILE
-
-
-        echo "Build Time: $BUILD_TIME, Insert Time: $INSERT_TIME" >> $LOG_FILE
-
-
-        for BUFFER_RATIO in "${BUFFER_RATIOS[@]}"; do
-
-            SHARED_BUFFERS=$(($BASE_SHARED_BUFFERS * $BUFFER_RATIO / 100))
-
-
-            echo "Testing with shared_buffers = ${SHARED_BUFFERS}B ($BUFFER_RATIO%), Build Ratio=${BUILD_RATIO}%, Pool Ratio=${POOL_RATIO_LOG}" >> $LOG_FILE
-
-
-    #        echo "Setting shared_buffers to ${SHARED_BUFFERS}B"
-            sudo sed -i "s/^shared_buffers = .*/shared_buffers = ${SHARED_BUFFERS}B/" $PG_OUT/pgdb/postgresql.conf
-            restart_postgres
-
-
-            $PG_OUT/bin/psql -U $PG_USER -p 8000 -d $PG_DB -c "select pg_stat_reset();"
-
-    #        echo "Running search.py..."
-            SEARCH_RESULTS=$(python3 ~/workspace/ann-benchmark/jaewon-test/sh_search.py --table_name $TABLE_NAME --data_path $DATA_PATH)
-
-            echo "$SEARCH_RESULTS" >> $LOG_FILE
-
-
-    #        echo "Fetching Index Hit Ratio..."
-            HIT_RATIO=$($PG_OUT/bin/psql -p 8000 -U $PG_USER -d $PG_DB -t -c "
-                SELECT relname AS items_embedding_idx, idx_blks_hit, idx_blks_read,
-                       ROUND(100.0 * idx_blks_hit / NULLIF(idx_blks_hit + idx_blks_read, 0), 2) AS index_hit_ratio
-                FROM pg_statio_user_indexes
-                ORDER BY index_hit_ratio DESC;
-            ")
-
-            echo "Index Hit Ratio for shared_buffers=${SHARED_BUFFERS}B ($BUFFER_RATIO%), Build Ratio=${BUILD_RATIO}%, Pool Ratio=${POOL_RATIO_LOG}:" >> $LOG_FILE
-            echo "$HIT_RATIO" >> $LOG_FILE
-
-
-            echo "---------------------------------" >> $LOG_FILE
-        done
-
-
-        sed -i 's|^\(\s*\)//\s*\(HnswInsertTupleOnDiskWithPartition(index, &support, value, heaptid, false);\)|\2|; s|^\(\s*\)\(HnswInsertTupleOnDisk(index, &support, value, heaptid, false);\)|\1// \2|' $SOURCE_INSERT_FILE
+#
+#        echo "Running build.py with data ratio $BUILD_RATIO%..."
+#        BUILD_TIME=$(python3 ~/workspace/ann-benchmark/jaewon-test/sh_build.py --size $HEAP_TUPLE --ratio $BUILD_RATIO --table_name $TABLE_NAME --data_path $DATA_PATH)
+#
+#
+#        POOL_RATIO_LOG="pool_vanilla"
+#
+#        LOG_FILE="/home/jaewonoh/workspace/ann-benchmark/jaewon-test/insert/${LOG_NAME}_${BUILD_RATIO_LOG}_${POOL_RATIO_LOG}.log"
+#
+#        echo "Modifying source code to set vanilla insert"
+#
+#        sed -i 's|^\(\s*\)//\s*\(HnswInsertTupleOnDisk(index, &support, value, heaptid, false);\)|\2|; s|^\(\s*\)\(HnswInsertTupleOnDiskWithPartition(index, &support, value, heaptid, false);\)|\1// \2|' $SOURCE_INSERT_FILE
+#
+#        cd /home/jaewonoh/workspace/git/pgpgpg/pgvector
+#
+#        make install PG_CONFIG=/home/jaewonoh/mnt/samsung-nvme/jaewonoh/workspace/pg_out/bin/pg_config;
+#
+#        restart_postgres
+#
+#        echo "Running insert.py with pool ratio $POOL_RATIO%..."
+#        INSERT_TIME=$(python3 ~/workspace/ann-benchmark/jaewon-test/sh_insert.py --size $HEAP_TUPLE --ratio $BUILD_RATIO --table_name $TABLE_NAME --data_path $DATA_PATH)
+#
+#        echo "Running ANALYZE..."
+#        $PG_OUT/bin/psql -p 8000 -U $PG_USER -d $PG_DB -c "ANALYZE;"
+#
+#        echo "Fetching index and page statistics..."
+#        INDEX_STATS=$($PG_OUT/bin/psql -p 8000 -U $PG_USER -d $PG_DB -t -c "
+#            SELECT oid, pg_table_size(oid), relname, relnamespace, reltype, relowner,
+#                   relfilenode, reltablespace, relpages, reltuples, reltoastrelid, relhasindex
+#            FROM pg_class
+#            WHERE relnamespace = $PG_NAMESPACE;
+#        ")
+#
+#
+#        echo "Index Stats for Build Ratio=${BUILD_RATIO}%, Pool Ratio=${POOL_RATIO_LOG}:" >> $LOG_FILE
+#        echo "$INDEX_STATS" >> $LOG_FILE
+#
+#
+#        echo "Build Time: $BUILD_TIME, Insert Time: $INSERT_TIME" >> $LOG_FILE
+#
+#
+#        for BUFFER_RATIO in "${BUFFER_RATIOS[@]}"; do
+#
+#            SHARED_BUFFERS=$(($BASE_SHARED_BUFFERS * $BUFFER_RATIO / 100))
+#
+#
+#            echo "Testing with shared_buffers = ${SHARED_BUFFERS}B ($BUFFER_RATIO%), Build Ratio=${BUILD_RATIO}%, Pool Ratio=${POOL_RATIO_LOG}" >> $LOG_FILE
+#
+#
+#    #        echo "Setting shared_buffers to ${SHARED_BUFFERS}B"
+#            sudo sed -i "s/^shared_buffers = .*/shared_buffers = ${SHARED_BUFFERS}B/" $PG_OUT/pgdb/postgresql.conf
+#            restart_postgres
+#
+#
+#            $PG_OUT/bin/psql -U $PG_USER -p 8000 -d $PG_DB -c "select pg_stat_reset();"
+#
+#    #        echo "Running search.py..."
+#            SEARCH_RESULTS=$(python3 ~/workspace/ann-benchmark/jaewon-test/sh_search.py --table_name $TABLE_NAME --data_path $DATA_PATH)
+#
+#            echo "$SEARCH_RESULTS" >> $LOG_FILE
+#
+#
+#    #        echo "Fetching Index Hit Ratio..."
+#            HIT_RATIO=$($PG_OUT/bin/psql -p 8000 -U $PG_USER -d $PG_DB -t -c "
+#                SELECT relname AS items_embedding_idx, idx_blks_hit, idx_blks_read,
+#                       ROUND(100.0 * idx_blks_hit / NULLIF(idx_blks_hit + idx_blks_read, 0), 2) AS index_hit_ratio
+#                FROM pg_statio_user_indexes
+#                ORDER BY index_hit_ratio DESC;
+#            ")
+#
+#            echo "Index Hit Ratio for shared_buffers=${SHARED_BUFFERS}B ($BUFFER_RATIO%), Build Ratio=${BUILD_RATIO}%, Pool Ratio=${POOL_RATIO_LOG}:" >> $LOG_FILE
+#            echo "$HIT_RATIO" >> $LOG_FILE
+#
+#
+#            echo "---------------------------------" >> $LOG_FILE
+#        done
+#
+#
+#        sed -i 's|^\(\s*\)//\s*\(HnswInsertTupleOnDiskWithPartition(index, &support, value, heaptid, false);\)|\2|; s|^\(\s*\)\(HnswInsertTupleOnDisk(index, &support, value, heaptid, false);\)|\1// \2|' $SOURCE_INSERT_FILE
 
 
     done

@@ -28,16 +28,26 @@ function restart_postgres() {
 #
 #
 
-HEAP_TUPLE=100000
-DATA_SIZE="100k"
+HEAP_TUPLE=30000
+DATA_SIZE="30k"
+
+#
+#HEAP_TUPLE=100000
+#DATA_SIZE="100k"
+
+
+HEAP_TUPLE=1000000
+DATA_SIZE="1m"
+
+#
+#HEAP_TUPLE=999000
+#DATA_SIZE="999k"
+#
 
 
 # 데이터셋별 설정을 배열로 정의
 DATA_PATHS=(
     "/home/jaewonoh/workspace/data/deep-image-96-angular.hdf5"
-    "/home/jaewonoh/workspace/data/nytimes-256-angular.hdf5"
-    "/home/jaewonoh/workspace/data/glove-200-angular.hdf5"
-    "/home/jaewonoh/workspace/data/coco-i2i-512-angular.hdf5"
 )
 
 #"/home/jaewonoh/workspace/data/sift-128-euclidean.hdf5"
@@ -52,11 +62,13 @@ DATA_PATHS=(
 #
 
 BASE_SHARED_BUFFERS_VALUES=(
-    82051072  # deep-image-96-angular
-    152887296
-    136552448
-    273055744
+    818315264
 )
+
+#
+#BASE_SHARED_BUFFERS_VALUES=(
+#    82034688
+#)
 #
 #    152887296
 #    136552448
@@ -85,9 +97,6 @@ BASE_SHARED_BUFFERS_VALUES=(
 
 DATA_NAMES=(
     "deep"
-    "nyt"
-    "glove"
-    "coco"
 )
 #    "sift"
 #    "nyt"
@@ -112,7 +121,7 @@ BUFFER_RATIOS=(10)
 #    273055744
 #    819208192
 
-LOG_FILE="/home/jaewonoh/workspace/ann-benchmark/jaewon-test/final/13_search_partition_no_limit.log"
+LOG_FILE="/home/jaewonoh/workspace/ann-benchmark/jaewon-test/final/14_search_shuffle.log"
 
 for i in "${!DATA_PATHS[@]}"; do
     BASE_SHARED_BUFFERS="${BASE_SHARED_BUFFERS_VALUES[$i]}"
@@ -135,7 +144,7 @@ for i in "${!DATA_PATHS[@]}"; do
             for POOL_RATIO in "${POOL_RATIOS[@]}"; do
                 POOL_RATIO_LOG="pool_$POOL_RATIO"
 
-                TABLE_NAME="${DATA_NAME}_${DATA_SIZE}_${BUILD_RATIO_LOG}_${PARTITION_LOG}_${POOL_RATIO_LOG}_nl"
+                TABLE_NAME="${DATA_NAME}_${DATA_SIZE}_${BUILD_RATIO_LOG}_${PARTITION_LOG}_${POOL_RATIO_LOG}_p"
                 echo "Search ${TABLE_NAME} ..." >> $LOG_FILE
 
                 for BUFFER_RATIO in "${BUFFER_RATIOS[@]}"; do

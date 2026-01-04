@@ -38,7 +38,8 @@ DATA_SIZE="100k"
 
 # 데이터셋별 설정을 배열로 정의
 DATA_PATHS=(
-    "/home/jaewonoh/workspace/data/deep-image-96-angular.hdf5"
+    "/home/jaewonoh/workspace/data/coco-i2i-512-angular.hdf5"
+#    "/home/jaewonoh/workspace/data/deep-image-96-angular.hdf5"
 #    "/home/jaewonoh/workspace/data/glove-200-angular.hdf5"
 )
 
@@ -56,7 +57,8 @@ DATA_PATHS=(
 BASE_SHARED_BUFFERS_VALUES=(
 #    819208192  # deep-image-96-angular
 #    73842688
-    28663808
+#    73834496 # deep
+    245760000 # coco
 #    136552448
 )
 
@@ -97,7 +99,8 @@ BASE_SHARED_BUFFERS_VALUES=(
 
 
 DATA_NAMES=(
-    "deep"
+    "coco"
+#    "deep"
 #    "glove"
 )
 #    "sift"
@@ -110,7 +113,7 @@ DATA_NAMES=(
 BUILD_RATIOS=(90)
 POOL_RATIOS=(30)
 PARTITION_SIZES=(64)
-BUFFER_RATIOS=(5)
+BUFFER_RATIOS=(5 10 20)
 #
 #
 #BASE_SHARED_BUFFERS_VALUES=(
@@ -123,7 +126,7 @@ BUFFER_RATIOS=(5)
 #    273055744
 #    819208192
 
-LOG_FILE="/home/jaewonoh/workspace/ann-benchmark/jaewon-test/final/20_search_bq.log"
+LOG_FILE="/home/jaewonoh/workspace/ann-benchmark/jaewon-test/final/21_buffer_van.log"
 
 for i in "${!DATA_PATHS[@]}"; do
     BASE_SHARED_BUFFERS="${BASE_SHARED_BUFFERS_VALUES[$i]}"
@@ -144,8 +147,8 @@ for i in "${!DATA_PATHS[@]}"; do
             for POOL_RATIO in "${POOL_RATIOS[@]}"; do
                 POOL_RATIO_LOG="pool_$POOL_RATIO"
 
-#                TABLE_NAME="${DATA_NAME}_${DATA_SIZE}_${BUILD_RATIO_LOG}_${PARTITION_LOG}_${POOL_RATIO_LOG}_v"
-                TABLE_NAME="${DATA_NAME}_${DATA_SIZE}_${BUILD_RATIO_LOG}_${PARTITION_LOG}_${POOL_RATIO_LOG}"
+#                TABLE_NAME="${DATA_NAME}_${DATA_SIZE}_${BUILD_RATIO_LOG}_${PARTITION_LOG}_${POOL_RATIO_LOG}_p"
+                TABLE_NAME="${DATA_NAME}_${DATA_SIZE}_${BUILD_RATIO_LOG}_${PARTITION_LOG}_${POOL_RATIO_LOG}_v"
                 echo "Search ${TABLE_NAME} ..." >> $LOG_FILE
 
                 for BUFFER_RATIO in "${BUFFER_RATIOS[@]}"; do
@@ -156,7 +159,7 @@ for i in "${!DATA_PATHS[@]}"; do
                     restart_postgres
 
                     $PG_OUT/bin/psql -U $PG_USER -p $PG_PORT -d $PG_DB -c "select pg_stat_reset();"
-                    SEARCH_RESULTS=$(python3 ~/workspace/ann-benchmark/jaewon-test/sh_search_bq.py --table_name $TABLE_NAME --data_path $DATA_PATH --port $PG_PORT --num 0)
+                    SEARCH_RESULTS=$(python3 ~/workspace/ann-benchmark/jaewon-test/sh_search.py --table_name $TABLE_NAME --data_path $DATA_PATH --port $PG_PORT --num 0)
                     echo "$SEARCH_RESULTS" >> $LOG_FILE
 
                     HIT_RATIO=$($PG_OUT/bin/psql -p $PG_PORT -U $PG_USER -d $PG_DB -t -c "
@@ -169,6 +172,14 @@ for i in "${!DATA_PATHS[@]}"; do
 
                     echo "Index Hit Ratio for shared_buffers=${SHARED_BUFFERS}B ($BUFFER_RATIO%), Build Ratio=${BUILD_RATIO}%, Pool Ratio=${POOL_RATIO_LOG}:" >> $LOG_FILE
                     echo "$HIT_RATIO" >> $LOG_FILE
+
+
+#                    PG_BUFFER_CACHE=$($PG_OUT/bin/psql -p $PG_PORT -U $PG_USER -d $PG_DB -t -c "
+#                        SELECT * FROM pg_buffercache;
+#                    ")
+#
+#                    echo "$PG_BUFFER_CACHE" >> $LOG_FILE
+
 
 
                     echo "---------------------------------" >> $LOG_FILE

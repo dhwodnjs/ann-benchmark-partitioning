@@ -56,7 +56,8 @@ DATA_SIZE="100k"
 
 # 데이터셋별 설정을 배열로 정의
 DATA_PATHS=(
-    "/home/jaewonoh/workspace/data/deep-image-96-angular.hdf5"
+    "/home/jaewonoh/workspace/data/coco-i2i-512-angular.hdf5"
+#    "/home/jaewonoh/workspace/data/deep-image-96-angular.hdf5"
 #    "/home/jaewonoh/workspace/data/openai-1536-5m.hdf5"
 #    "/home/jaewonoh/workspace/data/dbpedia-openai-1000k-angular.hdf5"
 #    "/home/jaewonoh/workspace/data/glove-200-angular.hdf5"
@@ -79,7 +80,8 @@ DATA_PATHS=(
 
 
 DATA_NAMES=(
-    "deep"
+    "coco"
+#    "deep"
 #    "c4"
 #    "dbp"
 #    "glove"
@@ -120,7 +122,7 @@ for i in "${!DATA_PATHS[@]}"; do
             for POOL_RATIO in "${POOL_RATIOS[@]}"; do
                 POOL_RATIO_LOG="pool_$POOL_RATIO"
 
-                TABLE_NAME="${DATA_NAME}_${DATA_SIZE}_${BUILD_RATIO_LOG}_${PARTITION_LOG}_${POOL_RATIO_LOG}_v" ## origin 아무것도 안한거  ## v: vanilla, p: pca, s: shuffle, i: initial, t: test
+                TABLE_NAME="${DATA_NAME}_${DATA_SIZE}_${BUILD_RATIO_LOG}_${PARTITION_LOG}_${POOL_RATIO_LOG}_p" ## origin 아무것도 안한거  ## v: vanilla, p: pca, s: shuffle, i: initial, t: test
 
                 echo "Build ${TABLE_NAME} ..." >> $LOG_FILE
 
@@ -134,7 +136,7 @@ for i in "${!DATA_PATHS[@]}"; do
 
                 restart_postgres
 
-                BUILD_TIME=$(python3 ~/workspace/ann-benchmark/jaewon-test/sh_build_bq.py --size $HEAP_TUPLE --ratio $BUILD_RATIO --table_name $TABLE_NAME --data_path $DATA_PATH --port $PG_PORT)
+                BUILD_TIME=$(python3 ~/workspace/ann-benchmark/jaewon-test/sh_build.py --size $HEAP_TUPLE --ratio $BUILD_RATIO --table_name $TABLE_NAME --data_path $DATA_PATH --port $PG_PORT)
 
                 echo "Build Time: $BUILD_TIME" >> $LOG_FILE
 
@@ -143,7 +145,7 @@ for i in "${!DATA_PATHS[@]}"; do
                            relfilenode, reltablespace, relpages, reltuples, reltoastrelid, relhasindex
                     FROM pg_class
                     WHERE relnamespace = $PG_NAMESPACE
-                    AND (relname = '$TABLE_NAME' OR relname = '${TABLE_NAME}_binary_quantize_idx');
+                    AND (relname = '$TABLE_NAME' OR relname = '${TABLE_NAME}_embedding_idx');
                 ")
 
                 echo "$INDEX_STATS" >> $LOG_FILE

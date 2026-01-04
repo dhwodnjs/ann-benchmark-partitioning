@@ -7,15 +7,31 @@ if [ "$#" -lt 1 ]; then
 fi
 
 # Define the server control commands and the configuration file path
-PG_BIN="/home/smrc/workspace/pg_out/bin"
+#PG_OUT="/home/smrc/samsung-nvme/workspace/pg_out"
+PG_OUT="/home/jaewonoh/mnt/samsung-nvme/jaewonoh/workspace/pg_out_final_io/"
+
+PG_DATA="$PG_OUT/pgdb_0707"
+PG_BIN="$PG_OUT/bin"
 PG_CTL="$PG_BIN/pg_ctl"
-PG_DATA="/home/smrc/workspace/pg_out/pgdb"
-CONFIG_FILE="/home/smrc/workspace/ann-benchmark/ann_benchmarks/algorithms/pgvector/config.yml"
+
+#CONFIG_FILE="/home/smrc/workspace/ann-benchmark/ann_benchmarks/algorithms/pgvector/config.yml"
+CONFIG_FILE="/home/jaewonoh/workspace/ann-benchmark/ann_benchmarks/algorithms/pgvector/config.yml"
 #DATA="gist-960-euclidean"
 #DATA="dbpedia-openai-100k-angular"
-DATA="dbpedia-openai-1000k-angular"
+#DATA="dbpedia-openai-1000k-angular"
 #DATA="dbpedia-openai-1000k-angular-ivf"
 #DATA="dbpedia-openai-100k-angular"
+#DATA="nytimes-256-angular"
+#DATA="nytimes-16-angular"
+#DATA="wikipedia-22-12-angular"
+#DATA="glove-200-angular"
+
+#DATA="dbpedia-openai-1000k-angular"
+DATA="deep-image-96-angular"
+#DATA="coco-i2i-512-angular"
+#DATA="glove-200-angular"
+#DATA="sift-128-angular"
+#DATA=
 
 #if data ends with -ivf, get rid of the suffix
 if [[ $DATA == *-ivf ]]; then
@@ -24,11 +40,6 @@ if [[ $DATA == *-ivf ]]; then
 fi
 
 # Function to stop the PostgreSQL server
-
-stop_server() {
-    cd $PG_BIN
-    $PG_CTL -D $PG_DATA stop
-}
 
 stop_server() {
     cd $PG_BIN
@@ -51,32 +62,22 @@ ADD_PARAM=''
 #ADD_PARAM=' --count 40'
 # Run Test
 run_ann_benchmark() {
-  cd /home/smrc/workspace/ann-benchmark
+  cd /home/jaewonoh/workspace/ann-benchmark/
   rm -rf results/*;
   python3 run.py --algorithm pgvector --dataset $DATA --runs 1 --local $ADD_PARAM;
   echo "python3 run.py --algorithm pgvector --dataset $DATA --runs 1 --local $ADD_PARAM;"
   python3 plot.py --dataset $DATA $ADD_PARAM;
 }
 
-# Main loop to process each argument
-for arg in "$@"; do
-    echo "Processing with query_arg: $arg"
+joined=$(printf ", %s" "$@")
+joined=${joined:2}  # Remove leading ", "
 
-    # Stop the server
-#    stop_server
+echo "\"$joined\""
 
-    # Start the server
-#    start_server
-
-    # Update the configuration file
-    update_config "$arg"
-
-    # Run the command
-    run_ann_benchmark
-    echo "↑↑↑↑↑↑ ef_search: $arg ↑↑↑↑↑↑"
-    echo ""
-    echo ""
-    echo ""
-
-#    stop_server
-done
+echo "Processing with query_arg: $joined"
+update_config "$joined"
+run_ann_benchmark
+echo "↑↑↑↑↑↑ ef_search: $joined ↑↑↑↑↑↑"
+echo ""
+echo ""
+echo ""

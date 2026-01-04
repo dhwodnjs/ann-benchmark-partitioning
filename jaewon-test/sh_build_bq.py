@@ -46,12 +46,12 @@ def build_index(X_train, table_name, port):
 
     # 인덱스 존재 여부 확인
     cur.execute(f"SELECT EXISTS (SELECT 1 FROM pg_indexes WHERE tablename = %s AND indexname = %s)",
-                (table_name, f"{table_name}_embedding_idx"))
+                (table_name, f"{table_name}_binary_quantize_idx"))
     index_exists = cur.fetchone()[0]
 
     if not index_exists:
         t0 = time.time()
-        cur.execute(f"CREATE INDEX ON {table_name} USING hnsw (embedding vector_cosine_ops) WITH (m = 24, ef_construction = 200);")
+        cur.execute(f"CREATE INDEX ON {table_name} USING hnsw ((binary_quantize(embedding)::bit(96)) bit_hamming_ops);")
 
         build_time = time.time() - t0
         print(f"Built index on {table_name} in {build_time:.2f} seconds")
