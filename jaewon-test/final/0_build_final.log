@@ -1,0 +1,785 @@
+Build deep_100k_build_90_prt_64_pool_10_stv1 ...
+Build Time: Built index on deep_100k_build_90_prt_64_pool_10_stv1 in 42.19 seconds
+Timing is on.
+ 16715 |      39182336 | deep_100k_build_90_prt_64_pool_10_stv1               |         2200 |   16717 |    16385 |       16715 |             0 |     4778 |     90000 |         16718 | t
+ 16720 |      73809920 | deep_100k_build_90_prt_64_pool_10_stv1_embedding_idx |         2200 |       0 |    16385 |       16720 |             0 |     9010 |     90000 |             0 | f
+
+Time: 1.280 ms
+
+Build deep_100k_build_90_prt_64_pool_30_stv1 ...
+Build deep_100k_build_90_prt_64_pool_10_v ...
+Build Time: Built index on deep_100k_build_90_prt_64_pool_10_v in 21.11 seconds
+Timing is on.
+ 16726 |      39182336 | deep_100k_build_90_prt_64_pool_10_v               |         2200 |   16728 |    16385 |       16726 |             0 |     4778 |     90000 |         16729 | t
+ 16731 |      73834496 | deep_100k_build_90_prt_64_pool_10_v_embedding_idx |         2200 |       0 |    16385 |       16731 |             0 |     9013 |     90000 |             0 | f
+
+Time: 1.240 ms
+
+Build deep_100k_build_90_prt_64_pool_30_v ...
+Build Time: Built index on deep_100k_build_90_prt_64_pool_30_v in 21.33 seconds
+Timing is on.
+ 16732 |      39182336 | deep_100k_build_90_prt_64_pool_30_v               |         2200 |   16734 |    16385 |       16732 |             0 |     4778 |     90000 |         16735 | t
+ 16737 |      73834496 | deep_100k_build_90_prt_64_pool_30_v_embedding_idx |         2200 |       0 |    16385 |       16737 |             0 |     9013 |     90000 |             0 | f
+
+Time: 1.224 ms
+
+Build deep_100k_build_90_prt_64_pool_50_v ...
+Build Time: Built index on deep_100k_build_90_prt_64_pool_50_v in 21.32 seconds
+Timing is on.
+ 16738 |      39182336 | deep_100k_build_90_prt_64_pool_50_v               |         2200 |   16740 |    16385 |       16738 |             0 |     4778 |     90000 |         16741 | t
+ 16743 |      73842688 | deep_100k_build_90_prt_64_pool_50_v_embedding_idx |         2200 |       0 |    16385 |       16743 |             0 |     9014 |     90000 |             0 | f
+
+Time: 1.252 ms
+
+Build deep_100k_build_90_prt_64_pool_70_v ...
+Build Time: Built index on deep_100k_build_90_prt_64_pool_70_v in 21.46 seconds
+Timing is on.
+ 16744 |      39182336 | deep_100k_build_90_prt_64_pool_70_v               |         2200 |   16746 |    16385 |       16744 |             0 |     4778 |     90000 |         16747 | t
+ 16749 |      73834496 | deep_100k_build_90_prt_64_pool_70_v_embedding_idx |         2200 |       0 |    16385 |       16749 |             0 |     9013 |     90000 |             0 | f
+
+Time: 1.204 ms
+
+Build deep_100k_build_90_prt_64_pool_90_v ...
+Build Time: Built index on deep_100k_build_90_prt_64_pool_90_v in 21.93 seconds
+Timing is on.
+ 16750 |      39182336 | deep_100k_build_90_prt_64_pool_90_v               |         2200 |   16752 |    16385 |       16750 |             0 |     4778 |     90000 |         16753 | t
+ 16755 |      73826304 | deep_100k_build_90_prt_64_pool_90_v_embedding_idx |         2200 |       0 |    16385 |       16755 |             0 |     9012 |     90000 |             0 | f
+
+Time: 1.224 ms
+
+Build deep_100k_build_90_prt_64_pool_10_p ...
+Build Time: Built index on deep_100k_build_90_prt_64_pool_10_p in 21.04 seconds
+Timing is on.
+ 16761 |      39182336 | deep_100k_build_90_prt_64_pool_10_p               |         2200 |   16763 |    16385 |       16761 |             0 |     4778 |     90000 |         16764 | t
+ 16766 |      73842688 | deep_100k_build_90_prt_64_pool_10_p_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9014 |     90000 |             0 | f
+
+Time: 1.356 ms
+
+Build deep_100k_build_90_prt_64_pool_30_p ...
+Build Time: Built index on deep_100k_build_90_prt_64_pool_30_p in 21.14 seconds
+Timing is on.
+ 16767 |      39182336 | deep_100k_build_90_prt_64_pool_30_p               |         2200 |   16769 |    16385 |       16767 |             0 |     4778 |     90000 |         16770 | t
+ 16772 |      73859072 | deep_100k_build_90_prt_64_pool_30_p_embedding_idx |         2200 |       0 |    16385 |       16772 |             0 |     9016 |     90000 |             0 | f
+
+Time: 1.369 ms
+
+Build deep_100k_build_90_prt_64_pool_50_p ...
+Build Time: Built index on deep_100k_build_90_prt_64_pool_50_p in 21.24 seconds
+Timing is on.
+ 16773 |      39182336 | deep_100k_build_90_prt_64_pool_50_p               |         2200 |   16775 |    16385 |       16773 |             0 |     4778 |     90000 |         16776 | t
+ 16778 |      73826304 | deep_100k_build_90_prt_64_pool_50_p_embedding_idx |         2200 |       0 |    16385 |       16778 |             0 |     9012 |     90000 |             0 | f
+
+Time: 1.325 ms
+
+Build deep_100k_build_90_prt_64_pool_70_p ...
+Build Time: Built index on deep_100k_build_90_prt_64_pool_70_p in 20.95 seconds
+Timing is on.
+ 16779 |      39182336 | deep_100k_build_90_prt_64_pool_70_p               |         2200 |   16781 |    16385 |       16779 |             0 |     4778 |     90000 |         16782 | t
+ 16784 |      73842688 | deep_100k_build_90_prt_64_pool_70_p_embedding_idx |         2200 |       0 |    16385 |       16784 |             0 |     9014 |     90000 |             0 | f
+
+Time: 1.244 ms
+
+Build deep_100k_build_90_prt_64_pool_90_p ...
+Build Time: Built index on deep_100k_build_90_prt_64_pool_90_p in 21.25 seconds
+Timing is on.
+ 16785 |      39182336 | deep_100k_build_90_prt_64_pool_90_p               |         2200 |   16787 |    16385 |       16785 |             0 |     4778 |     90000 |         16788 | t
+ 16790 |      73818112 | deep_100k_build_90_prt_64_pool_90_p_embedding_idx |         2200 |       0 |    16385 |       16790 |             0 |     9011 |     90000 |             0 | f
+
+Time: 1.242 ms
+
+Build deep_100k_build_90_prt_64_pool_30_o ...
+Build deep_100k_build_90_prt_64_pool_30_o ...
+Build Time: Built index on deep_100k_build_90_prt_64_pool_30_o in 21.31 seconds
+Timing is on.
+ 16804 |      38846464 | deep_100k_build_90_prt_64_pool_30_o               |         2200 |   16806 |    16385 |       16804 |             0 |     4737 |     90000 |         16807 | t
+ 16809 |      73834496 | deep_100k_build_90_prt_64_pool_30_o_embedding_idx |         2200 |       0 |    16385 |       16809 |             0 |     9013 |     90000 |             0 | f
+
+Time: 1.707 ms
+
+Build deep_100k_build_90_prt_64_pool_30_ov ...
+Build Time: Built index on deep_100k_build_90_prt_64_pool_30_ov in 20.92 seconds
+Timing is on.
+ 16797 |      38846464 | deep_100k_build_90_prt_64_pool_30_ov               |         2200 |   16799 |    16385 |       16797 |             0 |     4737 |     90000 |         16800 | t
+ 16802 |      73818112 | deep_100k_build_90_prt_64_pool_30_ov_embedding_idx |         2200 |       0 |    16385 |       16802 |             0 |     9011 |     90000 |             0 | f
+
+Time: 1.767 ms
+
+Build deep_100k_build_90_prt_64_pool_30_op ...
+Build Time: Built index on deep_100k_build_90_prt_64_pool_30_op in 20.93 seconds
+Timing is on.
+ 16803 |      38846464 | deep_100k_build_90_prt_64_pool_30_op               |         2200 |   16805 |    16385 |       16803 |             0 |     4737 |     90000 |         16806 | t
+ 16808 |      73826304 | deep_100k_build_90_prt_64_pool_30_op_embedding_idx |         2200 |       0 |    16385 |       16808 |             0 |     9012 |     90000 |             0 | f
+
+Time: 1.806 ms
+
+Build deep_100k_build_90_prt_64_pool_30_oo ...
+Build Time: Built index on deep_100k_build_90_prt_64_pool_30_oo in 21.09 seconds
+Timing is on.
+ 16810 |      38862848 | deep_100k_build_90_prt_64_pool_30_oo               |         2200 |   16812 |    16385 |       16810 |             0 |     4739 |     90000 |         16813 | t
+ 16815 |      73744384 | deep_100k_build_90_prt_64_pool_30_oo_embedding_idx |         2200 |       0 |    16385 |       16815 |             0 |     9002 |     90000 |             0 | f
+
+Time: 8.663 ms
+
+Build deep_100k_build_90_prt_64_pool_30_o ...
+Build Time: Built index on deep_100k_build_90_prt_64_pool_30_o in 20.88 seconds
+Timing is on.
+ 16816 |      38862848 | deep_100k_build_90_prt_64_pool_30_o               |         2200 |   16818 |    16385 |       16816 |             0 |     4739 |     90000 |         16819 | t
+ 16821 |      73744384 | deep_100k_build_90_prt_64_pool_30_o_embedding_idx |         2200 |       0 |    16385 |       16821 |             0 |     9002 |     90000 |             0 | f
+
+Time: 7.456 ms
+
+Build deep_100k_build_90_prt_64_pool_30_ov ...
+Build Time: Built index on deep_100k_build_90_prt_64_pool_30_ov in 20.75 seconds
+Timing is on.
+ 16809 |      38862848 | deep_100k_build_90_prt_64_pool_30_ov               |         2200 |   16811 |    16385 |       16809 |             0 |     4739 |     90000 |         16812 | t
+ 16814 |      73744384 | deep_100k_build_90_prt_64_pool_30_ov_embedding_idx |         2200 |       0 |    16385 |       16814 |             0 |     9002 |     90000 |             0 | f
+
+Time: 7.462 ms
+
+Build deep_100k_build_90_prt_64_pool_30_ov ...
+Build Time: Built index on deep_100k_build_90_prt_64_pool_30_ov in 21.35 seconds
+Timing is on.
+ 16815 |      38862848 | deep_100k_build_90_prt_64_pool_30_ov               |         2200 |   16817 |    16385 |       16815 |             0 |     4739 |     90000 |         16818 | t
+ 16820 |      73744384 | deep_100k_build_90_prt_64_pool_30_ov_embedding_idx |         2200 |       0 |    16385 |       16820 |             0 |     9002 |     90000 |             0 | f
+
+Time: 7.442 ms
+
+Build deep_100k_build_90_prt_64_pool_30_op ...
+Build Time: Built index on deep_100k_build_90_prt_64_pool_30_op in 20.90 seconds
+Timing is on.
+ 16821 |      38862848 | deep_100k_build_90_prt_64_pool_30_op               |         2200 |   16823 |    16385 |       16821 |             0 |     4739 |     90000 |         16824 | t
+ 16826 |      73744384 | deep_100k_build_90_prt_64_pool_30_op_embedding_idx |         2200 |       0 |    16385 |       16826 |             0 |     9002 |     90000 |             0 | f
+
+Time: 7.373 ms
+
+Build deep_100k_build_90_prt_64_pool_30_tt ...
+Build Time: Built index on deep_100k_build_90_prt_64_pool_30_tt in 20.98 seconds
+Timing is on.
+ 16829 |      38862848 | deep_100k_build_90_prt_64_pool_30_tt               |         2200 |   16831 |    16385 |       16829 |             0 |     4739 |     90000 |         16832 | t
+ 16834 |      73842688 | deep_100k_build_90_prt_64_pool_30_tt_embedding_idx |         2200 |       0 |    16385 |       16834 |             0 |     9014 |     90000 |             0 | f
+
+Time: 7.290 ms
+
+Build deep_100k_build_90_prt_64_pool_30_tt ...
+Build Time: Table deep_100k_build_90_prt_64_pool_30_tt already exists. Skipping data insertion.
+Index already exists on deep_100k_build_90_prt_64_pool_30_tt. Skipping index creation.
+Timing is on.
+ 16829 |      38862848 | deep_100k_build_90_prt_64_pool_30_tt               |         2200 |   16831 |    16385 |       16829 |             0 |     4739 |     90000 |         16832 | t
+ 16834 |      73842688 | deep_100k_build_90_prt_64_pool_30_tt_embedding_idx |         2200 |       0 |    16385 |       16834 |             0 |     9014 |     90000 |             0 | f
+
+Time: 1.762 ms
+
+Build deep_100k_build_90_prt_64_pool_30_ttt ...
+Build Time: Built index on deep_100k_build_90_prt_64_pool_30_ttt in 20.67 seconds
+Timing is on.
+ 16835 |      38862848 | deep_100k_build_90_prt_64_pool_30_ttt               |         2200 |   16837 |    16385 |       16835 |             0 |     4739 |     90000 |         16838 | t
+ 16840 |      73818112 | deep_100k_build_90_prt_64_pool_30_ttt_embedding_idx |         2200 |       0 |    16385 |       16840 |             0 |     9011 |     90000 |             0 | f
+
+Time: 8.037 ms
+
+Build deep_100k_build_90_prt_64_pool_30_tttt ...
+Build Time: Built index on deep_100k_build_90_prt_64_pool_30_tttt in 21.02 seconds
+Timing is on.
+ 16841 |      38862848 | deep_100k_build_90_prt_64_pool_30_tttt               |         2200 |   16843 |    16385 |       16841 |             0 |     4739 |     90000 |         16844 | t
+ 16846 |      73826304 | deep_100k_build_90_prt_64_pool_30_tttt_embedding_idx |         2200 |       0 |    16385 |       16846 |             0 |     9012 |     90000 |             0 | f
+
+Time: 7.251 ms
+
+Build deep_100k_build_90_prt_64_pool_30_o ...
+Build Time: Built index on deep_100k_build_90_prt_64_pool_30_o in 21.09 seconds
+Timing is on.
+ 16822 |      38862848 | deep_100k_build_90_prt_64_pool_30_o               |         2200 |   16824 |    16385 |       16822 |             0 |     4739 |     90000 |         16825 | t
+ 16827 |      73818112 | deep_100k_build_90_prt_64_pool_30_o_embedding_idx |         2200 |       0 |    16385 |       16827 |             0 |     9011 |     90000 |             0 | f
+
+Time: 7.648 ms
+
+Build deep_100k_build_90_prt_64_pool_30_ov ...
+Build Time: Built index on deep_100k_build_90_prt_64_pool_30_ov in 20.97 seconds
+Timing is on.
+ 16847 |      38862848 | deep_100k_build_90_prt_64_pool_30_ov               |         2200 |   16849 |    16385 |       16847 |             0 |     4739 |     90000 |         16850 | t
+ 16852 |      73826304 | deep_100k_build_90_prt_64_pool_30_ov_embedding_idx |         2200 |       0 |    16385 |       16852 |             0 |     9012 |     90000 |             0 | f
+
+Time: 7.421 ms
+
+Build deep_100k_build_90_prt_64_pool_30_op ...
+Build Time: Built index on deep_100k_build_90_prt_64_pool_30_op in 20.93 seconds
+Timing is on.
+ 16855 |      38862848 | deep_100k_build_90_prt_64_pool_30_op               |         2200 |   16857 |    16385 |       16855 |             0 |     4739 |     90000 |         16858 | t
+ 16860 |      73809920 | deep_100k_build_90_prt_64_pool_30_op_embedding_idx |         2200 |       0 |    16385 |       16860 |             0 |     9010 |     90000 |             0 | f
+
+Time: 7.434 ms
+
+Build deep_100k_build_90_prt_64_pool_30_pt ...
+Build Time: Built index on deep_100k_build_90_prt_64_pool_30_pt in 19.79 seconds
+Timing is on.
+ 16797 |      38846464 | deep_100k_build_90_prt_64_pool_30_pt               |         2200 |   16799 |    16385 |       16797 |             0 |     4737 |     90000 |         16800 | t
+ 16802 |      73818112 | deep_100k_build_90_prt_64_pool_30_pt_embedding_idx |         2200 |       0 |    16385 |       16802 |             0 |     9011 |     90000 |             0 | f
+
+Time: 1.686 ms
+
+Build deep_100k_build_90_prt_64_pool_30_pt ...
+Build Time: Built index on deep_100k_build_90_prt_64_pool_30_pt in 20.71 seconds
+Timing is on.
+ 16803 |      38846464 | deep_100k_build_90_prt_64_pool_30_pt               |         2200 |   16805 |    16385 |       16803 |             0 |     4737 |     90000 |         16806 | t
+ 16808 |      73826304 | deep_100k_build_90_prt_64_pool_30_pt_embedding_idx |         2200 |       0 |    16385 |       16808 |             0 |     9012 |     90000 |             0 | f
+
+Time: 1.980 ms
+
+Build deep_100k_build_90_prt_64_pool_30_pt ...
+Build Time: Built index on deep_100k_build_90_prt_64_pool_30_pt in 21.92 seconds
+Timing is on.
+ 16809 |      38862848 | deep_100k_build_90_prt_64_pool_30_pt               |         2200 |   16811 |    16385 |       16809 |             0 |     4739 |     90000 |         16812 | t
+ 16814 |      73834496 | deep_100k_build_90_prt_64_pool_30_pt_embedding_idx |         2200 |       0 |    16385 |       16814 |             0 |     9013 |     90000 |             0 | f
+
+Time: 7.323 ms
+
+Build deep_100k_build_90_prt_64_pool_30_v ...
+Build Time: Built index on deep_100k_build_90_prt_64_pool_30_v in 21.33 seconds
+Timing is on.
+ 16715 |      39182336 | deep_100k_build_90_prt_64_pool_30_v               |         2200 |   16717 |    16385 |       16715 |             0 |     4778 |     90000 |         16718 | t
+ 16720 |      73834496 | deep_100k_build_90_prt_64_pool_30_v_embedding_idx |         2200 |       0 |    16385 |       16720 |             0 |     9013 |     90000 |             0 | f
+
+Time: 1.429 ms
+
+Build deep_100k_build_90_prt_64_pool_30_p ...
+Build Time: Built index on deep_100k_build_90_prt_64_pool_30_p in 20.75 seconds
+Timing is on.
+ 16721 |      39182336 | deep_100k_build_90_prt_64_pool_30_p               |         2200 |   16723 |    16385 |       16721 |             0 |     4778 |     90000 |         16724 | t
+ 16726 |      73826304 | deep_100k_build_90_prt_64_pool_30_p_embedding_idx |         2200 |       0 |    16385 |       16726 |             0 |     9012 |     90000 |             0 | f
+
+Time: 1.387 ms
+
+Build deep_100k_build_90_prt_64_pool_30_p ...
+Build deep_100k_build_90_prt_64_pool_30_p ...
+Build Time: Table deep_100k_build_90_prt_64_pool_30_p already exists. Skipping data insertion.
+Built index on deep_100k_build_90_prt_64_pool_30_p in 59.17 seconds
+Timing is on.
+ 16715 |      39182336 | deep_100k_build_90_prt_64_pool_30_p               |         2200 |   16717 |    16385 |       16715 |             0 |     4778 |     90000 |         16718 | t
+ 16725 |      73826304 | deep_100k_build_90_prt_64_pool_30_p_embedding_idx |         2200 |       0 |    16385 |       16725 |             0 |     9012 |     90000 |             0 | f
+
+Time: 1.474 ms
+
+Build deep_100k_build_90_prt_64_pool_30_v ...
+Build Time: Built index on deep_100k_build_90_prt_64_pool_30_v in 60.63 seconds
+Timing is on.
+ 16726 |      39182336 | deep_100k_build_90_prt_64_pool_30_v               |         2200 |   16728 |    16385 |       16726 |             0 |     4778 |     90000 |         16729 | t
+ 16731 |      73834496 | deep_100k_build_90_prt_64_pool_30_v_embedding_idx |         2200 |       0 |    16385 |       16731 |             0 |     9013 |     90000 |             0 | f
+
+Time: 1.486 ms
+
+Build deep_100k_build_90_prt_64_pool_30_o ...
+Build Time: Built index on deep_100k_build_90_prt_64_pool_30_o in 58.95 seconds
+Timing is on.
+ 16734 |      38862848 | deep_100k_build_90_prt_64_pool_30_o               |         2200 |   16736 |    16385 |       16734 |             0 |     4739 |     90000 |         16737 | t
+ 16739 |      73826304 | deep_100k_build_90_prt_64_pool_30_o_embedding_idx |         2200 |       0 |    16385 |       16739 |             0 |     9012 |     90000 |             0 | f
+
+Time: 8.288 ms
+
+Build deep_100k_build_90_prt_64_pool_30_ov ...
+Build Time: Built index on deep_100k_build_90_prt_64_pool_30_ov in 58.94 seconds
+Timing is on.
+ 16734 |      38862848 | deep_100k_build_90_prt_64_pool_30_ov               |         2200 |   16736 |    16385 |       16734 |             0 |     4739 |     90000 |         16737 | t
+ 16739 |      73818112 | deep_100k_build_90_prt_64_pool_30_ov_embedding_idx |         2200 |       0 |    16385 |       16739 |             0 |     9011 |     90000 |             0 | f
+
+Time: 8.606 ms
+
+Build deep_100k_build_90_prt_64_pool_30_op ...
+Build Time: Built index on deep_100k_build_90_prt_64_pool_30_op in 58.80 seconds
+Timing is on.
+ 16741 |      38862848 | deep_100k_build_90_prt_64_pool_30_op               |         2200 |   16743 |    16385 |       16741 |             0 |     4739 |     90000 |         16744 | t
+ 16746 |      73818112 | deep_100k_build_90_prt_64_pool_30_op_embedding_idx |         2200 |       0 |    16385 |       16746 |             0 |     9011 |     90000 |             0 | f
+
+Time: 7.202 ms
+
+Build deep_1m_build_95_prt_64_pool_30_o ...
+Build deep_1m_build_95_prt_64_pool_30_o ...
+Build Time: Table deep_1m_build_95_prt_64_pool_30_o already exists. Skipping data insertion.
+Built index on deep_1m_build_95_prt_64_pool_30_o in 74.80 seconds
+Timing is on.
+ 16733 |     409960448 | deep_1m_build_95_prt_64_pool_30_o               |         2200 |   16735 |    16385 |       16733 |             0 |    50026 |    950000 |         16736 | t
+ 16741 |     779018240 | deep_1m_build_95_prt_64_pool_30_o_embedding_idx |         2200 |       0 |    16385 |       16741 |             0 |    95095 |    950000 |             0 | f
+
+Time: 6.498 ms
+
+Build deep_1m_build_95_prt_64_pool_30_op ...
+Build Time: Built index on deep_1m_build_95_prt_64_pool_30_op in 72.52 seconds
+Timing is on.
+ 16742 |     409944064 | deep_1m_build_95_prt_64_pool_30_op               |         2200 |   16744 |    16385 |       16742 |             0 |    50026 |    950000 |         16745 | t
+ 16747 |     779108352 | deep_1m_build_95_prt_64_pool_30_op_embedding_idx |         2200 |       0 |    16385 |       16747 |             0 |    95106 |    950000 |             0 | f
+
+Time: 6.477 ms
+
+Build deep_1m_build_95_prt_64_pool_30_p ...
+Build Time: Built index on deep_1m_build_95_prt_64_pool_30_p in 107.71 seconds
+Timing is on.
+ 16748 |     409944064 | deep_1m_build_95_prt_64_pool_30_p               |         2200 |   16750 |    16385 |       16748 |             0 |    50026 |    950000 |         16751 | t
+ 16753 |     779075584 | deep_1m_build_95_prt_64_pool_30_p_embedding_idx |         2200 |       0 |    16385 |       16753 |             0 |    95102 |    950000 |             0 | f
+
+Time: 6.165 ms
+
+Build deep_100k_build_95_prt_64_pool_30_tt ...
+Build Time: Built index on deep_100k_build_95_prt_64_pool_30_tt in 8.25 seconds
+Timing is on.
+ 16755 |      41279488 | deep_100k_build_95_prt_64_pool_30_tt               |         2200 |   16757 |    16385 |       16755 |             0 |     5034 |     95000 |         16758 | t
+ 16760 |      77922304 | deep_100k_build_95_prt_64_pool_30_tt_embedding_idx |         2200 |       0 |    16385 |       16760 |             0 |     9512 |     95000 |             0 | f
+
+Time: 1.593 ms
+
+Build deep_1m_build_95_prt_64_pool_5_o ...
+Build Time: Built index on deep_1m_build_95_prt_64_pool_5_o in 73.37 seconds
+Timing is on.
+ 16761 |     409944064 | deep_1m_build_95_prt_64_pool_5_o               |         2200 |   16763 |    16385 |       16761 |             0 |    50026 |    950000 |         16764 | t
+ 16766 |     779026432 | deep_1m_build_95_prt_64_pool_5_o_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |    95096 |    950000 |             0 | f
+
+Time: 4.323 ms
+
+Build deep_1m_build_95_prt_64_pool_1_o ...
+Build Time: Built index on deep_1m_build_95_prt_64_pool_1_o in 73.51 seconds
+Timing is on.
+ 16769 |     409944064 | deep_1m_build_95_prt_64_pool_1_o               |         2200 |   16771 |    16385 |       16769 |             0 |    50026 |    950000 |         16772 | t
+ 16774 |     779001856 | deep_1m_build_95_prt_64_pool_1_o_embedding_idx |         2200 |       0 |    16385 |       16774 |             0 |    95093 |    950000 |             0 | f
+
+Time: 5.619 ms
+
+Build deep_100k_build_90_prt_64_pool_30_o ...
+Build deep_100k_build_90_prt_64_pool_30_to ...
+Build Time: Built index on deep_100k_build_90_prt_64_pool_30_to in 20.81 seconds
+Timing is on.
+ 16796 |      38862848 | deep_100k_build_90_prt_64_pool_30_to               |         2200 |   16798 |    16385 |       16796 |             0 |     4739 |     90000 |         16799 | t
+ 16801 |      73826304 | deep_100k_build_90_prt_64_pool_30_to_embedding_idx |         2200 |       0 |    16385 |       16801 |             0 |     9012 |     90000 |             0 | f
+
+Time: 1.904 ms
+
+Build deep_100k_build_90_prt_64_pool_30_tl ...
+Build Time: Built index on deep_100k_build_90_prt_64_pool_30_tl in 20.88 seconds
+Timing is on.
+ 16802 |      38862848 | deep_100k_build_90_prt_64_pool_30_tl               |         2200 |   16804 |    16385 |       16802 |             0 |     4739 |     90000 |         16805 | t
+ 16807 |      73842688 | deep_100k_build_90_prt_64_pool_30_tl_embedding_idx |         2200 |       0 |    16385 |       16807 |             0 |     9014 |     90000 |             0 | f
+
+Time: 1.869 ms
+
+Build deep_100k_build_90_prt_64_pool_30_to ...
+Build Time: Built index on deep_100k_build_90_prt_64_pool_30_to in 22.38 seconds
+Timing is on.
+ 16810 |      38862848 | deep_100k_build_90_prt_64_pool_30_to               |         2200 |   16812 |    16385 |       16810 |             0 |     4739 |     90000 |         16813 | t
+ 16815 |      73826304 | deep_100k_build_90_prt_64_pool_30_to_embedding_idx |         2200 |       0 |    16385 |       16815 |             0 |     9012 |     90000 |             0 | f
+
+Time: 7.069 ms
+
+Build deep_100k_build_90_prt_64_pool_30_to ...
+Build Time: Table deep_100k_build_90_prt_64_pool_30_to already exists. Skipping data insertion.
+Index already exists on deep_100k_build_90_prt_64_pool_30_to. Skipping index creation.
+Timing is on.
+ 16810 |      39878656 | deep_100k_build_90_prt_64_pool_30_to               |         2200 |   16812 |    16385 |       16810 |             0 |     4766 |     90541 |         16813 | t
+ 16815 |      77070336 | deep_100k_build_90_prt_64_pool_30_to_embedding_idx |         2200 |       0 |    16385 |       16815 |             0 |     9293 |     90541 |             0 | f
+
+Time: 1.740 ms
+
+Build deep_100k_build_90_prt_64_pool_30_ttt ...
+Build deep_100k_build_90_prt_64_pool_30_ttt ...
+Build deep_100k_build_90_prt_64_pool_30_ttt ...
+Build deep_100k_build_90_prt_64_pool_30_ttt ...
+Build deep_100k_build_90_prt_64_pool_30_ttt ...
+Build Time: Table deep_100k_build_90_prt_64_pool_30_ttt already exists. Skipping data insertion.
+Built index on deep_100k_build_90_prt_64_pool_30_ttt in 22.74 seconds
+Timing is on.
+ 16817 |      38871040 | deep_100k_build_90_prt_64_pool_30_ttt               |         2200 |   16819 |    16385 |       16817 |             0 |     4739 |     90000 |         16820 | t
+ 16827 |      73842688 | deep_100k_build_90_prt_64_pool_30_ttt_embedding_idx |         2200 |       0 |    16385 |       16827 |             0 |     9014 |     90000 |             0 | f
+
+Time: 7.502 ms
+
+Build deep_100k_build_90_prt_64_pool_30_ttt ...
+Build deep_100k_build_90_prt_64_pool_30_tttt ...
+Build Time: 
+Timing is on.
+
+Time: 0.948 ms
+
+Build deep_100k_build_90_prt_64_pool_30_tttt ...
+Build deep_100k_build_90_prt_64_pool_30_tl ...
+Build Time: Built index on deep_100k_build_90_prt_64_pool_30_tl in 22.43 seconds
+Timing is on.
+ 16834 |      38862848 | deep_100k_build_90_prt_64_pool_30_tl               |         2200 |   16836 |    16385 |       16834 |             0 |     4739 |     90000 |         16837 | t
+ 16839 |      73834496 | deep_100k_build_90_prt_64_pool_30_tl_embedding_idx |         2200 |       0 |    16385 |       16839 |             0 |     9013 |     90000 |             0 | f
+
+Time: 7.076 ms
+
+Build deep_100k_build_90_prt_64_pool_30_to ...
+Build Time: Built index on deep_100k_build_90_prt_64_pool_30_to in 22.32 seconds
+Timing is on.
+ 16840 |      38862848 | deep_100k_build_90_prt_64_pool_30_to               |         2200 |   16842 |    16385 |       16840 |             0 |     4739 |     90000 |         16843 | t
+ 16845 |      73826304 | deep_100k_build_90_prt_64_pool_30_to_embedding_idx |         2200 |       0 |    16385 |       16845 |             0 |     9012 |     90000 |             0 | f
+
+Time: 7.109 ms
+
+Build deep_100k_build_90_prt_64_pool_30_to2 ...
+Build Time: Built index on deep_100k_build_90_prt_64_pool_30_to2 in 21.78 seconds
+Timing is on.
+ 16849 |      38862848 | deep_100k_build_90_prt_64_pool_30_to2               |         2200 |   16851 |    16385 |       16849 |             0 |     4739 |     90000 |         16852 | t
+ 16854 |      73818112 | deep_100k_build_90_prt_64_pool_30_to2_embedding_idx |         2200 |       0 |    16385 |       16854 |             0 |     9011 |     90000 |             0 | f
+
+Time: 7.551 ms
+
+Build deep_100k_build_90_prt_64_pool_30_tl2 ...
+Build Time: Built index on deep_100k_build_90_prt_64_pool_30_tl2 in 22.39 seconds
+Timing is on.
+ 16855 |      38862848 | deep_100k_build_90_prt_64_pool_30_tl2               |         2200 |   16857 |    16385 |       16855 |             0 |     4739 |     90000 |         16858 | t
+ 16860 |      73818112 | deep_100k_build_90_prt_64_pool_30_tl2_embedding_idx |         2200 |       0 |    16385 |       16860 |             0 |     9011 |     90000 |             0 | f
+
+Time: 7.374 ms
+
+Build deep_100k_build_90_prt_64_pool_30_to3 ...
+Build Time: Built index on deep_100k_build_90_prt_64_pool_30_to3 in 22.10 seconds
+Timing is on.
+ 16861 |      38862848 | deep_100k_build_90_prt_64_pool_30_to3               |         2200 |   16863 |    16385 |       16861 |             0 |     4739 |     90000 |         16864 | t
+ 16866 |      73850880 | deep_100k_build_90_prt_64_pool_30_to3_embedding_idx |         2200 |       0 |    16385 |       16866 |             0 |     9015 |     90000 |             0 | f
+
+Time: 7.647 ms
+
+Build deep_100k_build_90_prt_64_pool_30_to4 ...
+Build Time: Built index on deep_100k_build_90_prt_64_pool_30_to4 in 22.16 seconds
+Timing is on.
+ 16867 |      38862848 | deep_100k_build_90_prt_64_pool_30_to4               |         2200 |   16869 |    16385 |       16867 |             0 |     4739 |     90000 |         16870 | t
+ 16872 |      73834496 | deep_100k_build_90_prt_64_pool_30_to4_embedding_idx |         2200 |       0 |    16385 |       16872 |             0 |     9013 |     90000 |             0 | f
+
+Time: 7.524 ms
+
+Build deep_100k_build_90_prt_64_pool_30_tl4 ...
+Build Time: Built index on deep_100k_build_90_prt_64_pool_30_tl4 in 22.14 seconds
+Timing is on.
+ 16873 |      38862848 | deep_100k_build_90_prt_64_pool_30_tl4               |         2200 |   16875 |    16385 |       16873 |             0 |     4739 |     90000 |         16876 | t
+ 16878 |      73826304 | deep_100k_build_90_prt_64_pool_30_tl4_embedding_idx |         2200 |       0 |    16385 |       16878 |             0 |     9012 |     90000 |             0 | f
+
+Time: 7.452 ms
+
+Build deep_100k_build_90_prt_64_pool_30_tl3 ...
+Build Time: Built index on deep_100k_build_90_prt_64_pool_30_tl3 in 22.09 seconds
+Timing is on.
+ 16884 |      38952960 | deep_100k_build_90_prt_64_pool_30_tl3               |         2200 |   16886 |    16385 |       16884 |             0 |     4750 |     90000 |         16887 | t
+ 16889 |      73842688 | deep_100k_build_90_prt_64_pool_30_tl3_embedding_idx |         2200 |       0 |    16385 |       16889 |             0 |     9014 |     90000 |             0 | f
+
+Time: 8.273 ms
+
+Build deep_100k_build_90_prt_64_pool_30_tttt ...
+Build Time: 
+
+
+Build deep_100k_build_90_prt_64_pool_30_tttt ...
+Build deep_100k_build_90_prt_64_pool_30_tttt ...
+Build Time: 
+
+
+Build deep_100k_build_90_prt_64_pool_30_tttt ...
+Build Time: 
+Timing is on.
+
+Time: 0.966 ms
+
+Build deep_100k_build_90_prt_64_pool_30_tttt ...
+Build Time: 
+Timing is on.
+
+Time: 1.049 ms
+
+Build deep_100k_build_90_prt_64_pool_30_tttt ...
+Build Time: Built index on deep_100k_build_90_prt_64_pool_30_tttt in 61.02 seconds
+Timing is on.
+ 16733 |      39182336 | deep_100k_build_90_prt_64_pool_30_tttt               |         2200 |   16735 |    16385 |       16733 |             0 |     4778 |     90000 |         16736 | t
+ 16738 |      73850880 | deep_100k_build_90_prt_64_pool_30_tttt_embedding_idx |         2200 |       0 |    16385 |       16738 |             0 |     9015 |     90000 |             0 | f
+
+Time: 1.522 ms
+
+Build deep_100k_build_90_prt_64_pool_30_tttt ...
+Build Time: Table deep_100k_build_90_prt_64_pool_30_tttt already exists. Skipping data insertion.
+Index already exists on deep_100k_build_90_prt_64_pool_30_tttt. Skipping index creation.
+Timing is on.
+ 16733 |      39182336 | deep_100k_build_90_prt_64_pool_30_tttt               |         2200 |   16735 |    16385 |       16733 |             0 |     4778 |     90000 |         16736 | t
+ 16738 |      73850880 | deep_100k_build_90_prt_64_pool_30_tttt_embedding_idx |         2200 |       0 |    16385 |       16738 |             0 |     9015 |     90000 |             0 | f
+
+Time: 1.669 ms
+
+Build deep_100k_build_90_prt_64_pool_30_ttt ...
+Build Time: Built index on deep_100k_build_90_prt_64_pool_30_ttt in 60.79 seconds
+Timing is on.
+ 16740 |      39182336 | deep_100k_build_90_prt_64_pool_30_ttt               |         2200 |   16742 |    16385 |       16740 |             0 |     4778 |     90000 |         16743 | t
+ 16745 |      73818112 | deep_100k_build_90_prt_64_pool_30_ttt_embedding_idx |         2200 |       0 |    16385 |       16745 |             0 |     9011 |     90000 |             0 | f
+
+Time: 1.569 ms
+
+Build deep_100k_build_90_prt_64_pool_30_t1 ...
+Build deep_100k_build_90_prt_64_pool_30_t1 ...
+Build Time: Built index on deep_100k_build_90_prt_64_pool_30_t1 in 60.92 seconds
+Timing is on.
+ 16747 |      39182336 | deep_100k_build_90_prt_64_pool_30_t1               |         2200 |   16749 |    16385 |       16747 |             0 |     4778 |     90000 |         16750 | t
+ 16752 |      73826304 | deep_100k_build_90_prt_64_pool_30_t1_embedding_idx |         2200 |       0 |    16385 |       16752 |             0 |     9012 |     90000 |             0 | f
+
+Time: 1.468 ms
+
+Build deep_100k_build_90_prt_64_pool_30_t2 ...
+Build Time: Built index on deep_100k_build_90_prt_64_pool_30_t2 in 60.86 seconds
+Timing is on.
+ 16754 |      38862848 | deep_100k_build_90_prt_64_pool_30_t2               |         2200 |   16756 |    16385 |       16754 |             0 |     4739 |     90000 |         16757 | t
+ 16759 |      73826304 | deep_100k_build_90_prt_64_pool_30_t2_embedding_idx |         2200 |       0 |    16385 |       16759 |             0 |     9012 |     90000 |             0 | f
+
+Time: 6.850 ms
+
+Build deep_100k_build_90_prt_64_pool_30_t3 ...
+Build deep_100k_build_90_prt_64_pool_30_t3 ...
+Build Time: Built index on deep_100k_build_90_prt_64_pool_30_t3 in 61.45 seconds
+Timing is on.
+ 16761 |      38862848 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4739 |     90000 |         16764 | t
+ 16766 |      73826304 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9012 |     90000 |             0 | f
+
+Time: 6.969 ms
+
+Build dbp_100k_build_90_prt_64_pool_30_t3 ...
+Build dbp_100k_build_90_prt_64_pool_30_t3 ...
+Build dbp_100k_build_90_prt_64_pool_30_t3 ...
+Build dbp_100k_build_90_prt_64_pool_30_t3 ...
+Build dbp_100k_build_90_prt_64_pool_30_t3 ...
+Build dbp_100k_build_90_prt_64_pool_30_t3 ...
+Build Time: Table dbp_100k_build_90_prt_64_pool_30_t3 already exists. Skipping data insertion.
+Built index on dbp_100k_build_90_prt_64_pool_30_t3 in 50.89 seconds
+Timing is on.
+ 16768 |     737542144 | dbp_100k_build_90_prt_64_pool_30_t3               |         2200 |   16770 |    16385 |       16768 |             0 |    90006 |     90000 |         16771 | t
+ 24961 |     737296384 | dbp_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       24961 |             0 |    90002 |     90000 |             0 | f
+
+Time: 7.806 ms
+
+Build dbp_100k_build_90_prt_64_pool_30_t3 ...
+Build Time: 
+
+
+Build dbp_100k_build_90_prt_64_pool_30_t3 ...
+Build Time: 
+
+
+Build dbp_100k_build_90_prt_64_pool_30_t3 ...
+Build dbp_100k_build_90_prt_64_pool_30_t3 ...
+Build Time: 
+
+
+Build dbp_100k_build_90_prt_64_pool_30_t3 ...
+Build dbp_100k_build_90_prt_64_pool_30_t3 ...
+Build Time: 
+
+
+Build dbp_100k_build_90_prt_64_pool_30_t3 ...
+Build dbp_100k_build_90_prt_64_pool_30_t3 ...
+Build Time: 
+
+
+Build deep_100k_build_90_prt_64_pool_30_t3 ...
+Build Time: Built index on deep_100k_build_90_prt_64_pool_30_t3 in 69.15 seconds
+Timing is on.
+ 16734 |      39182336 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16736 |    16385 |       16734 |             0 |     4778 |     90000 |         16737 | t
+ 16739 |      73834496 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16739 |             0 |     9013 |     90000 |             0 | f
+
+Time: 2.780 ms
+
+Build deep_100k_build_90_prt_64_pool_30_t4 ...
+Build Time: 
+
+
+Build deep_100k_build_90_prt_64_pool_30_t4 ...
+Build Time: Built index on deep_100k_build_90_prt_64_pool_30_t4 in 68.97 seconds
+Timing is on.
+ 16733 |      39182336 | deep_100k_build_90_prt_64_pool_30_t4               |         2200 |   16735 |    16385 |       16733 |             0 |     4778 |     90000 |         16736 | t
+ 16738 |      73834496 | deep_100k_build_90_prt_64_pool_30_t4_embedding_idx |         2200 |       0 |    16385 |       16738 |             0 |     9013 |     90000 |             0 | f
+
+Time: 3.316 ms
+
+Build deep_100k_build_90_prt_64_pool_30_t4 ...
+Build Time: Table deep_100k_build_90_prt_64_pool_30_t4 already exists. Skipping data insertion.
+Index already exists on deep_100k_build_90_prt_64_pool_30_t4. Skipping index creation.
+Timing is on.
+ 16733 |      39182336 | deep_100k_build_90_prt_64_pool_30_t4               |         2200 |   16735 |    16385 |       16733 |             0 |     4778 |     90000 |         16736 | t
+ 16738 |      73834496 | deep_100k_build_90_prt_64_pool_30_t4_embedding_idx |         2200 |       0 |    16385 |       16738 |             0 |     9013 |     90000 |             0 | f
+
+Time: 3.002 ms
+
+Build deep_100k_build_90_prt_64_pool_30_t5 ...
+Build Time: 
+
+
+Build deep_100k_build_90_prt_64_pool_30_t5 ...
+Build Time: Built index on deep_100k_build_90_prt_64_pool_30_t5 in 69.25 seconds
+Timing is on.
+ 16733 |      39182336 | deep_100k_build_90_prt_64_pool_30_t5               |         2200 |   16735 |    16385 |       16733 |             0 |     4778 |     90000 |         16736 | t
+ 16738 |      73834496 | deep_100k_build_90_prt_64_pool_30_t5_embedding_idx |         2200 |       0 |    16385 |       16738 |             0 |     9013 |     90000 |             0 | f
+
+Time: 2.723 ms
+
+Build deep_100k_build_90_prt_64_pool_30_t6 ...
+Build Time: 
+
+
+Build deep_100k_build_90_prt_64_pool_30_t6 ...
+Build Time: Built index on deep_100k_build_90_prt_64_pool_30_t6 in 70.28 seconds
+Timing is on.
+ 16733 |      39182336 | deep_100k_build_90_prt_64_pool_30_t6               |         2200 |   16735 |    16385 |       16733 |             0 |     4778 |     90000 |         16736 | t
+ 16738 |      73834496 | deep_100k_build_90_prt_64_pool_30_t6_embedding_idx |         2200 |       0 |    16385 |       16738 |             0 |     9013 |     90000 |             0 | f
+
+Time: 2.710 ms
+
+Build deep_100k_build_90_prt_64_pool_30_t7 ...
+Build Time: 
+
+
+Build deep_100k_build_90_prt_64_pool_30_t7 ...
+Build Time: Built index on deep_100k_build_90_prt_64_pool_30_t7 in 69.17 seconds
+Timing is on.
+ 16733 |      39182336 | deep_100k_build_90_prt_64_pool_30_t7               |         2200 |   16735 |    16385 |       16733 |             0 |     4778 |     90000 |         16736 | t
+ 16738 |      73842688 | deep_100k_build_90_prt_64_pool_30_t7_embedding_idx |         2200 |       0 |    16385 |       16738 |             0 |     9014 |     90000 |             0 | f
+
+Time: 2.784 ms
+
+Build deep_100k_build_90_prt_64_pool_30_t8 ...
+Build Time: 
+
+
+Build deep_100k_build_90_prt_64_pool_30_t8 ...
+Build deep_100k_build_90_prt_64_pool_30_t8 ...
+Build Time: Built index on deep_100k_build_90_prt_64_pool_30_t8 in 68.83 seconds
+Timing is on.
+ 16733 |      39182336 | deep_100k_build_90_prt_64_pool_30_t8               |         2200 |   16735 |    16385 |       16733 |             0 |     4778 |     90000 |         16736 | t
+ 16738 |      73826304 | deep_100k_build_90_prt_64_pool_30_t8_embedding_idx |         2200 |       0 |    16385 |       16738 |             0 |     9012 |     90000 |             0 | f
+
+Time: 2.822 ms
+
+Build deep_100k_build_90_prt_64_pool_30_t9 ...
+Build Time: 
+
+
+Build deep_100k_build_90_prt_64_pool_30_t9 ...
+Build Time: Built index on deep_100k_build_90_prt_64_pool_30_t9 in 69.42 seconds
+Timing is on.
+ 16733 |      39182336 | deep_100k_build_90_prt_64_pool_30_t9               |         2200 |   16735 |    16385 |       16733 |             0 |     4778 |     90000 |         16736 | t
+ 16738 |      73834496 | deep_100k_build_90_prt_64_pool_30_t9_embedding_idx |         2200 |       0 |    16385 |       16738 |             0 |     9013 |     90000 |             0 | f
+
+Time: 2.715 ms
+
+Build deep_100k_build_90_prt_64_pool_30_t5 ...
+Build Time: 
+
+
+Build deep_100k_build_90_prt_64_pool_30_t5 ...
+Build Time: Built index on deep_100k_build_90_prt_64_pool_30_t5 in 69.23 seconds
+Timing is on.
+ 16733 |      39182336 | deep_100k_build_90_prt_64_pool_30_t5               |         2200 |   16735 |    16385 |       16733 |             0 |     4778 |     90000 |         16736 | t
+ 16738 |      73834496 | deep_100k_build_90_prt_64_pool_30_t5_embedding_idx |         2200 |       0 |    16385 |       16738 |             0 |     9013 |     90000 |             0 | f
+
+Time: 2.708 ms
+
+Build deep_100k_build_90_prt_64_pool_30_t5 ...
+Build Time: Built index on deep_100k_build_90_prt_64_pool_30_t5 in 69.06 seconds
+Timing is on.
+ 16733 |      39182336 | deep_100k_build_90_prt_64_pool_30_t5               |         2200 |   16735 |    16385 |       16733 |             0 |     4778 |     90000 |         16736 | t
+ 16738 |      73834496 | deep_100k_build_90_prt_64_pool_30_t5_embedding_idx |         2200 |       0 |    16385 |       16738 |             0 |     9013 |     90000 |             0 | f
+
+Time: 2.596 ms
+
+Build deep_100k_build_90_prt_64_pool_30_t6 ...
+Build Time: 
+
+
+Build deep_100k_build_90_prt_64_pool_30_t6 ...
+Build Time: Built index on deep_100k_build_90_prt_64_pool_30_t6 in 69.23 seconds
+Timing is on.
+ 16733 |      39182336 | deep_100k_build_90_prt_64_pool_30_t6               |         2200 |   16735 |    16385 |       16733 |             0 |     4778 |     90000 |         16736 | t
+ 16738 |      73826304 | deep_100k_build_90_prt_64_pool_30_t6_embedding_idx |         2200 |       0 |    16385 |       16738 |             0 |     9012 |     90000 |             0 | f
+
+Time: 2.632 ms
+
+Build deep_100k_build_90_prt_64_pool_30_t7 ...
+Build Time: Built index on deep_100k_build_90_prt_64_pool_30_t7 in 68.87 seconds
+Timing is on.
+ 16740 |      39182336 | deep_100k_build_90_prt_64_pool_30_t7               |         2200 |   16742 |    16385 |       16740 |             0 |     4778 |     90000 |         16743 | t
+ 16745 |      73826304 | deep_100k_build_90_prt_64_pool_30_t7_embedding_idx |         2200 |       0 |    16385 |       16745 |             0 |     9012 |     90000 |             0 | f
+
+Time: 2.903 ms
+
+Build deep_100k_build_90_prt_64_pool_30_t7 ...
+Build Time: Table deep_100k_build_90_prt_64_pool_30_t7 already exists. Skipping data insertion.
+Index already exists on deep_100k_build_90_prt_64_pool_30_t7. Skipping index creation.
+Timing is on.
+ 16740 |      39182336 | deep_100k_build_90_prt_64_pool_30_t7               |         2200 |   16742 |    16385 |       16740 |             0 |     4778 |     90000 |         16743 | t
+ 16745 |      73826304 | deep_100k_build_90_prt_64_pool_30_t7_embedding_idx |         2200 |       0 |    16385 |       16745 |             0 |     9012 |     90000 |             0 | f
+
+Time: 3.152 ms
+
+Build deep_100k_build_90_prt_64_pool_30_t8 ...
+Build Time: Built index on deep_100k_build_90_prt_64_pool_30_t8 in 69.03 seconds
+Timing is on.
+ 16747 |      39182336 | deep_100k_build_90_prt_64_pool_30_t8               |         2200 |   16749 |    16385 |       16747 |             0 |     4778 |     90000 |         16750 | t
+ 16752 |      73850880 | deep_100k_build_90_prt_64_pool_30_t8_embedding_idx |         2200 |       0 |    16385 |       16752 |             0 |     9015 |     90000 |             0 | f
+
+Time: 2.934 ms
+
+Build deep_100k_build_90_prt_64_pool_30_t9 ...
+Build Time: Built index on deep_100k_build_90_prt_64_pool_30_t9 in 69.14 seconds
+Timing is on.
+ 16754 |      39182336 | deep_100k_build_90_prt_64_pool_30_t9               |         2200 |   16756 |    16385 |       16754 |             0 |     4778 |     90000 |         16757 | t
+ 16759 |      73818112 | deep_100k_build_90_prt_64_pool_30_t9_embedding_idx |         2200 |       0 |    16385 |       16759 |             0 |     9011 |     90000 |             0 | f
+
+Time: 3.521 ms
+
+Build deep_100k_build_90_prt_64_pool_30_t3 ...
+Build Time: Built index on deep_100k_build_90_prt_64_pool_30_t3 in 5.86 seconds
+Timing is on.
+ 16761 |      39182336 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4778 |     90000 |         16764 | t
+ 16766 |      73834496 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9013 |     90000 |             0 | f
+
+Time: 2.923 ms
+
+Build dbp_100k_build_90_prt_64_pool_30_t1 ...
+Build Time: 
+
+
+Build dbp_100k_build_90_prt_64_pool_30_t1 ...
+Build Time: 
+
+
+Build dbp_100k_build_90_prt_64_pool_30_t1 ...
+Build Time: 
+
+
+Build dbp_100k_build_90_prt_64_pool_30_t1 ...
+Build Time: Table dbp_100k_build_90_prt_64_pool_30_t1 already exists. Skipping data insertion.
+Timing is on.
+ 16733 |     150011904 | dbp_100k_build_90_prt_64_pool_30_t1 |         2200 |   16735 |    16385 |       16733 |             0 |        0 |        -1 |         16736 | f
+
+Time: 2.249 ms
+
+Build dbp_100k_build_90_prt_64_pool_30_t1 ...
+Build Time: Table dbp_100k_build_90_prt_64_pool_30_t1 already exists. Skipping data insertion.
+Timing is on.
+ 16733 |     150011904 | dbp_100k_build_90_prt_64_pool_30_t1 |         2200 |   16735 |    16385 |       16733 |             0 |        0 |        -1 |         16736 | f
+
+Time: 2.699 ms
+
+Build dbp_100k_build_90_prt_64_pool_30_t1 ...
+Build Time: 
+
+
+Build dbp_100k_build_90_prt_64_pool_30_t1 ...
+Build Time: Table dbp_100k_build_90_prt_64_pool_30_t1 already exists. Skipping data insertion.
+Timing is on.
+ 16733 |     150011904 | dbp_100k_build_90_prt_64_pool_30_t1 |         2200 |   16735 |    16385 |       16733 |             0 |        0 |        -1 |         16736 | f
+
+Time: 2.392 ms
+
+Build dbp_100k_build_90_prt_64_pool_30_t1 ...
+Build Time: Table dbp_100k_build_90_prt_64_pool_30_t1 already exists. Skipping data insertion.
+Timing is on.
+ 16733 |     150011904 | dbp_100k_build_90_prt_64_pool_30_t1 |         2200 |   16735 |    16385 |       16733 |             0 |        0 |        -1 |         16736 | f
+
+Time: 2.262 ms
+
+Build dbp_100k_build_90_prt_64_pool_30_t1 ...
+Build Time: Table dbp_100k_build_90_prt_64_pool_30_t1 already exists. Skipping data insertion.
+Timing is on.
+ 16733 |     150011904 | dbp_100k_build_90_prt_64_pool_30_t1 |         2200 |   16735 |    16385 |       16733 |             0 |        0 |        -1 |         16736 | f
+
+Time: 2.332 ms
+

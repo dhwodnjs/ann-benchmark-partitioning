@@ -1,0 +1,171 @@
+Build coco_10k_build_100_prt_1_pool_30_8kb ...
+Build Time: Built index on coco_10k_build_100_prt_1_pool_30_8kb in 204.98 seconds
+ 479071 |     273252352 | coco_10k_build_100_prt_1_pool_30_8kb               |         2200 |  479073 |    16385 |      479071 |             0 |    33344 |    100000 |        479074 | t
+ 479076 |     273301504 | coco_10k_build_100_prt_1_pool_30_8kb_embedding_idx |         2200 |       0 |    16385 |      479076 |             0 |    33362 |    100000 |             0 | f
+
+Build coco_10k_build_100_prt_8_pool_30_8kb ...
+Build Time: Built index on coco_10k_build_100_prt_8_pool_30_8kb in 176.80 seconds
+ 479077 |     273252352 | coco_10k_build_100_prt_8_pool_30_8kb               |         2200 |  479079 |    16385 |      479077 |             0 |    33344 |    100000 |        479080 | t
+ 479082 |     273080320 | coco_10k_build_100_prt_8_pool_30_8kb_embedding_idx |         2200 |       0 |    16385 |      479082 |             0 |    33335 |    100000 |             0 | f
+
+Build coco_10k_build_100_prt_32_pool_30_8kb ...
+Build Time: Built index on coco_10k_build_100_prt_32_pool_30_8kb in 173.29 seconds
+ 479083 |     273252352 | coco_10k_build_100_prt_32_pool_30_8kb               |         2200 |  479085 |    16385 |      479083 |             0 |    33344 |    100000 |        479086 | t
+ 479088 |     273055744 | coco_10k_build_100_prt_32_pool_30_8kb_embedding_idx |         2200 |       0 |    16385 |      479088 |             0 |    33332 |    100000 |             0 | f
+
+Build coco_10k_build_100_prt_64_pool_30_8kb ...
+Build Time: Built index on coco_10k_build_100_prt_64_pool_30_8kb in 173.77 seconds
+ 479089 |     273252352 | coco_10k_build_100_prt_64_pool_30_8kb               |         2200 |  479091 |    16385 |      479089 |             0 |    33344 |    100000 |        479092 | t
+ 479094 |     273055744 | coco_10k_build_100_prt_64_pool_30_8kb_embedding_idx |         2200 |       0 |    16385 |      479094 |             0 |    33332 |    100000 |             0 | f
+
+Build coco_10k_build_100_prt_1_pool_30_8kb ...
+Build Time: Table coco_10k_build_100_prt_1_pool_30_8kb already exists. Skipping data insertion.
+Index already exists on coco_10k_build_100_prt_1_pool_30_8kb. Skipping index creation.
+ 479071 |     273268736 | coco_10k_build_100_prt_1_pool_30_8kb               |         2200 |  479073 |    16385 |      479071 |             0 |    33344 |    100000 |        479074 | t
+ 479076 |     273301504 | coco_10k_build_100_prt_1_pool_30_8kb_embedding_idx |         2200 |       0 |    16385 |      479076 |             0 |    33362 |    100000 |             0 | f
+
+Build coco_10k_build_100_prt_8_pool_30_8kb ...
+Build Time: Table coco_10k_build_100_prt_8_pool_30_8kb already exists. Skipping data insertion.
+Index already exists on coco_10k_build_100_prt_8_pool_30_8kb. Skipping index creation.
+ 479077 |     273268736 | coco_10k_build_100_prt_8_pool_30_8kb               |         2200 |  479079 |    16385 |      479077 |             0 |    33344 |    100003 |        479080 | t
+ 479082 |     273080320 | coco_10k_build_100_prt_8_pool_30_8kb_embedding_idx |         2200 |       0 |    16385 |      479082 |             0 |    33335 |    100003 |             0 | f
+
+Build coco_10k_build_100_prt_32_pool_30_8kb ...
+Build Time: Table coco_10k_build_100_prt_32_pool_30_8kb already exists. Skipping data insertion.
+Index already exists on coco_10k_build_100_prt_32_pool_30_8kb. Skipping index creation.
+ 479083 |     273268736 | coco_10k_build_100_prt_32_pool_30_8kb               |         2200 |  479085 |    16385 |      479083 |             0 |    33344 |    100000 |        479086 | t
+ 479088 |     273055744 | coco_10k_build_100_prt_32_pool_30_8kb_embedding_idx |         2200 |       0 |    16385 |      479088 |             0 |    33332 |    100000 |             0 | f
+
+Build coco_10k_build_100_prt_64_pool_30_8kb ...
+Build Time: Table coco_10k_build_100_prt_64_pool_30_8kb already exists. Skipping data insertion.
+Index already exists on coco_10k_build_100_prt_64_pool_30_8kb. Skipping index creation.
+ 479089 |     273268736 | coco_10k_build_100_prt_64_pool_30_8kb               |         2200 |  479091 |    16385 |      479089 |             0 |    33344 |     99996 |        479092 | t
+ 479094 |     273055744 | coco_10k_build_100_prt_64_pool_30_8kb_embedding_idx |         2200 |       0 |    16385 |      479094 |             0 |    33332 |     99996 |             0 | f
+
+Build coco_10k_build_100_prt_1_pool_30_8kb ...
+Build Time: Table coco_10k_build_100_prt_1_pool_30_8kb already exists. Skipping data insertion.
+Index already exists on coco_10k_build_100_prt_1_pool_30_8kb. Skipping index creation.
+ 479071 |     273268736 | coco_10k_build_100_prt_1_pool_30_8kb               |         2200 |  479073 |    16385 |      479071 |             0 |    33344 |    100000 |        479074 | t
+ 479076 |     273301504 | coco_10k_build_100_prt_1_pool_30_8kb_embedding_idx |         2200 |       0 |    16385 |      479076 |             0 |    33362 |    100000 |             0 | f
+
+Build coco_10k_build_100_prt_8_pool_30_8kb ...
+Build Time: Table coco_10k_build_100_prt_8_pool_30_8kb already exists. Skipping data insertion.
+Index already exists on coco_10k_build_100_prt_8_pool_30_8kb. Skipping index creation.
+ 479077 |     273268736 | coco_10k_build_100_prt_8_pool_30_8kb               |         2200 |  479079 |    16385 |      479077 |             0 |    33344 |    100003 |        479080 | t
+ 479082 |     273080320 | coco_10k_build_100_prt_8_pool_30_8kb_embedding_idx |         2200 |       0 |    16385 |      479082 |             0 |    33335 |    100003 |             0 | f
+
+Build coco_10k_build_100_prt_32_pool_30_8kb ...
+Build Time: Table coco_10k_build_100_prt_32_pool_30_8kb already exists. Skipping data insertion.
+Index already exists on coco_10k_build_100_prt_32_pool_30_8kb. Skipping index creation.
+ 479083 |     273268736 | coco_10k_build_100_prt_32_pool_30_8kb               |         2200 |  479085 |    16385 |      479083 |             0 |    33344 |    100000 |        479086 | t
+ 479088 |     273055744 | coco_10k_build_100_prt_32_pool_30_8kb_embedding_idx |         2200 |       0 |    16385 |      479088 |             0 |    33332 |    100000 |             0 | f
+
+Build coco_10k_build_100_prt_64_pool_30_8kb ...
+Build Time: Table coco_10k_build_100_prt_64_pool_30_8kb already exists. Skipping data insertion.
+Index already exists on coco_10k_build_100_prt_64_pool_30_8kb. Skipping index creation.
+ 479089 |     273268736 | coco_10k_build_100_prt_64_pool_30_8kb               |         2200 |  479091 |    16385 |      479089 |             0 |    33344 |     99996 |        479092 | t
+ 479094 |     273055744 | coco_10k_build_100_prt_64_pool_30_8kb_embedding_idx |         2200 |       0 |    16385 |      479094 |             0 |    33332 |     99996 |             0 | f
+
+Build coco_100k_build_100_prt_1_pool_30_8kb ...
+Build Time: Table coco_100k_build_100_prt_1_pool_30_8kb already exists. Skipping data insertion.
+Built index on coco_100k_build_100_prt_1_pool_30_8kb in 203.60 seconds
+ 396505 |     273268736 | coco_100k_build_100_prt_1_pool_30_8kb               |         2200 |  396507 |    16385 |      396505 |             0 |    33344 |    100000 |        396508 | t
+ 479095 |     273301504 | coco_100k_build_100_prt_1_pool_30_8kb_embedding_idx |         2200 |       0 |    16385 |      479095 |             0 |    33362 |    100000 |             0 | f
+
+Build coco_100k_build_100_prt_8_pool_30_8kb ...
+Build Time: Table coco_100k_build_100_prt_8_pool_30_8kb already exists. Skipping data insertion.
+Built index on coco_100k_build_100_prt_8_pool_30_8kb in 177.17 seconds
+ 396513 |     273268736 | coco_100k_build_100_prt_8_pool_30_8kb               |         2200 |  396515 |    16385 |      396513 |             0 |    33344 |    100000 |        396516 | t
+ 479096 |     273080320 | coco_100k_build_100_prt_8_pool_30_8kb_embedding_idx |         2200 |       0 |    16385 |      479096 |             0 |    33335 |    100000 |             0 | f
+
+Build coco_100k_build_100_prt_32_pool_30_8kb ...
+Build Time: Table coco_100k_build_100_prt_32_pool_30_8kb already exists. Skipping data insertion.
+Built index on coco_100k_build_100_prt_32_pool_30_8kb in 174.79 seconds
+ 396525 |     273268736 | coco_100k_build_100_prt_32_pool_30_8kb               |         2200 |  396527 |    16385 |      396525 |             0 |    33344 |    100000 |        396528 | t
+ 479097 |     273055744 | coco_100k_build_100_prt_32_pool_30_8kb_embedding_idx |         2200 |       0 |    16385 |      479097 |             0 |    33332 |    100000 |             0 | f
+
+Build coco_100k_build_100_prt_64_pool_30_8kb ...
+Build Time: Table coco_100k_build_100_prt_64_pool_30_8kb already exists. Skipping data insertion.
+Built index on coco_100k_build_100_prt_64_pool_30_8kb in 174.48 seconds
+ 396531 |     273268736 | coco_100k_build_100_prt_64_pool_30_8kb               |         2200 |  396533 |    16385 |      396531 |             0 |    33344 |    100000 |        396534 | t
+ 479098 |     273055744 | coco_100k_build_100_prt_64_pool_30_8kb_embedding_idx |         2200 |       0 |    16385 |      479098 |             0 |    33332 |    100000 |             0 | f
+
+Build coco_100k_build_100_prt_3_pool_30_8kb ...
+Build Time: Built index on coco_100k_build_100_prt_3_pool_30_8kb in 183.26 seconds
+ 479099 |     273252352 | coco_100k_build_100_prt_3_pool_30_8kb               |         2200 |  479101 |    16385 |      479099 |             0 |    33344 |    100000 |        479102 | t
+ 479104 |     273137664 | coco_100k_build_100_prt_3_pool_30_8kb_embedding_idx |         2200 |       0 |    16385 |      479104 |             0 |    33342 |    100000 |             0 | f
+
+Build deep_100k_build_100_prt_1_pool_30_8kb ...
+Build Time: Table deep_100k_build_100_prt_1_pool_30_8kb already exists. Skipping data insertion.
+Index already exists on deep_100k_build_100_prt_1_pool_30_8kb. Skipping index creation.
+ 396389 |      82329600 | deep_100k_build_100_prt_1_pool_30_8kb_embedding_idx |         2200 |       0 |    16385 |      396389 |             0 |    10050 |    100000 |             0 | f
+ 396384 |      43302912 | deep_100k_build_100_prt_1_pool_30_8kb               |         2200 |  396386 |    16385 |      396384 |             0 |     5280 |    100000 |        396387 | t
+
+Build deep_100k_build_100_prt_64_pool_30_8kb ...
+Build Time: Table deep_100k_build_100_prt_64_pool_30_8kb already exists. Skipping data insertion.
+Index already exists on deep_100k_build_100_prt_64_pool_30_8kb. Skipping index creation.
+ 396413 |      43302912 | deep_100k_build_100_prt_64_pool_30_8kb               |         2200 |  396415 |    16385 |      396413 |             0 |     5280 |    100000 |        396416 | t
+ 404846 |      82018304 | deep_100k_build_100_prt_64_pool_30_8kb_embedding_idx |         2200 |       0 |    16385 |      404846 |             0 |    10012 |    100000 |             0 | f
+
+Build nyt_100k_build_100_prt_1_pool_30_8kb ...
+Build deep_100k_build_100_prt_1_pool_30_8kb ...
+Build Time: Built index on deep_100k_build_100_prt_1_pool_30_8kb in 111.07 seconds
+ 479106 |      43212800 | deep_100k_build_100_prt_1_pool_30_8kb               |         2200 |  479108 |    16385 |      479106 |             0 |     5270 |    100000 |        479109 | t
+ 479111 |      82264064 | deep_100k_build_100_prt_1_pool_30_8kb_embedding_idx |         2200 |       0 |    16385 |      479111 |             0 |    10042 |    100000 |             0 | f
+
+Build deep_100k_build_100_prt_64_pool_30_8kb ...
+Build Time: Built index on deep_100k_build_100_prt_64_pool_30_8kb in 81.89 seconds
+ 479112 |      43212800 | deep_100k_build_100_prt_64_pool_30_8kb               |         2200 |  479114 |    16385 |      479112 |             0 |     5270 |    100000 |        479115 | t
+ 479117 |      82034688 | deep_100k_build_100_prt_64_pool_30_8kb_embedding_idx |         2200 |       0 |    16385 |      479117 |             0 |    10014 |    100000 |             0 | f
+
+Build nyt_100k_build_100_prt_1_pool_30_8kb ...
+Build Time: Built index on nyt_100k_build_100_prt_1_pool_30_8kb in 327.76 seconds
+ 479119 |     117178368 | nyt_100k_build_100_prt_1_pool_30_8kb               |         2200 |  479121 |    16385 |      479119 |             0 |    14297 |    100000 |        479122 | t
+ 479124 |     153124864 | nyt_100k_build_100_prt_1_pool_30_8kb_embedding_idx |         2200 |       0 |    16385 |      479124 |             0 |    18692 |     99921 |             0 | f
+
+Build nyt_100k_build_100_prt_64_pool_30_8kb ...
+Build Time: Built index on nyt_100k_build_100_prt_64_pool_30_8kb in 301.06 seconds
+ 479126 |     117178368 | nyt_100k_build_100_prt_64_pool_30_8kb               |         2200 |  479128 |    16385 |      479126 |             0 |    14297 |    100000 |        479129 | t
+ 479131 |     152887296 | nyt_100k_build_100_prt_64_pool_30_8kb_embedding_idx |         2200 |       0 |    16385 |      479131 |             0 |    18663 |     99921 |             0 | f
+
+Build glove_100k_build_100_prt_1_pool_30_8kb ...
+Build Time: Built index on glove_100k_build_100_prt_1_pool_30_8kb in 253.14 seconds
+ 479132 |      91127808 | glove_100k_build_100_prt_1_pool_30_8kb               |         2200 |  479134 |    16385 |      479132 |             0 |    11118 |    100000 |        479135 | t
+ 479137 |     136798208 | glove_100k_build_100_prt_1_pool_30_8kb_embedding_idx |         2200 |       0 |    16385 |      479137 |             0 |    16699 |    100000 |             0 | f
+
+Build glove_100k_build_100_prt_64_pool_30_8kb ...
+Build Time: Built index on glove_100k_build_100_prt_64_pool_30_8kb in 232.87 seconds
+ 479138 |      91127808 | glove_100k_build_100_prt_64_pool_30_8kb               |         2200 |  479140 |    16385 |      479138 |             0 |    11118 |    100000 |        479141 | t
+ 479143 |     136552448 | glove_100k_build_100_prt_64_pool_30_8kb_embedding_idx |         2200 |       0 |    16385 |      479143 |             0 |    16669 |    100000 |             0 | f
+
+Build coco_100k_build_100_prt_1_pool_30_8kb ...
+Build Time: Built index on coco_100k_build_100_prt_1_pool_30_8kb in 203.76 seconds
+ 479145 |     273195008 | coco_100k_build_100_prt_1_pool_30_8kb               |         2200 |  479147 |    16385 |      479145 |             0 |    33337 |    100000 |        479148 | t
+ 479150 |     273301504 | coco_100k_build_100_prt_1_pool_30_8kb_embedding_idx |         2200 |       0 |    16385 |      479150 |             0 |    33362 |    100000 |             0 | f
+
+Build coco_100k_build_100_prt_64_pool_30_8kb ...
+Build Time: Built index on coco_100k_build_100_prt_64_pool_30_8kb in 174.99 seconds
+ 479152 |     273195008 | coco_100k_build_100_prt_64_pool_30_8kb               |         2200 |  479154 |    16385 |      479152 |             0 |    33337 |    100000 |        479155 | t
+ 479157 |     273055744 | coco_100k_build_100_prt_64_pool_30_8kb_embedding_idx |         2200 |       0 |    16385 |      479157 |             0 |    33332 |    100000 |             0 | f
+
+Build deep_99k_build_100_prt_1_pool_30_8kb ...
+Build deep_99k_build_100_prt_64_pool_30_8kb ...
+Build Time: Built index on deep_99k_build_100_prt_64_pool_30_8kb in 365.17 seconds
+ 487350 |      43212800 | deep_99k_build_100_prt_64_pool_30_8kb               |         2200 |  487352 |    16385 |      487350 |             0 |     5270 |     99999 |        487353 | t
+ 487355 |      82034688 | deep_99k_build_100_prt_64_pool_30_8kb_embedding_idx |         2200 |       0 |    16385 |      487355 |             0 |    10014 |     99999 |             0 | f
+
+Build nyt_99k_build_100_prt_64_pool_30_8kb ...
+Build Time: Built index on nyt_99k_build_100_prt_64_pool_30_8kb in 571.44 seconds
+ 487356 |     117178368 | nyt_99k_build_100_prt_64_pool_30_8kb               |         2200 |  487358 |    16385 |      487356 |             0 |    14297 |     99999 |        487359 | t
+ 487361 |     152887296 | nyt_99k_build_100_prt_64_pool_30_8kb_embedding_idx |         2200 |       0 |    16385 |      487361 |             0 |    18663 |     99920 |             0 | f
+
+Build glove_99k_build_100_prt_64_pool_30_8kb ...
+Build Time: Built index on glove_99k_build_100_prt_64_pool_30_8kb in 498.60 seconds
+ 487363 |      91127808 | glove_99k_build_100_prt_64_pool_30_8kb               |         2200 |  487365 |    16385 |      487363 |             0 |    11118 |     99999 |        487366 | t
+ 487368 |     136552448 | glove_99k_build_100_prt_64_pool_30_8kb_embedding_idx |         2200 |       0 |    16385 |      487368 |             0 |    16669 |     99999 |             0 | f
+
+Build coco_99k_build_100_prt_64_pool_30_8kb ...
+Build Time: Built index on coco_99k_build_100_prt_64_pool_30_8kb in 462.06 seconds
+ 487369 |     273195008 | coco_99k_build_100_prt_64_pool_30_8kb               |         2200 |  487371 |    16385 |      487369 |             0 |    33337 |     99999 |        487372 | t
+ 487374 |     273055744 | coco_99k_build_100_prt_64_pool_30_8kb_embedding_idx |         2200 |       0 |    16385 |      487374 |             0 |    33332 |     99999 |             0 | f
+

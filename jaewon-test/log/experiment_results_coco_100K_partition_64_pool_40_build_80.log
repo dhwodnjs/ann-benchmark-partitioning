@@ -1,0 +1,5 @@
+Starting experiment with partition size 64 pool size 500 ...
+Index Stats for Data Ratio=80%, Table = items:
+ 213922 |     273252352 | items   |         2200 |  213924 |    16385 |      213922 |             0 |        0 |        -1 |        213925 | f
+Build Time: , Insert Time: 
+Testing with shared_buffers = 163828531B (60%), Data Ratio = 80%, Table = items

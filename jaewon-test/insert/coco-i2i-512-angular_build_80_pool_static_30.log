@@ -1,0 +1,30 @@
+Starting experiment with Build Ratio=80%, Pool Ratio=pool_static_30 ...
+Index Stats for Build Ratio=80%, Pool Ratio=pool_static_30:
+ 313538 |     273178624 | items               |         2200 |  313540 |    16385 |      313538 |             0 |    33334 |    100000 |        313541 | t
+ 313543 |     274415616 | items_embedding_idx |         2200 |       0 |    16385 |      313543 |             0 |    33498 |    100000 |             0 | f
+Build Time: Built index on items in 156.76 seconds, Insert Time: Inserted 20000 rows into items in 246.08 seconds.
+Testing with shared_buffers = 27441561B (10%), Build Ratio=80%, Pool Ratio=pool_static_30}
+Search completed in 25.48 seconds.
+Index Hit Ratio for shared_buffers=27441561B (10%), Build Ratio=80%, Pool Ratio=pool_static_30:
+ items               |      2761242 |       3969042 |           41.03
+---------------------------------
+Testing with shared_buffers = 54883123B (20%), Build Ratio=80%, Pool Ratio=pool_static_30}
+Search completed in 24.44 seconds.
+Index Hit Ratio for shared_buffers=54883123B (20%), Build Ratio=80%, Pool Ratio=pool_static_30:
+ items               |      3344753 |       3385531 |           49.70
+---------------------------------
+Testing with shared_buffers = 82324684B (30%), Build Ratio=80%, Pool Ratio=pool_static_30}
+Search completed in 25.09 seconds.
+Index Hit Ratio for shared_buffers=82324684B (30%), Build Ratio=80%, Pool Ratio=pool_static_30:
+ items               |      3866560 |       2863724 |           57.45
+---------------------------------
+Testing with shared_buffers = 109766246B (40%), Build Ratio=80%, Pool Ratio=pool_static_30}
+Search completed in 23.66 seconds.
+Index Hit Ratio for shared_buffers=109766246B (40%), Build Ratio=80%, Pool Ratio=pool_static_30:
+ items               |      4355918 |       2374366 |           64.72
+---------------------------------
+Testing with shared_buffers = 137207808B (50%), Build Ratio=80%, Pool Ratio=pool_static_30}
+Search completed in 21.63 seconds.
+Index Hit Ratio for shared_buffers=137207808B (50%), Build Ratio=80%, Pool Ratio=pool_static_30:
+ items               |      4822560 |       1907724 |           71.65
+---------------------------------

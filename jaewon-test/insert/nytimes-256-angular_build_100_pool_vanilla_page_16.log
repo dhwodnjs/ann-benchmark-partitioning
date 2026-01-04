@@ -1,0 +1,12 @@
+Starting experiment with Build Ratio=100%  ...
+Index Stats for Build Ratio=100%, Pool Ratio=pool_vanilla:
+ 41407 |     109379584 | items               |         2200 |   41409 |    16385 |       41407 |             0 |     6672 |    100000 |         41410 | t
+ 41412 |     127451136 | items_embedding_idx |         2200 |       0 |    16385 |       41412 |             0 |     7779 |    100000 |             0 | f
+Build Time: Built index on items in 81.71 seconds, Insert Time: Inserted 0 rows into items in 0.00 seconds.
+Testing with shared_buffers = 63725568B (50%), Build Ratio=100%, Pool Ratio=pool_vanilla
+PostgreSQL Page Size (block_size):  16384 bytes
+Actual shared_buffers:  62240kB
+Search completed in 314.67 seconds.
+Index Hit Ratio for shared_buffers=63725568B (50%), Build Ratio=100%, Pool Ratio=pool_vanilla:
+ items               |      7908997 |       3931150 |           66.80
+---------------------------------

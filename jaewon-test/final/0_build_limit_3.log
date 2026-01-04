@@ -1,0 +1,249 @@
+Build {DATA_NAME}_99k_build_100_prt_64_pool_30 ...
+Build Time: 
+
+
+Build {DATA_NAME}_99k_build_100_prt_64_pool_30 ...
+Build Time: 
+
+
+Build {DATA_NAME}_99k_build_100_prt_64_pool_30 ...
+Build Time: 
+
+
+Build {DATA_NAME}_99k_build_100_prt_64_pool_30 ...
+Build lim3_deep_99k_build_100_prt_64_pool_30 ...
+Build Time: Built index on lim3_deep_99k_build_100_prt_64_pool_30 in 81.32 seconds
+ 487376 |      43212800 | lim3_deep_99k_build_100_prt_64_pool_30               |         2200 |  487378 |    16385 |      487376 |             0 |     5270 |     99999 |        487379 | t
+ 487381 |     273055744 | lim3_deep_99k_build_100_prt_64_pool_30_embedding_idx |         2200 |       0 |    16385 |      487381 |             0 |    33332 |     99999 |             0 | f
+
+Build lim3_nyt_99k_build_100_prt_64_pool_30 ...
+Build Time: Built index on lim3_nyt_99k_build_100_prt_64_pool_30 in 302.48 seconds
+ 487382 |     117178368 | lim3_nyt_99k_build_100_prt_64_pool_30               |         2200 |  487384 |    16385 |      487382 |             0 |    14297 |     99999 |        487385 | t
+ 487387 |     254795776 | lim3_nyt_99k_build_100_prt_64_pool_30_embedding_idx |         2200 |       0 |    16385 |      487387 |             0 |    31103 |     99920 |             0 | f
+
+Build lim3_glove_99k_build_100_prt_64_pool_30 ...
+Build Time: Built index on lim3_glove_99k_build_100_prt_64_pool_30 in 218.03 seconds
+ 487389 |      91127808 | lim3_glove_99k_build_100_prt_64_pool_30               |         2200 |  487391 |    16385 |      487389 |             0 |    11118 |     99999 |        487392 | t
+ 487394 |     273080320 | lim3_glove_99k_build_100_prt_64_pool_30_embedding_idx |         2200 |       0 |    16385 |      487394 |             0 |    33335 |     99999 |             0 | f
+
+Build lim3_coco_99k_build_100_prt_64_pool_30 ...
+Build Time: Built index on lim3_coco_99k_build_100_prt_64_pool_30 in 175.75 seconds
+ 487395 |     273195008 | lim3_coco_99k_build_100_prt_64_pool_30               |         2200 |  487397 |    16385 |      487395 |             0 |    33337 |     99999 |        487398 | t
+ 487400 |     273055744 | lim3_coco_99k_build_100_prt_64_pool_30_embedding_idx |         2200 |       0 |    16385 |      487400 |             0 |    33332 |     99999 |             0 | f
+
+Build lim3_deep_99k_build_100_prt_64_pool_30 ...
+Build Time: Table lim3_deep_99k_build_100_prt_64_pool_30 already exists. Skipping data insertion.
+Index already exists on lim3_deep_99k_build_100_prt_64_pool_30. Skipping index creation.
+ 487376 |      43220992 | lim3_deep_99k_build_100_prt_64_pool_30               |         2200 |  487378 |    16385 |      487376 |             0 |     5270 |     99999 |        487379 | t
+ 487381 |     273055744 | lim3_deep_99k_build_100_prt_64_pool_30_embedding_idx |         2200 |       0 |    16385 |      487381 |             0 |    33332 |     99999 |             0 | f
+
+Build lim3_deep_99k_build_100_prt_64_pool_30 ...
+Build Time: Table lim3_deep_99k_build_100_prt_64_pool_30 already exists. Skipping data insertion.
+Index already exists on lim3_deep_99k_build_100_prt_64_pool_30. Skipping index creation.
+ 487376 |      43220992 | lim3_deep_99k_build_100_prt_64_pool_30               |         2200 |  487378 |    16385 |      487376 |             0 |     5270 |     99999 |        487379 | t
+ 487381 |     273055744 | lim3_deep_99k_build_100_prt_64_pool_30_embedding_idx |         2200 |       0 |    16385 |      487381 |             0 |    33332 |     99999 |             0 | f
+
+Build lim3_deep_99k_build_100_prt_64_pool_30 ...
+Build Time: Table lim3_deep_99k_build_100_prt_64_pool_30 already exists. Skipping data insertion.
+Built index on lim3_deep_99k_build_100_prt_64_pool_30 in 96.04 seconds
+ 487376 |      43220992 | lim3_deep_99k_build_100_prt_64_pool_30               |         2200 |  487378 |    16385 |      487376 |             0 |     5270 |     99999 |        487379 | t
+ 487403 |     273055744 | lim3_deep_99k_build_100_prt_64_pool_30_embedding_idx |         2200 |       0 |    16385 |      487403 |             0 |    33332 |     99999 |             0 | f
+
+Build lim3_deep_99k_build_100_prt_64_pool_30 ...
+Build Time: Table lim3_deep_99k_build_100_prt_64_pool_30 already exists. Skipping data insertion.
+
+
+Build deep_99k_build_100_prt_64_pool_30 ...
+Build Time: 
+
+
+Build deep_99k_build_100_prt_64_pool_30 ...
+Build Time: Table deep_99k_build_100_prt_64_pool_30 already exists. Skipping data insertion.
+ 586465 |      43212800 | deep_99k_build_100_prt_64_pool_30 |         2200 |  586467 |    16385 |      586465 |             0 |        0 |        -1 |        586468 | f
+
+Build deep_99k_build_100_prt_64_pool_30 ...
+Build deep_99k_build_100_prt_64_pool_30 ...
+Build Time: Table deep_99k_build_100_prt_64_pool_30 already exists. Skipping data insertion.
+Built index on deep_99k_build_100_prt_64_pool_30 in 81.89 seconds
+ 594985 |      43212800 | deep_99k_build_100_prt_64_pool_30               |         2200 |  594987 |    16385 |      594985 |             0 |     5270 |     99999 |        594988 | t
+ 594991 |      82051072 | deep_99k_build_100_prt_64_pool_30_embedding_idx |         2200 |       0 |    16385 |      594991 |             0 |    10016 |     99999 |             0 | f
+
+Build deep_99k_build_100_prt_64_pool_30 ...
+Build Time: Table deep_99k_build_100_prt_64_pool_30 already exists. Skipping data insertion.
+Index already exists on deep_99k_build_100_prt_64_pool_30. Skipping index creation.
+ 594985 |      43212800 | deep_99k_build_100_prt_64_pool_30               |         2200 |  594987 |    16385 |      594985 |             0 |     5270 |     99999 |        594988 | t
+ 594991 |      82051072 | deep_99k_build_100_prt_64_pool_30_embedding_idx |         2200 |       0 |    16385 |      594991 |             0 |    10016 |     99999 |             0 | f
+
+Build deep_99k_build_100_prt_64_pool_30 ...
+Build Time: Built index on deep_99k_build_100_prt_64_pool_30 in 82.33 seconds
+ 594992 |      43212800 | deep_99k_build_100_prt_64_pool_30               |         2200 |  594994 |    16385 |      594992 |             0 |     5270 |     99999 |        594995 | t
+ 594997 |      82034688 | deep_99k_build_100_prt_64_pool_30_embedding_idx |         2200 |       0 |    16385 |      594997 |             0 |    10014 |     99999 |             0 | f
+
+Build deep_99k_build_100_prt_64_pool_30 ...
+Build Time: Table deep_99k_build_100_prt_64_pool_30 already exists. Skipping data insertion.
+Index already exists on deep_99k_build_100_prt_64_pool_30. Skipping index creation.
+ 594992 |      43212800 | deep_99k_build_100_prt_64_pool_30               |         2200 |  594994 |    16385 |      594992 |             0 |     5270 |     99999 |        594995 | t
+ 594997 |      82034688 | deep_99k_build_100_prt_64_pool_30_embedding_idx |         2200 |       0 |    16385 |      594997 |             0 |    10014 |     99999 |             0 | f
+
+Build deep_99k_build_100_prt_64_pool_30 ...
+Build Time: 
+
+
+Build deep_99k_build_100_prt_64_pool_30 ...
+Build deep_99k_build_100_prt_64_pool_30 ...
+Build Time: Built index on deep_99k_build_100_prt_64_pool_30 in 84.52 seconds
+ 603190 |      43212800 | deep_99k_build_100_prt_64_pool_30               |         2200 |  603192 |    16385 |      603190 |             0 |     5270 |     99999 |        603193 | t
+ 603195 |      82051072 | deep_99k_build_100_prt_64_pool_30_embedding_idx |         2200 |       0 |    16385 |      603195 |             0 |    10016 |     99999 |             0 | f
+
+Build deep_99k_build_100_prt_64_pool_30 ...
+Build Time: Built index on deep_99k_build_100_prt_64_pool_30 in 83.90 seconds
+ 603196 |      43212800 | deep_99k_build_100_prt_64_pool_30               |         2200 |  603198 |    16385 |      603196 |             0 |     5270 |     99999 |        603199 | t
+ 603201 |      82026496 | deep_99k_build_100_prt_64_pool_30_embedding_idx |         2200 |       0 |    16385 |      603201 |             0 |    10013 |     99999 |             0 | f
+
+Build deep_99k_build_100_prt_64_pool_30 ...
+Build Time: 
+
+
+Build deep_99k_build_100_prt_64_pool_30 ...
+Build Time: Table deep_99k_build_100_prt_64_pool_30 already exists. Skipping data insertion.
+
+
+Build deep_99k_build_100_prt_64_pool_30 ...
+Build deep_99k_build_100_prt_64_pool_30 ...
+Build deep_99k_build_100_prt_64_pool_30 ...
+Build Time: Table deep_99k_build_100_prt_64_pool_30 already exists. Skipping data insertion.
+Built index on deep_99k_build_100_prt_64_pool_30 in 215.00 seconds
+ 603202 |      43212800 | deep_99k_build_100_prt_64_pool_30               |         2200 |  603204 |    16385 |      603202 |             0 |     5270 |     99999 |        603205 | t
+ 619586 |      82034688 | deep_99k_build_100_prt_64_pool_30_embedding_idx |         2200 |       0 |    16385 |      619586 |             0 |    10014 |     99999 |             0 | f
+
+Build deep_99k_build_100_prt_64_pool_30 ...
+Build Time: Built index on deep_99k_build_100_prt_64_pool_30 in 231.95 seconds
+ 619587 |      43212800 | deep_99k_build_100_prt_64_pool_30               |         2200 |  619589 |    16385 |      619587 |             0 |     5270 |     99999 |        619590 | t
+ 619592 |      82042880 | deep_99k_build_100_prt_64_pool_30_embedding_idx |         2200 |       0 |    16385 |      619592 |             0 |    10015 |     99999 |             0 | f
+
+Build deep_99k_build_100_prt_64_pool_30 ...
+Build deep_99k_build_100_prt_64_pool_30 ...
+Build Time: Built index on deep_99k_build_100_prt_64_pool_30 in 237.50 seconds
+ 619593 |      43212800 | deep_99k_build_100_prt_64_pool_30               |         2200 |  619595 |    16385 |      619593 |             0 |     5270 |     99999 |        619596 | t
+ 619598 |      82042880 | deep_99k_build_100_prt_64_pool_30_embedding_idx |         2200 |       0 |    16385 |      619598 |             0 |    10015 |     99999 |             0 | f
+
+Build deep_99k_build_100_prt_64_pool_30 ...
+Build Time: Built index on deep_99k_build_100_prt_64_pool_30 in 233.18 seconds
+ 619599 |      43163648 | deep_99k_build_100_prt_64_pool_30               |         2200 |  619601 |    16385 |      619599 |             0 |     5264 |     99999 |        619602 | t
+ 619604 |      82034688 | deep_99k_build_100_prt_64_pool_30_embedding_idx |         2200 |       0 |    16385 |      619604 |             0 |    10014 |     99999 |             0 | f
+
+Build deep_99k_build_100_prt_64_pool_30 ...
+Build Time: Table deep_99k_build_100_prt_64_pool_30 already exists. Skipping data insertion.
+Index already exists on deep_99k_build_100_prt_64_pool_30. Skipping index creation.
+ 619599 |      43163648 | deep_99k_build_100_prt_64_pool_30               |         2200 |  619601 |    16385 |      619599 |             0 |     5264 |     99999 |        619602 | t
+ 619604 |      82034688 | deep_99k_build_100_prt_64_pool_30_embedding_idx |         2200 |       0 |    16385 |      619604 |             0 |    10014 |     99999 |             0 | f
+
+Build deep_99k_build_100_prt_64_pool_30 ...
+Build Time: 
+
+
+Build deep_99k_build_100_prt_64_pool_30 ...
+Build deep_99k_build_100_prt_64_pool_30 ...
+Build deep_99k_build_100_prt_64_pool_30 ...
+Build deep_99k_build_100_prt_64_pool_30 ...
+Build Time: Table deep_99k_build_100_prt_64_pool_30 already exists. Skipping data insertion.
+ 619605 |      43163648 | deep_99k_build_100_prt_64_pool_30 |         2200 |  619607 |    16385 |      619605 |             0 |        0 |        -1 |        619608 | f
+
+Build deep_99k_build_100_prt_64_pool_30 ...
+Build Time: Table deep_99k_build_100_prt_64_pool_30 already exists. Skipping data insertion.
+Built index on deep_99k_build_100_prt_64_pool_30 in 215.57 seconds
+ 635992 |      82034688 | deep_99k_build_100_prt_64_pool_30_embedding_idx |         2200 |       0 |    16385 |      635992 |             0 |    10014 |     99999 |             0 | f
+ 619605 |      43163648 | deep_99k_build_100_prt_64_pool_30               |         2200 |  619607 |    16385 |      619605 |             0 |     5264 |     99999 |        619608 | t
+
+Build deep_99k_build_100_prt_64_pool_30 ...
+Build deep_99k_build_100_prt_64_pool_30 ...
+Build Time: Table deep_99k_build_100_prt_64_pool_30 already exists. Skipping data insertion.
+ 635993 |      43163648 | deep_99k_build_100_prt_64_pool_30 |         2200 |  635995 |    16385 |      635993 |             0 |        0 |        -1 |        635996 | f
+
+Build deep_99k_build_100_prt_64_pool_30 ...
+Build Time: 
+
+
+Build deep_50k_build_100_prt_64_pool_30 ...
+Build Time: Built index on deep_50k_build_100_prt_64_pool_30 in 102.63 seconds
+ 652383 |      21594112 | deep_50k_build_100_prt_64_pool_30               |         2200 |  652385 |    16385 |      652383 |             0 |     2632 |     50000 |        652386 | t
+ 652388 |      41017344 | deep_50k_build_100_prt_64_pool_30_embedding_idx |         2200 |       0 |    16385 |      652388 |             0 |     5007 |     50000 |             0 | f
+
+Build nyt_50k_build_100_prt_64_pool_30 ...
+Build Time: Built index on nyt_50k_build_100_prt_64_pool_30 in 416.33 seconds
+ 652389 |      58556416 | nyt_50k_build_100_prt_64_pool_30               |         2200 |  652391 |    16385 |      652389 |             0 |     7143 |     50000 |        652392 | t
+ 652394 |      78700544 | nyt_50k_build_100_prt_64_pool_30_embedding_idx |         2200 |       0 |    16385 |      652394 |             0 |     9607 |     49964 |             0 | f
+
+Build glove_50k_build_100_prt_64_pool_30 ...
+Build Time: Built index on glove_50k_build_100_prt_64_pool_30 in 288.40 seconds
+ 652396 |      45555712 | glove_50k_build_100_prt_64_pool_30               |         2200 |  652398 |    16385 |      652396 |             0 |     5556 |     50000 |        652399 | t
+ 652401 |      68280320 | glove_50k_build_100_prt_64_pool_30_embedding_idx |         2200 |       0 |    16385 |      652401 |             0 |     8335 |     50000 |             0 | f
+
+Build coco_50k_build_100_prt_64_pool_30 ...
+Build Time: 
+
+
+Build deep_10k_build_100_prt_64_pool_30 ...
+Build Time: Built index on deep_10k_build_100_prt_64_pool_30 in 16.94 seconds
+ 660594 |       4349952 | deep_10k_build_100_prt_64_pool_30               |         2200 |  660596 |    16385 |      660594 |             0 |      527 |     10000 |        660597 | t
+ 660599 |       8216576 | deep_10k_build_100_prt_64_pool_30_embedding_idx |         2200 |       0 |    16385 |      660599 |             0 |     1003 |     10000 |             0 | f
+
+Build nyt_10k_build_100_prt_64_pool_30 ...
+Build Time: Built index on nyt_10k_build_100_prt_64_pool_30 in 63.37 seconds
+ 660600 |      11739136 | nyt_10k_build_100_prt_64_pool_30               |         2200 |  660602 |    16385 |      660600 |             0 |     1429 |     10000 |        660603 | t
+ 660605 |      16211968 | nyt_10k_build_100_prt_64_pool_30_embedding_idx |         2200 |       0 |    16385 |      660605 |             0 |     1979 |      9991 |             0 | f
+
+Build glove_10k_build_100_prt_64_pool_30 ...
+Build Time: Built index on glove_10k_build_100_prt_64_pool_30 in 42.21 seconds
+ 660607 |       9142272 | glove_10k_build_100_prt_64_pool_30               |         2200 |  660609 |    16385 |      660607 |             0 |     1112 |     10000 |        660610 | t
+ 660612 |      13664256 | glove_10k_build_100_prt_64_pool_30_embedding_idx |         2200 |       0 |    16385 |      660612 |             0 |     1668 |     10000 |             0 | f
+
+Build coco_10k_build_100_prt_64_pool_30 ...
+Build Time: Built index on coco_10k_build_100_prt_64_pool_30 in 40.19 seconds
+ 660613 |      27344896 | coco_10k_build_100_prt_64_pool_30               |         2200 |  660615 |    16385 |      660613 |             0 |     3334 |     10000 |        660616 | t
+ 660618 |      27320320 | coco_10k_build_100_prt_64_pool_30_embedding_idx |         2200 |       0 |    16385 |      660618 |             0 |     3335 |     10000 |             0 | f
+
+Build deep_10k_build_100_prt_64_pool_30 ...
+Build Time: Table deep_10k_build_100_prt_64_pool_30 already exists. Skipping data insertion.
+Index already exists on deep_10k_build_100_prt_64_pool_30. Skipping index creation.
+ 660594 |       4358144 | deep_10k_build_100_prt_64_pool_30               |         2200 |  660596 |    16385 |      660594 |             0 |      527 |     10000 |        660597 | t
+ 660599 |       8216576 | deep_10k_build_100_prt_64_pool_30_embedding_idx |         2200 |       0 |    16385 |      660599 |             0 |     1003 |     10000 |             0 | f
+
+Build nyt_10k_build_100_prt_64_pool_30 ...
+Build deep_10k_build_100_prt_64_pool_30 ...
+Build Time: Table deep_10k_build_100_prt_64_pool_30 already exists. Skipping data insertion.
+Built index on deep_10k_build_100_prt_64_pool_30 in 17.11 seconds
+ 660594 |       4358144 | deep_10k_build_100_prt_64_pool_30               |         2200 |  660596 |    16385 |      660594 |             0 |      527 |     10000 |        660597 | t
+ 660619 |      27328512 | deep_10k_build_100_prt_64_pool_30_embedding_idx |         2200 |       0 |    16385 |      660619 |             0 |     3336 |     10000 |             0 | f
+
+Build nyt_10k_build_100_prt_64_pool_30 ...
+Build Time: Table nyt_10k_build_100_prt_64_pool_30 already exists. Skipping data insertion.
+Built index on nyt_10k_build_100_prt_64_pool_30 in 25.58 seconds
+ 660600 |      11739136 | nyt_10k_build_100_prt_64_pool_30               |         2200 |  660602 |    16385 |      660600 |             0 |     1429 |     10000 |        660603 | t
+ 660620 |      27025408 | nyt_10k_build_100_prt_64_pool_30_embedding_idx |         2200 |       0 |    16385 |      660620 |             0 |     3299 |      9991 |             0 | f
+
+Build glove_10k_build_100_prt_64_pool_30 ...
+Build deep_10k_build_100_prt_64_pool_30 ...
+Build Time: Table deep_10k_build_100_prt_64_pool_30 already exists. Skipping data insertion.
+Built index on deep_10k_build_100_prt_64_pool_30 in 17.18 seconds
+ 660594 |       4358144 | deep_10k_build_100_prt_64_pool_30               |         2200 |  660596 |    16385 |      660594 |             0 |      527 |     10000 |        660597 | t
+ 660621 |       8232960 | deep_10k_build_100_prt_64_pool_30_embedding_idx |         2200 |       0 |    16385 |      660621 |             0 |     1005 |     10000 |             0 | f
+
+Build nyt_10k_build_100_prt_64_pool_30 ...
+Build Time: Table nyt_10k_build_100_prt_64_pool_30 already exists. Skipping data insertion.
+Built index on nyt_10k_build_100_prt_64_pool_30 in 26.08 seconds
+ 660600 |      11739136 | nyt_10k_build_100_prt_64_pool_30               |         2200 |  660602 |    16385 |      660600 |             0 |     1429 |     10000 |        660603 | t
+ 660622 |      16220160 | nyt_10k_build_100_prt_64_pool_30_embedding_idx |         2200 |       0 |    16385 |      660622 |             0 |     1980 |      9991 |             0 | f
+
+Build glove_10k_build_100_prt_64_pool_30 ...
+Build Time: Table glove_10k_build_100_prt_64_pool_30 already exists. Skipping data insertion.
+Built index on glove_10k_build_100_prt_64_pool_30 in 18.53 seconds
+ 660607 |       9142272 | glove_10k_build_100_prt_64_pool_30               |         2200 |  660609 |    16385 |      660607 |             0 |     1112 |     10000 |        660610 | t
+ 660623 |      13672448 | glove_10k_build_100_prt_64_pool_30_embedding_idx |         2200 |       0 |    16385 |      660623 |             0 |     1669 |     10000 |             0 | f
+
+Build coco_10k_build_100_prt_64_pool_30 ...
+Build Time: Table coco_10k_build_100_prt_64_pool_30 already exists. Skipping data insertion.
+Built index on coco_10k_build_100_prt_64_pool_30 in 17.43 seconds
+ 660613 |      27344896 | coco_10k_build_100_prt_64_pool_30               |         2200 |  660615 |    16385 |      660613 |             0 |     3334 |     10000 |        660616 | t
+ 660624 |      27328512 | coco_10k_build_100_prt_64_pool_30_embedding_idx |         2200 |       0 |    16385 |      660624 |             0 |     3336 |     10000 |             0 | f
+

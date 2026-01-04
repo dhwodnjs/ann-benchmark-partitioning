@@ -1,0 +1,5 @@
+Starting experiment with partition size 64 pool size 0 ...
+Index Stats for Data Ratio=40%, Table = items:
+
+Build Time: , Insert Time: 
+Testing with shared_buffers = 163828531B (60%), Data Ratio = 40%, Table = items

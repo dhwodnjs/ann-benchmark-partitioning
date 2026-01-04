@@ -1,0 +1,30 @@
+Starting experiment with Build Ratio=60%, Pool Ratio=pool_20 ...
+Index Stats for Build Ratio=60%, Pool Ratio=pool_20:
+ 288265 |      43171840 | items               |         2200 |  288267 |    16385 |      288265 |             0 |     5264 |    100000 |        288268 | t
+ 288270 |      72261632 | items_embedding_idx |         2200 |       0 |    16385 |      288270 |             0 |     8821 |    100000 |             0 | f
+Build Time: Built index on items in 19.33 seconds, Insert Time: Inserted 40000 rows into items in 195.61 seconds.
+Testing with shared_buffers = 7152435B (10%), Build Ratio=60%, Pool Ratio=pool_20
+Search completed in 18.74 seconds.
+Index Hit Ratio for shared_buffers=7152435B (10%), Build Ratio=60%, Pool Ratio=pool_20:
+ items               |      4228486 |       4248394 |           49.88
+---------------------------------
+Testing with shared_buffers = 14304870B (20%), Build Ratio=60%, Pool Ratio=pool_20
+Search completed in 17.62 seconds.
+Index Hit Ratio for shared_buffers=14304870B (20%), Build Ratio=60%, Pool Ratio=pool_20:
+ items               |      4789920 |       3686960 |           56.51
+---------------------------------
+Testing with shared_buffers = 21457305B (30%), Build Ratio=60%, Pool Ratio=pool_20
+Search completed in 17.15 seconds.
+Index Hit Ratio for shared_buffers=21457305B (30%), Build Ratio=60%, Pool Ratio=pool_20:
+ items               |      5297360 |       3179520 |           62.49
+---------------------------------
+Testing with shared_buffers = 28609740B (40%), Build Ratio=60%, Pool Ratio=pool_20
+Search completed in 16.34 seconds.
+Index Hit Ratio for shared_buffers=28609740B (40%), Build Ratio=60%, Pool Ratio=pool_20:
+ items               |      5795268 |       2681612 |           68.37
+---------------------------------
+Testing with shared_buffers = 35762176B (50%), Build Ratio=60%, Pool Ratio=pool_20
+Search completed in 15.21 seconds.
+Index Hit Ratio for shared_buffers=35762176B (50%), Build Ratio=60%, Pool Ratio=pool_20:
+ items               |      6281794 |       2195086 |           74.11
+---------------------------------

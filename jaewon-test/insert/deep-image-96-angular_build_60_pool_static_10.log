@@ -1,0 +1,29 @@
+Index Stats for Build Ratio=60%, Pool Ratio=pool_static_10:
+ 288334 |      43171840 | items               |         2200 |  288336 |    16385 |      288334 |             0 |     5264 |    100000 |        288337 | t
+ 288339 |      71843840 | items_embedding_idx |         2200 |       0 |    16385 |      288339 |             0 |     8770 |    100000 |             0 | f
+Build Time: Built index on items in 18.74 seconds, Insert Time: Inserted 40000 rows into items in 200.42 seconds.
+Testing with shared_buffers = 7152435B (10%), Build Ratio=60%, Pool Ratio=pool_static_10}
+Search completed in 19.53 seconds.
+Index Hit Ratio for shared_buffers=7152435B (10%), Build Ratio=60%, Pool Ratio=pool_static_10:
+ items               |      3919336 |       4545246 |           46.30
+---------------------------------
+Testing with shared_buffers = 14304870B (20%), Build Ratio=60%, Pool Ratio=pool_static_10}
+Search completed in 18.78 seconds.
+Index Hit Ratio for shared_buffers=14304870B (20%), Build Ratio=60%, Pool Ratio=pool_static_10:
+ items               |      4510099 |       3954483 |           53.28
+---------------------------------
+Testing with shared_buffers = 21457305B (30%), Build Ratio=60%, Pool Ratio=pool_static_10}
+Search completed in 18.07 seconds.
+Index Hit Ratio for shared_buffers=21457305B (30%), Build Ratio=60%, Pool Ratio=pool_static_10:
+ items               |      5060966 |       3403616 |           59.79
+---------------------------------
+Testing with shared_buffers = 28609740B (40%), Build Ratio=60%, Pool Ratio=pool_static_10}
+Search completed in 17.29 seconds.
+Index Hit Ratio for shared_buffers=28609740B (40%), Build Ratio=60%, Pool Ratio=pool_static_10:
+ items               |      5597979 |       2866603 |           66.13
+---------------------------------
+Testing with shared_buffers = 35762176B (50%), Build Ratio=60%, Pool Ratio=pool_static_10}
+Search completed in 16.27 seconds.
+Index Hit Ratio for shared_buffers=35762176B (50%), Build Ratio=60%, Pool Ratio=pool_static_10:
+ items               |      6119551 |       2345031 |           72.30
+---------------------------------

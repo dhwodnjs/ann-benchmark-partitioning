@@ -1,0 +1,30 @@
+Starting experiment with Build Ratio=80%, Pool Ratio=pool_20 ...
+Index Stats for Build Ratio=80%, Pool Ratio=pool_20:
+ 288083 |      43171840 | items               |         2200 |  288085 |    16385 |      288083 |             0 |     5264 |    100000 |        288086 | t
+ 288088 |      72466432 | items_embedding_idx |         2200 |       0 |    16385 |      288088 |             0 |     8846 |    100000 |             0 | f
+Build Time: Built index on items in 27.58 seconds, Insert Time: Inserted 20000 rows into items in 103.54 seconds.
+Testing with shared_buffers = 7152435B (10%), Build Ratio=80%, Pool Ratio=pool_20
+Search completed in 19.18 seconds.
+Index Hit Ratio for shared_buffers=7152435B (10%), Build Ratio=80%, Pool Ratio=pool_20:
+ items               |      4358659 |       4122684 |           51.39
+---------------------------------
+Testing with shared_buffers = 14304870B (20%), Build Ratio=80%, Pool Ratio=pool_20
+Search completed in 18.09 seconds.
+Index Hit Ratio for shared_buffers=14304870B (20%), Build Ratio=80%, Pool Ratio=pool_20:
+ items               |      4908160 |       3573183 |           57.87
+---------------------------------
+Testing with shared_buffers = 21457305B (30%), Build Ratio=80%, Pool Ratio=pool_20
+Search completed in 16.98 seconds.
+Index Hit Ratio for shared_buffers=21457305B (30%), Build Ratio=80%, Pool Ratio=pool_20:
+ items               |      5405411 |       3075932 |           63.73
+---------------------------------
+Testing with shared_buffers = 28609740B (40%), Build Ratio=80%, Pool Ratio=pool_20
+Search completed in 16.04 seconds.
+Index Hit Ratio for shared_buffers=28609740B (40%), Build Ratio=80%, Pool Ratio=pool_20:
+ items               |      5891375 |       2589968 |           69.46
+---------------------------------
+Testing with shared_buffers = 35762176B (50%), Build Ratio=80%, Pool Ratio=pool_20
+Search completed in 16.11 seconds.
+Index Hit Ratio for shared_buffers=35762176B (50%), Build Ratio=80%, Pool Ratio=pool_20:
+ items               |      6363831 |       2117512 |           75.03
+---------------------------------

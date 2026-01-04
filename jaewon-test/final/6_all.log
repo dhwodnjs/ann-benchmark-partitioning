@@ -1,0 +1,134 @@
+Build r_deep_100k_build_90_prt_64_pool_90_8kb ...
+Build r_deep_100k_build_90_prt_64_pool_90_8kb ...
+Build r_deep_100k_build_90_prt_64_pool_90_8kb ...
+Build Time: Table r_deep_100k_build_90_prt_64_pool_90_8kb already exists. Skipping data insertion.
+Built index on r_deep_100k_build_90_prt_64_pool_90_8kb in 83.14 seconds, Insert Time Inserted 10000 rows into r_deep_100k_build_90_prt_64_pool_90_8kb in 113.95 seconds.
+ 445809 |      43171840 | r_deep_100k_build_90_prt_64_pool_90_8kb               |         2200 |  445811 |    16385 |      445809 |             0 |     5264 |    100000 |        445812 | t
+ 445815 |      87318528 | r_deep_100k_build_90_prt_64_pool_90_8kb_embedding_idx |         2200 |       0 |    16385 |      445815 |             0 |    10659 |    100000 |             0 | f
+Build n_deep_100k_build_90_prt_64_pool_90_8kb ...
+
+
+Build Time: Built index on n_deep_100k_build_90_prt_64_pool_90_8kb in 91.94 seconds, Insert Time Inserted 10000 rows into n_deep_100k_build_90_prt_64_pool_90_8kb in 113.47 seconds.
+ 445860 |      43171840 | n_deep_100k_build_90_prt_64_pool_90_8kb               |         2200 |  445862 |    16385 |      445860 |             0 |     5264 |    100000 |        445863 | t
+ 445865 |      87220224 | n_deep_100k_build_90_prt_64_pool_90_8kb_embedding_idx |         2200 |       0 |    16385 |      445865 |             0 |    10647 |    100000 |             0 | f
+Testing with shared_buffers = 8203468B (10%), Build Ratio=90%, Pool Ratio=pool_90}
+Build k_deep_100k_build_90_prt_64_pool_90_8kb ...
+Build k_deep_100k_build_90_prt_64_pool_90_8kb ...
+Build Time: Table k_deep_100k_build_90_prt_64_pool_90_8kb already exists. Skipping data insertion.
+Built index on k_deep_100k_build_90_prt_64_pool_90_8kb in 93.68 seconds, Insert Time Inserted 10000 rows into k_deep_100k_build_90_prt_64_pool_90_8kb in 1130.58 seconds.
+ 445906 |      43171840 | k_deep_100k_build_90_prt_64_pool_90_8kb               |         2200 |  445908 |    16385 |      445906 |             0 |     5264 |    100000 |        445909 | t
+ 445913 |      87515136 | k_deep_100k_build_90_prt_64_pool_90_8kb_embedding_idx |         2200 |       0 |    16385 |      445913 |             0 |    10683 |    100000 |             0 | f
+Testing with shared_buffers = 8203468B (10%), Build Ratio=90%, Pool Ratio=pool_90}
+Build k_deep_100k_build_90_prt_64_pool_70_8kb ...
+Build Time: Built index on k_deep_100k_build_90_prt_64_pool_70_8kb in 92.83 seconds, Insert Time Inserted 10000 rows into k_deep_100k_build_90_prt_64_pool_70_8kb in 1148.05 seconds.
+ 445955 |      43171840 | k_deep_100k_build_90_prt_64_pool_70_8kb               |         2200 |  445957 |    16385 |      445955 |             0 |     5264 |    100000 |        445958 | t
+ 445960 |      86220800 | k_deep_100k_build_90_prt_64_pool_70_8kb_embedding_idx |         2200 |       0 |    16385 |      445960 |             0 |    10525 |    100000 |             0 | f
+
+Build k_deep_100k_build_90_prt_64_pool_50_8kb ...
+Build Time: Built index on k_deep_100k_build_90_prt_64_pool_50_8kb in 93.85 seconds, Insert Time Inserted 10000 rows into k_deep_100k_build_90_prt_64_pool_50_8kb in 1136.56 seconds.
+ 446004 |      43171840 | k_deep_100k_build_90_prt_64_pool_50_8kb               |         2200 |  446006 |    16385 |      446004 |             0 |     5264 |    100000 |        446007 | t
+ 446009 |      84910080 | k_deep_100k_build_90_prt_64_pool_50_8kb_embedding_idx |         2200 |       0 |    16385 |      446009 |             0 |    10365 |    100000 |             0 | f
+
+Build k_deep_100k_build_90_prt_64_pool_30_8kb ...
+Build Time: Built index on k_deep_100k_build_90_prt_64_pool_30_8kb in 93.90 seconds, Insert Time Inserted 10000 rows into k_deep_100k_build_90_prt_64_pool_30_8kb in 1123.85 seconds.
+ 446054 |      43171840 | k_deep_100k_build_90_prt_64_pool_30_8kb               |         2200 |  446056 |    16385 |      446054 |             0 |     5264 |    100000 |        446057 | t
+ 446059 |      83828736 | k_deep_100k_build_90_prt_64_pool_30_8kb_embedding_idx |         2200 |       0 |    16385 |      446059 |             0 |    10233 |    100000 |             0 | f
+
+Build k_deep_100k_build_90_prt_64_pool_10_8kb ...
+Build Time: Built index on k_deep_100k_build_90_prt_64_pool_10_8kb in 93.45 seconds, Insert Time Inserted 10000 rows into k_deep_100k_build_90_prt_64_pool_10_8kb in 1157.46 seconds.
+ 446105 |      43171840 | k_deep_100k_build_90_prt_64_pool_10_8kb               |         2200 |  446107 |    16385 |      446105 |             0 |     5264 |    100000 |        446108 | t
+ 446110 |      82673664 | k_deep_100k_build_90_prt_64_pool_10_8kb_embedding_idx |         2200 |       0 |    16385 |      446110 |             0 |    10092 |    100000 |             0 | f
+
+Build k_deep_100k_build_90_prt_64_pool_90_8kb ...
+Index Hit Ratio for shared_buffers=B (10%), k_deep_100k_build_90_prt_64_pool_90_8kb:
+Build k_deep_100k_build_90_prt_64_pool_90_8kb ...
+Index Hit Ratio for shared_buffers=B (10%), k_deep_100k_build_90_prt_64_pool_90_8kb:
+
+Testing with shared_buffers = 8203468B (10%), Build Ratio=90%, Pool Ratio=pool_90}
+Search completed in 24.34 seconds.
+[[75722, 54030, 85311, 42804, 68417], [30990, 91703, 122, 54436, 46943], [99813, 60047, 41399, 46531, 40449], [7062, 60425, 74483, 37622, 84312], [44858, 61839, 66827, 19499, 85875], [74978, 82556, 41471, 16018, 66354], [18464, 82320, 46760, 5992, 61768], [57755, 32068, 85855, 68471, 26819], [11085, 3943, 61736, 76655, 37354], [22125, 47927, 54697, 63755, 3224]]
+Index Hit Ratio for shared_buffers=8203468B (10%), k_deep_100k_build_90_prt_64_pool_90_8kb:
+ k_deep_100k_build_90_prt_64_pool_90_8kb |      5614314 |       5554615 |           50.27
+---------------------------------
+
+Build k_deep_100k_build_90_prt_64_pool_70_8kb ...
+Index Hit Ratio for shared_buffers=8203468B (10%), k_deep_100k_build_90_prt_64_pool_70_8kb:
+ k_deep_100k_build_90_prt_64_pool_10_8kb  |            0 |             0 |
+ k_deep_100k_build_90_prt_64_pool_90_8kb  |      5614314 |       5554615 |           50.27
+Testing with shared_buffers = 8203468B (10%), Build Ratio=90%, Pool Ratio=pool_70}
+
+
+Search completed in 24.49 seconds.
+[[75722, 54030, 85311, 42804, 68417], [30990, 91703, 122, 54436, 46943], [99813, 60047, 41399, 46531, 40449], [7062, 60425, 74483, 37622, 84312], [44858, 61839, 66827, 19499, 85875], [74978, 82556, 41471, 16018, 66354], [18464, 82320, 46760, 5992, 61768], [57755, 32068, 85855, 68471, 26819], [11085, 3943, 61736, 76655, 37354], [22125, 47927, 54697, 63755, 3224]]
+Index Hit Ratio for shared_buffers=8203468B (10%), k_deep_100k_build_90_prt_64_pool_70_8kb:
+ k_deep_100k_build_90_prt_64_pool_70_8kb |      5640674 |       5546204 |           50.42
+---------------------------------
+
+Build k_deep_100k_build_90_prt_64_pool_50_8kb ...
+Index Hit Ratio for shared_buffers=8203468B (10%), k_deep_100k_build_90_prt_64_pool_50_8kb:
+ k_deep_100k_build_90_prt_64_pool_10_8kb  |            0 |             0 |
+ k_deep_100k_build_90_prt_64_pool_70_8kb  |      5640674 |       5546204 |           50.42
+Testing with shared_buffers = 8203468B (10%), Build Ratio=90%, Pool Ratio=pool_50}
+
+Search completed in 23.77 seconds.
+[[75722, 54030, 85311, 42804, 68417], [30990, 91703, 122, 54436, 46943], [99813, 60047, 41399, 46531, 40449], [7062, 60425, 74483, 37622, 84312], [44858, 61839, 66827, 19499, 85875], [74978, 82556, 41471, 16018, 66354], [18464, 82320, 46760, 5992, 61768], [57755, 32068, 85855, 68471, 26819], [11085, 3943, 61736, 76655, 37354], [22125, 47927, 54697, 63755, 3224]]
+Index Hit Ratio for shared_buffers=8203468B (10%), k_deep_100k_build_90_prt_64_pool_50_8kb:
+ k_deep_100k_build_90_prt_64_pool_50_8kb |      5612700 |       5580894 |           50.14
+---------------------------------
+
+Build k_deep_100k_build_90_prt_64_pool_30_8kb ...
+Index Hit Ratio for shared_buffers=8203468B (10%), k_deep_100k_build_90_prt_64_pool_30_8kb:
+ k_deep_100k_build_90_prt_64_pool_10_8kb  |            0 |             0 |
+ k_deep_100k_build_90_prt_64_pool_50_8kb  |      5612700 |       5580894 |           50.14
+Testing with shared_buffers = 8203468B (10%), Build Ratio=90%, Pool Ratio=pool_30}
+Search completed in 23.85 seconds.
+
+[[75722, 54030, 85311, 42804, 68417], [30990, 91703, 122, 54436, 46943], [99813, 60047, 41399, 46531, 40449], [7062, 60425, 74483, 37622, 84312], [44858, 61839, 66827, 19499, 85875], [74978, 82556, 41471, 16018, 66354], [18464, 82320, 46760, 5992, 61768], [57755, 32068, 85855, 68471, 26819], [11085, 3943, 61736, 76655, 37354], [22125, 47927, 54697, 63755, 3224]]
+Index Hit Ratio for shared_buffers=8203468B (10%), k_deep_100k_build_90_prt_64_pool_30_8kb:
+ k_deep_100k_build_90_prt_64_pool_30_8kb |      5653623 |       5562316 |           50.41
+---------------------------------
+
+Build k_deep_100k_build_90_prt_64_pool_10_8kb ...
+Index Hit Ratio for shared_buffers=8203468B (10%), k_deep_100k_build_90_prt_64_pool_10_8kb:
+ k_deep_100k_build_90_prt_64_pool_10_8kb  |            0 |             0 |
+ k_deep_100k_build_90_prt_64_pool_30_8kb  |      5653623 |       5562316 |           50.41
+Testing with shared_buffers = 8203468B (10%), Build Ratio=90%, Pool Ratio=pool_10}
+
+Search completed in 24.60 seconds.
+[[75722, 54030, 85311, 42804, 68417], [30990, 91703, 122, 54436, 46943], [99813, 60047, 41399, 46531, 40449], [7062, 60425, 74483, 37622, 84312], [44858, 61839, 66827, 19499, 85875], [74978, 82556, 41471, 16018, 66354], [18464, 82320, 46760, 5992, 61768], [57755, 32068, 85855, 68471, 26819], [11085, 3943, 61736, 76655, 37354], [22125, 47927, 54697, 63755, 3224]]
+Index Hit Ratio for shared_buffers=8203468B (10%), k_deep_100k_build_90_prt_64_pool_10_8kb:
+ k_deep_100k_build_90_prt_64_pool_10_8kb |      5492863 |       5661550 |           49.24
+---------------------------------
+
+Build a_deep_100k_build_90_prt_64_pool_90_8kb ...
+Build Time: Built index on a_deep_100k_build_90_prt_64_pool_90_8kb in 91.95 seconds, Insert Time Inserted 10000 rows into a_deep_100k_build_90_prt_64_pool_90_8kb in 137.26 seconds.
+ 446157 |      43171840 | a_deep_100k_build_90_prt_64_pool_90_8kb               |         2200 |  446159 |    16385 |      446157 |             0 |     5264 |    100000 |        446160 | t
+ 446162 |      82026496 | a_deep_100k_build_90_prt_64_pool_90_8kb_embedding_idx |         2200 |       0 |    16385 |      446162 |             0 |    10013 |    100000 |             0 | f
+Index Hit Ratio for shared_buffers=16406937B (10%), a_deep_100k_build_90_prt_64_pool_90_8kb:
+ a_deep_100k_build_90_prt_64_pool_90_8kb |     44108512 |      15115760 |           74.48
+Testing with shared_buffers = 8203468B (10%), Build Ratio=90%, Pool Ratio=pool_90}
+Search completed in 24.85 seconds.
+[[75722, 54030, 85311, 42804, 68417], [30990, 91703, 122, 54436, 46943], [99813, 60047, 41399, 46531, 40449], [7062, 60425, 74483, 37622, 84312], [44858, 61839, 66827, 19499, 85875], [74978, 82556, 41471, 16018, 66354], [18464, 82320, 46760, 5992, 61768], [57755, 32068, 85855, 68471, 26819], [11085, 3943, 61736, 76655, 37354], [22125, 47927, 54697, 63755, 3224]]
+Index Hit Ratio for shared_buffers=8203468B (10%), a_deep_100k_build_90_prt_64_pool_90_8kb:
+ a_deep_100k_build_90_prt_64_pool_90_8kb |      5289260 |       5896646 |           47.29
+---------------------------------
+
+Build a_deep_100k_build_90_prt_64_pool_70_8kb ...
+Build b_deep_100k_build_90_prt_64_pool_30_8kb ...
+Build Time: Built index on b_deep_100k_build_90_prt_64_pool_30_8kb in 93.58 seconds, Insert Time Inserted 10000 rows into b_deep_100k_build_90_prt_64_pool_30_8kb in 1169.87 seconds.
+ 446216 |      43171840 | b_deep_100k_build_90_prt_64_pool_30_8kb               |         2200 |  446218 |    16385 |      446216 |             0 |     5264 |    100000 |        446219 | t
+ 446221 |      82034688 | b_deep_100k_build_90_prt_64_pool_30_8kb_embedding_idx |         2200 |       0 |    16385 |      446221 |             0 |    10014 |    100000 |             0 | f
+Index Hit Ratio for shared_buffers=16406937B (10%), b_deep_100k_build_90_prt_64_pool_30_8kb:
+ b_deep_100k_build_90_prt_64_pool_30_8kb |     44379047 |      14971493 |           74.77
+Testing with shared_buffers = 8203468B (10%), Build Ratio=90%, Pool Ratio=pool_30}
+
+Index Hit Ratio for shared_buffers=B (10%), b_deep_100k_build_90_prt_64_pool_30_8kb:
+ b_deep_100k_build_90_prt_64_pool_30_8kb |        12092 |         12226 |           49.72
+Testing with shared_buffers = 8203468B (10%), Build Ratio=90%, Pool Ratio=pool_30}
+
+Search completed in 25.15 seconds.
+[[75722, 54030, 85311, 42804, 68417], [30990, 91703, 122, 54436, 46943], [99813, 60047, 41399, 46531, 40449], [7062, 60425, 74483, 37622, 84312], [44858, 61839, 66827, 19499, 85875], [74978, 82556, 41471, 16018, 66354], [18464, 82320, 46760, 5992, 61768], [57755, 32068, 85855, 68471, 26819], [11085, 3943, 61736, 76655, 37354], [22125, 47927, 54697, 63755, 3224]]
+Index Hit Ratio for shared_buffers=8203468B (10%), b_deep_100k_build_90_prt_64_pool_30_8kb:
+ b_deep_100k_build_90_prt_64_pool_30_8kb |      5350715 |       5823624 |           47.88
+---------------------------------
+

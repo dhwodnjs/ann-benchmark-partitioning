@@ -1,0 +1,10 @@
+Starting experiment with partition size 64 pool size 468 ...
+Index Stats for Data Ratio=40%, Table = items:
+ 271510 |      43253760 | items               |         2200 |  271512 |    16385 |      271510 |             0 |     5275 |    100000 |        271513 | t
+ 271515 |      73392128 | items_embedding_idx |         2200 |       0 |    16385 |      271515 |             0 |     8959 |    100000 |             0 | f
+Build Time: Built index on items in 81.66 seconds, Insert Time: 
+Testing with shared_buffers = 35762176B (50%), Data Ratio = 40%, Table = items
+Search completed in 15.13 seconds.
+Index Hit Ratio for shared_buffers=35762176B (50%), Data Ratio=40%, Table = items:
+ items               |      6314436 |       2128615 |           74.79
+---------------------------------

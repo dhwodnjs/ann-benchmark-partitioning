@@ -1,0 +1,29 @@
+Index Stats for Build Ratio=60%, Pool Ratio=pool_static_40:
+ 288388 |      43171840 | items               |         2200 |  288390 |    16385 |      288388 |             0 |     5264 |    100000 |        288391 | t
+ 288393 |      73334784 | items_embedding_idx |         2200 |       0 |    16385 |      288393 |             0 |     8952 |    100000 |             0 | f
+Build Time: Built index on items in 19.24 seconds, Insert Time: Inserted 40000 rows into items in 199.29 seconds.
+Testing with shared_buffers = 7152435B (10%), Build Ratio=60%, Pool Ratio=pool_static_40}
+Search completed in 18.31 seconds.
+Index Hit Ratio for shared_buffers=7152435B (10%), Build Ratio=60%, Pool Ratio=pool_static_40:
+ items               |      4423106 |       4035248 |           52.29
+---------------------------------
+Testing with shared_buffers = 14304870B (20%), Build Ratio=60%, Pool Ratio=pool_static_40}
+Search completed in 17.50 seconds.
+Index Hit Ratio for shared_buffers=14304870B (20%), Build Ratio=60%, Pool Ratio=pool_static_40:
+ items               |      4946662 |       3511692 |           58.48
+---------------------------------
+Testing with shared_buffers = 21457305B (30%), Build Ratio=60%, Pool Ratio=pool_static_40}
+Search completed in 16.64 seconds.
+Index Hit Ratio for shared_buffers=21457305B (30%), Build Ratio=60%, Pool Ratio=pool_static_40:
+ items               |      5434459 |       3023895 |           64.25
+---------------------------------
+Testing with shared_buffers = 28609740B (40%), Build Ratio=60%, Pool Ratio=pool_static_40}
+Search completed in 15.91 seconds.
+Index Hit Ratio for shared_buffers=28609740B (40%), Build Ratio=60%, Pool Ratio=pool_static_40:
+ items               |      5910564 |       2547790 |           69.88
+---------------------------------
+Testing with shared_buffers = 35762176B (50%), Build Ratio=60%, Pool Ratio=pool_static_40}
+Search completed in 15.20 seconds.
+Index Hit Ratio for shared_buffers=35762176B (50%), Build Ratio=60%, Pool Ratio=pool_static_40:
+ items               |      6371332 |       2087022 |           75.33
+---------------------------------

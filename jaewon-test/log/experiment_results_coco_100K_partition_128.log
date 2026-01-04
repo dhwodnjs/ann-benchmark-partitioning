@@ -1,0 +1,25 @@
+Starting experiment...
+Index Stats for Data Ratio=100%, Table = items:
+ 33277 |     273252352 | items               |         2200 |   33279 |    16385 |       33277 |             0 |    33344 |    100000 |         33280 | t
+ 33282 |     273047552 | items_embedding_idx |         2200 |       0 |    16385 |       33282 |             0 |    33331 |    100000 |             0 | f
+Build Time: Built index on items in 72.68 seconds, Insert Time: Inserted 0 rows into items in 0.00 seconds.
+Testing with shared_buffers = 218438041B (80%), Data Ratio = 100%, Table = items
+Search completed in 18.64 seconds.
+Index Hit Ratio for shared_buffers=218438041B (80%), Data Ratio=100%, Table = items:
+ items               |      6087201 |        677263 |           89.99
+---------------------------------
+Testing with shared_buffers = 163828531B (60%), Data Ratio = 100%, Table = items
+Search completed in 20.92 seconds.
+Index Hit Ratio for shared_buffers=163828531B (60%), Data Ratio=100%, Table = items:
+ items               |      5294700 |       1469764 |           78.27
+---------------------------------
+Testing with shared_buffers = 109219020B (40%), Data Ratio = 100%, Table = items
+Search completed in 22.39 seconds.
+Index Hit Ratio for shared_buffers=109219020B (40%), Data Ratio=100%, Table = items:
+ items               |      4390246 |       2374218 |           64.90
+---------------------------------
+Testing with shared_buffers = 54609510B (20%), Data Ratio = 100%, Table = items
+Search completed in 24.35 seconds.
+Index Hit Ratio for shared_buffers=54609510B (20%), Data Ratio=100%, Table = items:
+ items               |      3390900 |       3373564 |           50.13
+---------------------------------

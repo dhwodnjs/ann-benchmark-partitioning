@@ -1,0 +1,3197 @@
+
+Insert deep_100k_build_90_prt_8_pool_5_8kb ...
+Insert Time: Inserted 10000 rows into deep_100k_build_90_prt_8_pool_5_8kb in 1572.89 seconds.
+ 404741 |      43171840 | deep_100k_build_90_prt_8_pool_5_8kb                          |         2200 |  404743 |    16385 |      404741 |             0 |     5264 |    100000 |        404744 | t
+ 404748 |      84402176 | deep_100k_build_90_prt_8_pool_5_8kb_embedding_idx            |         2200 |       0 |    16385 |      404748 |             0 |    10303 |    100000 |             0 | f
+
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_5:
+ deep_100k_build_90_prt_8_pool_5_8kb |     38733254 |      20575107 |           65.31
+---------------------------------
+
+Build deep_100k_build_90_prt_8_pool_50_8kb ...
+Insert deep_100k_build_90_prt_8_pool_50_8kb ...
+Insert Time: Inserted 10000 rows into deep_100k_build_90_prt_8_pool_50_8kb in 1622.43 seconds.
+ 404762 |      43171840 | deep_100k_build_90_prt_8_pool_50_8kb                         |         2200 |  404764 |    16385 |      404762 |             0 |     5264 |    100000 |        404765 | t
+ 404767 |     105562112 | deep_100k_build_90_prt_8_pool_50_8kb_embedding_idx           |         2200 |       0 |    16385 |      404767 |             0 |    12886 |    100000 |             0 | f
+
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_50:
+ deep_100k_build_90_prt_8_pool_50_8kb |     38284615 |      21048897 |           64.52
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_5_8kb ...
+Insert Time: Inserted 10000 rows into deep_100k_build_90_prt_64_pool_5_8kb in 1163.46 seconds.
+ 404769 |      43171840 | deep_100k_build_90_prt_64_pool_5_8kb                         |         2200 |  404771 |    16385 |      404769 |             0 |     5264 |    100000 |        404772 | t
+ 404774 |      82280448 | deep_100k_build_90_prt_64_pool_5_8kb_embedding_idx           |         2200 |       0 |    16385 |      404774 |             0 |    10044 |    100000 |             0 | f
+
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_5:
+ deep_100k_build_90_prt_64_pool_5_8kb |     44509792 |      14799955 |           75.05
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_50_8kb ...
+Insert Time: Inserted 10000 rows into deep_100k_build_90_prt_64_pool_50_8kb in 1133.54 seconds.
+ 404790 |      43171840 | deep_100k_build_90_prt_64_pool_50_8kb                        |         2200 |  404792 |    16385 |      404790 |             0 |     5264 |    100000 |        404793 | t
+ 404795 |      84885504 | deep_100k_build_90_prt_64_pool_50_8kb_embedding_idx          |         2200 |       0 |    16385 |      404795 |             0 |    10362 |    100000 |             0 | f
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_50:
+ deep_100k_build_90_prt_64_pool_50_8kb |     44842327 |      14459875 |           75.62
+---------------------------------
+
+
+(vanilla)
+Insert deep_100k_build_90_prt_8_pool_5_8kb ...
+Insert deep_100k_build_90_prt_8_pool_5_8kb ...
+Insert Time: Inserted 10000 rows into deep_100k_build_90_prt_8_pool_5_8kb in 1613.61 seconds.
+ 404741 |      43171840 | deep_100k_build_90_prt_8_pool_5_8kb                          |         2200 |  404743 |    16385 |      404741 |             0 |     5264 |    100000 |        404744 | t
+ 404748 |      82026496 | deep_100k_build_90_prt_8_pool_5_8kb_embedding_idx            |         2200 |       0 |    16385 |      404748 |             0 |    10013 |    100000 |             0 | f
+
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_5:
+ deep_100k_build_90_prt_8_pool_5_8kb |     38092673 |      21153360 |           64.30
+---------------------------------
+
+(vanilla)
+Insert deep_100k_build_90_prt_64_pool_5_8kb ...
+Insert Time: Inserted 10000 rows into deep_100k_build_90_prt_64_pool_5_8kb in 1284.31 seconds.
+ 404769 |      43171840 | deep_100k_build_90_prt_64_pool_5_8kb                         |         2200 |  404771 |    16385 |      404769 |             0 |     5264 |    100000 |        404772 | t
+ 404774 |      82018304 | deep_100k_build_90_prt_64_pool_5_8kb_embedding_idx           |         2200 |       0 |    16385 |      404774 |             0 |    10012 |    100000 |             0 | f
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_5:
+ deep_100k_build_90_prt_64_pool_5_8kb |     44175122 |      15125964 |           74.49
+---------------------------------
+
+(vanilla)
+Insert deep_100k_build_10_prt_64_pool_30_8kb ...
+Insert Time: Inserted 90000 rows into deep_100k_build_10_prt_64_pool_30_8kb in 1234.34 seconds.
+ 404798 |      43171840 | deep_100k_build_10_prt_64_pool_30_8kb                  |         2200 |  404800 |    16385 |      404798 |             0 |     5264 |    100000 |        404801 | t
+ 404803 |      82010112 | deep_100k_build_10_prt_64_pool_30_8kb_embedding_idx    |         2200 |       0 |    16385 |      404803 |             0 |    10011 |    100000 |             0 | f
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=10%, Pool Ratio=pool_30:
+ deep_100k_build_10_prt_64_pool_30_8kb |    335287603 |     164993386 |           67.02
+---------------------------------
+
+(vanilla)
+Insert deep_100k_build_30_prt_64_pool_30_8kb ...
+Insert Time: Inserted 70000 rows into deep_100k_build_30_prt_64_pool_30_8kb in 968.77 seconds.
+ 404804 |      43171840 | deep_100k_build_30_prt_64_pool_30_8kb                  |         2200 |  404806 |    16385 |      404804 |             0 |     5264 |    100000 |        404807 | t
+ 404810 |      82010112 | deep_100k_build_30_prt_64_pool_30_8kb_embedding_idx    |         2200 |       0 |    16385 |      404810 |             0 |    10011 |    100000 |             0 | f
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=30%, Pool Ratio=pool_30:
+ deep_100k_build_30_prt_64_pool_30_8kb |    273650999 |     124598988 |           68.71
+---------------------------------
+
+(vanilla)
+Insert deep_100k_build_50_prt_64_pool_30_8kb ...
+Insert Time: Inserted 50000 rows into deep_100k_build_50_prt_64_pool_30_8kb in 691.97 seconds.
+ 404811 |      43171840 | deep_100k_build_50_prt_64_pool_30_8kb                  |         2200 |  404813 |    16385 |      404811 |             0 |     5264 |    100000 |        404814 | t
+ 404816 |      82026496 | deep_100k_build_50_prt_64_pool_30_8kb_embedding_idx    |         2200 |       0 |    16385 |      404816 |             0 |    10013 |    100000 |             0 | f
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=50%, Pool Ratio=pool_30:
+ deep_100k_build_50_prt_64_pool_30_8kb |    204738935 |      84256470 |           70.85
+---------------------------------
+
+(vanilla)
+Insert deep_100k_build_70_prt_64_pool_30_8kb ...
+Insert Time: Inserted 30000 rows into deep_100k_build_70_prt_64_pool_30_8kb in 412.48 seconds.
+ 404817 |      43171840 | deep_100k_build_70_prt_64_pool_30_8kb                  |         2200 |  404819 |    16385 |      404817 |             0 |     5264 |    100000 |        404820 | t
+ 404822 |      82026496 | deep_100k_build_70_prt_64_pool_30_8kb_embedding_idx    |         2200 |       0 |    16385 |      404822 |             0 |    10013 |    100000 |             0 | f
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=70%, Pool Ratio=pool_30:
+ deep_100k_build_70_prt_64_pool_30_8kb |    127944156 |      47679374 |           72.85
+---------------------------------
+
+(vanilla)
+Insert deep_100k_build_90_prt_64_pool_30_8kb ...
+Insert Time: Inserted 10000 rows into deep_100k_build_90_prt_64_pool_30_8kb in 136.68 seconds.
+ 404783 |      43171840 | deep_100k_build_90_prt_64_pool_30_8kb                  |         2200 |  404785 |    16385 |      404783 |             0 |     5264 |    100000 |        404786 | t
+ 404788 |      82051072 | deep_100k_build_90_prt_64_pool_30_8kb_embedding_idx    |         2200 |       0 |    16385 |      404788 |             0 |    10016 |    100000 |             0 | f
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+ deep_100k_build_90_prt_64_pool_30_8kb |     44184664 |      14968852 |           74.69
+---------------------------------
+
+
+Insert deep_100k_build_10_prt_64_pool_30_8kb ...
+Insert Time: Inserted 90000 rows into deep_100k_build_10_prt_64_pool_30_8kb in 1048.39 seconds.
+
+ 404798 |      43171840 | deep_100k_build_10_prt_64_pool_30_8kb                  |         2200 |  404800 |    16385 |      404798 |             0 |     5264 |    100000 |        404801 | t
+ 404803 |      82624512 | deep_100k_build_10_prt_64_pool_30_8kb_embedding_idx    |         2200 |       0 |    16385 |      404803 |             0 |    10086 |    100000 |             0 | f
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=10%, Pool Ratio=pool_30:
+ deep_100k_build_10_prt_64_pool_30_8kb |    418047356 |      82821300 |           83.46
+---------------------------------
+
+Insert deep_100k_build_30_prt_64_pool_30_8kb ...
+Insert Time: Inserted 70000 rows into deep_100k_build_30_prt_64_pool_30_8kb in 857.40 seconds.
+404804 |      43171840 | deep_100k_build_30_prt_64_pool_30_8kb                  |         2200 |  404806 |    16385 |      404804 |             0 |     5264 |    100000 |        404807 | t
+ 404810 |      83795968 | deep_100k_build_30_prt_64_pool_30_8kb_embedding_idx    |         2200 |       0 |    16385 |      404810 |             0 |    10229 |    100000 |             0 | f
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=30%, Pool Ratio=pool_30:
+ deep_100k_build_30_prt_64_pool_30_8kb |    323250856 |      75146381 |           81.14
+---------------------------------
+
+Insert deep_100k_build_50_prt_64_pool_30_8kb ...
+Insert Time: Inserted 50000 rows into deep_100k_build_50_prt_64_pool_30_8kb in 638.49 seconds.
+ 404811 |      43171840 | deep_100k_build_50_prt_64_pool_30_8kb                  |         2200 |  404813 |    16385 |      404811 |             0 |     5264 |    100000 |        404814 | t
+ 404816 |      83779584 | deep_100k_build_50_prt_64_pool_30_8kb_embedding_idx    |         2200 |       0 |    16385 |      404816 |             0 |    10227 |    100000 |             0 | f
+
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=50%, Pool Ratio=pool_30:
+ deep_100k_build_50_prt_64_pool_30_8kb |    227666163 |      61423847 |           78.75
+---------------------------------
+
+Insert deep_100k_build_70_prt_64_pool_30_8kb ...
+Insert Time: Inserted 30000 rows into deep_100k_build_70_prt_64_pool_30_8kb in 396.44 seconds.
+ 404817 |      43171840 | deep_100k_build_70_prt_64_pool_30_8kb                  |         2200 |  404819 |    16385 |      404817 |             0 |     5264 |    100000 |        404820 | t
+ 404822 |      83828736 | deep_100k_build_70_prt_64_pool_30_8kb_embedding_idx    |         2200 |       0 |    16385 |      404822 |             0 |    10233 |    100000 |             0 | f
+
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=70%, Pool Ratio=pool_30:
+ deep_100k_build_70_prt_64_pool_30_8kb |    135127021 |      40520289 |           76.93
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_8kb ...
+Insert Time: Inserted 10000 rows into deep_100k_build_90_prt_64_pool_30_8kb in 133.35 seconds.
+404783 |      43171840 | deep_100k_build_90_prt_64_pool_30_8kb                  |         2200 |  404785 |    16385 |      404783 |             0 |     5264 |    100000 |        404786 | t
+ 404788 |      83812352 | deep_100k_build_90_prt_64_pool_30_8kb_embedding_idx    |         2200 |       0 |    16385 |      404788 |             0 |    10231 |    100000 |             0 | f
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+ deep_100k_build_90_prt_64_pool_30_8kb |     44813938 |      14367614 |           75.72
+---------------------------------
+Insert deep_100k_build_90_prt_64_pool_10_8kb ...
+Insert Time: Inserted 10000 rows into deep_100k_build_90_prt_64_pool_10_8kb in 1125.61 seconds.
+  404776 |      43171840 | deep_100k_build_90_prt_64_pool_10_8kb                  |         2200 |  404778 |    16385 |      404776 |             0 |     5264 |    100000 |        404779 | t
+  404781 |      82599936 | deep_100k_build_90_prt_64_pool_10_8kb_embedding_idx    |         2200 |       0 |    16385 |      404781 |             0 |    10083 |    100000 |             0 | f
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_10:
+ deep_100k_build_90_prt_64_pool_10_8kb |     44544975 |      14579818 |           75.34
+---------------------------------
+
+
+Insert deep_100k_build_90_prt_64_pool_70_8kb ...
+Insert Time: Inserted 10000 rows into deep_100k_build_90_prt_64_pool_70_8kb in 1117.82 seconds.
+ 404826 |      43171840 | deep_100k_build_90_prt_64_pool_70_8kb                  |         2200 |  404828 |    16385 |      404826 |             0 |     5264 |    100000 |        404829 | t
+ 404831 |      86155264 | deep_100k_build_90_prt_64_pool_70_8kb_embedding_idx    |         2200 |       0 |    16385 |      404831 |             0 |    10517 |    100000 |             0 | f
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_70:
+ deep_100k_build_90_prt_64_pool_70_8kb |     44705580 |      14443839 |           75.58
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_90_8kb ...
+Insert Time: Inserted 10000 rows into deep_100k_build_90_prt_64_pool_90_8kb in 1147.45 seconds.
+ 404833 |      43171840 | deep_100k_build_90_prt_64_pool_90_8kb                  |         2200 |  404835 |    16385 |      404833 |             0 |     5264 |    100000 |        404836 | t
+ 404838 |      87326720 | deep_100k_build_90_prt_64_pool_90_8kb_embedding_idx    |         2200 |       0 |    16385 |      404838 |             0 |    10660 |    100000 |             0 | f
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_90:
+ deep_100k_build_90_prt_64_pool_90_8kb |     44744331 |      14545743 |           75.47
+---------------------------------
+
+
+ 404798 |      43171840 | deep_100k_build_10_prt_64_pool_30_8kb                  |         2200 |  404800 |    16385 |      404798 |             0 |     5264 |    100000 |        404801 | t
+ 404803 |      82624512 | deep_100k_build_10_prt_64_pool_30_8kb_embedding_idx    |         2200 |       0 |    16385 |      404803 |             0 |    10086 |    100000 |             0 | f
+ 404804 |      43171840 | deep_100k_build_30_prt_64_pool_30_8kb                  |         2200 |  404806 |    16385 |      404804 |             0 |     5264 |    100000 |        404807 | t
+ 404810 |      83795968 | deep_100k_build_30_prt_64_pool_30_8kb_embedding_idx    |         2200 |       0 |    16385 |      404810 |             0 |    10229 |    100000 |             0 | f
+ 404811 |      43171840 | deep_100k_build_50_prt_64_pool_30_8kb                  |         2200 |  404813 |    16385 |      404811 |             0 |     5264 |    100000 |        404814 | t
+ 404816 |      83779584 | deep_100k_build_50_prt_64_pool_30_8kb_embedding_idx    |         2200 |       0 |    16385 |      404816 |             0 |    10227 |    100000 |             0 | f
+ 404817 |      43171840 | deep_100k_build_70_prt_64_pool_30_8kb                  |         2200 |  404819 |    16385 |      404817 |             0 |     5264 |    100000 |        404820 | t
+ 404822 |      83828736 | deep_100k_build_70_prt_64_pool_30_8kb_embedding_idx    |         2200 |       0 |    16385 |      404822 |             0 |    10233 |    100000 |             0 | fInsert deep_10m_build_90_prt_64_pool_30_8kb ...
+Insert Time: 
+Timing is on.
+
+Time: 0.867 ms
+Index Hit Ratio for shared_buffers=1636289740B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+
+Time: 2.879 ms
+---------------------------------
+
+Insert deep_10m_build_90_prt_64_pool_30_v ...
+Insert deep_1m_build_90_prt_64_pool_30_v ...
+Insert Time: 
+Timing is on.
+
+Time: 0.779 ms
+Index Hit Ratio for shared_buffers=163628974B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+
+Time: 2.082 ms
+---------------------------------
+
+Insert deep_1m_build_50_prt_64_pool_30_v ...
+Insert deep_1m_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 100000 rows into deep_1m_build_90_prt_64_pool_30_t3 in 879.02 seconds.
+Timing is on.
+ 66077 |     431308800 | deep_1m_build_90_prt_64_pool_30_t3               |         2200 |   66079 |    16385 |       66077 |             0 |    47784 |    907896 |         66080 | t
+ 66082 |     835444736 | deep_1m_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       66082 |             0 |    93258 |    907896 |             0 | f
+
+Time: 1.627 ms
+Index Hit Ratio for shared_buffers=163628974B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_1m_build_90_prt_64_pool_30_t3 |    517127285 |     200557293 |           72.05
+
+Time: 2.697 ms
+---------------------------------
+
+Insert deep_1m_build_90_prt_64_pool_30_v ...
+Insert Time: 
+Timing is on.
+ 66071 |     388456448 | deep_1m_build_90_prt_64_pool_30_v               |         2200 |   66073 |    16385 |       66071 |             0 |    47402 |    900050 |         66074 | t
+ 66076 |     738082816 | deep_1m_build_90_prt_64_pool_30_v_embedding_idx |         2200 |       0 |    16385 |       66076 |             0 |    90098 |    900050 |             0 | f
+
+Time: 1.224 ms
+Index Hit Ratio for shared_buffers=163628974B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_1m_build_90_prt_64_pool_30_v |       845496 |        286177 |           74.71
+
+Time: 2.277 ms
+---------------------------------
+
+Insert deep_1m_build_90_prt_64_pool_30_v ...
+Insert Time: 
+Timing is on.
+ 66071 |     388456448 | deep_1m_build_90_prt_64_pool_30_v               |         2200 |   66073 |    16385 |       66071 |             0 |    47402 |    900050 |         66074 | t
+ 66076 |     738082816 | deep_1m_build_90_prt_64_pool_30_v_embedding_idx |         2200 |       0 |    16385 |       66076 |             0 |    90098 |    900050 |             0 | f
+
+Time: 1.243 ms
+Index Hit Ratio for shared_buffers=163628974B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_1m_build_90_prt_64_pool_30_v |       863059 |        300625 |           74.17
+
+Time: 2.173 ms
+---------------------------------
+
+Insert deep_1m_build_90_prt_64_pool_30_v ...
+Insert Time: 
+Timing is on.
+ 66071 |     388456448 | deep_1m_build_90_prt_64_pool_30_v               |         2200 |   66073 |    16385 |       66071 |             0 |    47402 |    900050 |         66074 | t
+ 66076 |     738082816 | deep_1m_build_90_prt_64_pool_30_v_embedding_idx |         2200 |       0 |    16385 |       66076 |             0 |    90098 |    900050 |             0 | f
+
+Time: 1.119 ms
+Index Hit Ratio for shared_buffers=163628974B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_1m_build_90_prt_64_pool_30_v |       880622 |        315073 |           73.65
+
+Time: 2.128 ms
+---------------------------------
+
+Insert deep_1m_build_90_prt_64_pool_30_v ...
+Insert Time: 
+Timing is on.
+ 66085 |     388440064 | deep_1m_build_90_prt_64_pool_30_v               |         2200 |   66087 |    16385 |       66085 |             0 |    47402 |    900000 |         66088 | t
+ 66090 |     738017280 | deep_1m_build_90_prt_64_pool_30_v_embedding_idx |         2200 |       0 |    16385 |       66090 |             0 |    90090 |    900000 |             0 | f
+
+Time: 1.080 ms
+Index Hit Ratio for shared_buffers=163628974B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_1m_build_90_prt_64_pool_30_v |       816177 |        273550 |           74.90
+
+Time: 2.071 ms
+---------------------------------
+
+Insert deep_1m_build_90_prt_64_pool_30_v ...
+Insert Time: 
+Timing is on.
+ 66085 |     388440064 | deep_1m_build_90_prt_64_pool_30_v               |         2200 |   66087 |    16385 |       66085 |             0 |    47402 |    900000 |         66088 | t
+ 66090 |     738017280 | deep_1m_build_90_prt_64_pool_30_v_embedding_idx |         2200 |       0 |    16385 |       66090 |             0 |    90090 |    900000 |             0 | f
+
+Time: 1.108 ms
+Index Hit Ratio for shared_buffers=163628974B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_1m_build_90_prt_64_pool_30_v |       821023 |        277972 |           74.71
+
+Time: 2.160 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_v ...
+Insert Time: Inserted 10000 rows into deep_100k_build_90_prt_64_pool_30_v in 23.86 seconds.
+Timing is on.
+ 66092 |      43163648 | deep_100k_build_90_prt_64_pool_30_v               |         2200 |   66094 |    16385 |       66092 |             0 |     4778 |     90000 |         66095 | t
+ 66097 |      82059264 | deep_100k_build_90_prt_64_pool_30_v_embedding_idx |         2200 |       0 |    16385 |       66097 |             0 |     9015 |     90000 |             0 | f
+
+Time: 1.331 ms
+Index Hit Ratio for shared_buffers=163628974B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_v |     59209987 |         19031 |           99.97
+
+Time: 2.134 ms
+---------------------------------
+
+Insert deep_1m_build_90_prt_64_pool_30_v ...
+Insert Time: 
+Timing is on.
+ 66104 |     738033664 | deep_1m_build_90_prt_64_pool_30_v_embedding_idx |         2200 |       0 |    16385 |       66104 |             0 |    90092 |    900000 |             0 | f
+ 66099 |     388440064 | deep_1m_build_90_prt_64_pool_30_v               |         2200 |   66101 |    16385 |       66099 |             0 |    47402 |    900000 |         66102 | t
+
+Time: 1.072 ms
+Index Hit Ratio for shared_buffers=163628974B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_1m_build_90_prt_64_pool_30_v |       816110 |        273624 |           74.89
+
+Time: 2.016 ms
+---------------------------------
+
+Insert deep_1m_build_90_prt_64_pool_30_v ...
+Insert Time: 
+Timing is on.
+
+Time: 0.903 ms
+Index Hit Ratio for shared_buffers=163628974B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+
+Time: 2.064 ms
+---------------------------------
+
+Insert deep_1m_build_90_prt_64_pool_5_v ...
+Insert Time: 
+Timing is on.
+ 66105 |     388440064 | deep_1m_build_90_prt_64_pool_5_v               |         2200 |   66107 |    16385 |       66105 |             0 |    47402 |    900000 |         66108 | t
+ 66110 |     738033664 | deep_1m_build_90_prt_64_pool_5_v_embedding_idx |         2200 |       0 |    16385 |       66110 |             0 |    90092 |    900000 |             0 | f
+
+Time: 1.142 ms
+Index Hit Ratio for shared_buffers=163628974B (20%), Build Ratio=90%, Pool Ratio=pool_5:
+Timing is on.
+ deep_1m_build_90_prt_64_pool_5_v |       850141 |        287914 |           74.70
+
+Time: 2.156 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_10_v ...
+Insert deep_100k_build_90_prt_64_pool_30_v ...
+Insert Time: 
+Timing is on.
+ 16732 |      39190528 | deep_100k_build_90_prt_64_pool_30_v               |         2200 |   16734 |    16385 |       16732 |             0 |     4778 |     90000 |         16735 | t
+ 16737 |      73834496 | deep_100k_build_90_prt_64_pool_30_v_embedding_idx |         2200 |       0 |    16385 |       16737 |             0 |     9013 |     90000 |             0 | f
+
+Time: 1.125 ms
+Index Hit Ratio for shared_buffers=16411852B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_v |        99008 |             2 |          100.00
+
+Time: 2.683 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_v ...
+Insert deep_100k_build_90_prt_64_pool_30_v ...
+Insert Time: Inserted 10000 rows into deep_100k_build_90_prt_64_pool_30_v in 1069.36 seconds.
+Timing is on.
+ 16732 |      43171840 | deep_100k_build_90_prt_64_pool_30_v               |         2200 |   16734 |    16385 |       16732 |             0 |     5238 |     99521 |         16735 | t
+ 16737 |      82034688 | deep_100k_build_90_prt_64_pool_30_v_embedding_idx |         2200 |       0 |    16385 |       16737 |             0 |     9966 |     99521 |             0 | f
+
+Time: 7.244 ms
+Index Hit Ratio for shared_buffers=16411852B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_v |     44308559 |      14958317 |           74.76
+
+Time: 5.655 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_v ...
+Insert Time: Inserted 10000 rows into deep_100k_build_90_prt_64_pool_30_v in 1032.49 seconds.
+Timing is on.
+ 16732 |      43171840 | deep_100k_build_90_prt_64_pool_30_v               |         2200 |   16734 |    16385 |       16732 |             0 |     5225 |     99261 |         16735 | t
+ 16737 |      83517440 | deep_100k_build_90_prt_64_pool_30_v_embedding_idx |         2200 |       0 |    16385 |       16737 |             0 |    10118 |     99261 |             0 | f
+
+Time: 7.277 ms
+Index Hit Ratio for shared_buffers=16411852B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_v |     44964543 |      14433330 |           75.70
+
+Time: 5.655 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_v ...
+Insert deep_100k_build_90_prt_64_pool_30_v ...
+Insert deep_100k_build_90_prt_64_pool_30_v ...
+Insert Time: Inserted 10000 rows into deep_100k_build_90_prt_64_pool_30_v in 919.09 seconds.
+Timing is on.
+ 16732 |      43171840 | deep_100k_build_90_prt_64_pool_30_v               |         2200 |   16734 |    16385 |       16732 |             0 |     5218 |     99140 |         16735 | t
+ 16737 |      82034688 | deep_100k_build_90_prt_64_pool_30_v_embedding_idx |         2200 |       0 |    16385 |       16737 |             0 |     9928 |     99140 |             0 | f
+
+Time: 6.994 ms
+Index Hit Ratio for shared_buffers=16411852B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_v |     46613006 |      12688221 |           78.60
+
+Time: 5.521 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_v ...
+Insert Time: Inserted 10000 rows into deep_100k_build_90_prt_64_pool_30_v in 888.66 seconds.
+Timing is on.
+ 16732 |      43171840 | deep_100k_build_90_prt_64_pool_30_v               |         2200 |   16734 |    16385 |       16732 |             0 |     4778 |     90000 |         16735 | t
+ 16737 |      83615744 | deep_100k_build_90_prt_64_pool_30_v_embedding_idx |         2200 |       0 |    16385 |       16737 |             0 |     9013 |     90000 |             0 | f
+
+Time: 6.798 ms
+Index Hit Ratio for shared_buffers=16411852B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_v |     46898980 |      12366525 |           79.13
+
+Time: 5.264 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_p ...
+Insert Time: Inserted 10000 rows into deep_100k_build_90_prt_64_pool_30_p in 317.41 seconds.
+Timing is on.
+ 16767 |      43171840 | deep_100k_build_90_prt_64_pool_30_p               |         2200 |   16769 |    16385 |       16767 |             0 |     4778 |     90000 |         16770 | t
+ 16772 |      82051072 | deep_100k_build_90_prt_64_pool_30_p_embedding_idx |         2200 |       0 |    16385 |       16772 |             0 |     9016 |     90000 |             0 | f
+
+Time: 7.115 ms
+Index Hit Ratio for shared_buffers=16411852B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_p |     46767263 |       4175208 |           91.80
+
+Time: 5.583 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_p ...
+Insert Time: Inserted 10000 rows into deep_100k_build_90_prt_64_pool_30_p in 325.52 seconds.
+Timing is on.
+ 16767 |      43171840 | deep_100k_build_90_prt_64_pool_30_p               |         2200 |   16769 |    16385 |       16767 |             0 |     4778 |     90000 |         16770 | t
+ 16772 |      83034112 | deep_100k_build_90_prt_64_pool_30_p_embedding_idx |         2200 |       0 |    16385 |       16772 |             0 |     9016 |     90000 |             0 | f
+
+Time: 6.858 ms
+Index Hit Ratio for shared_buffers=16411852B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_p |     46594283 |       4402728 |           91.37
+
+Time: 5.428 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_op ...
+Insert Time: 
+Timing is on.
+ 16803 |      38846464 | deep_100k_build_90_prt_64_pool_30_op               |         2200 |   16805 |    16385 |       16803 |             0 |     4737 |     90000 |         16806 | t
+ 16808 |      73826304 | deep_100k_build_90_prt_64_pool_30_op_embedding_idx |         2200 |       0 |    16385 |       16808 |             0 |     9012 |     90000 |             0 | f
+
+Time: 1.680 ms
+Index Hit Ratio for shared_buffers=16411852B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_op |        80986 |         18026 |           81.79
+
+Time: 4.448 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_op ...
+Insert Time: 
+Timing is on.
+ 16803 |      38846464 | deep_100k_build_90_prt_64_pool_30_op               |         2200 |   16805 |    16385 |       16803 |             0 |     4737 |     90000 |         16806 | t
+ 16808 |      73826304 | deep_100k_build_90_prt_64_pool_30_op_embedding_idx |         2200 |       0 |    16385 |       16808 |             0 |     9012 |     90000 |             0 | f
+
+Time: 1.666 ms
+Index Hit Ratio for shared_buffers=16411852B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_op |        80986 |         18028 |           81.79
+
+Time: 4.565 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_o ...
+Insert Time: 
+Timing is on.
+ 16804 |      38846464 | deep_100k_build_90_prt_64_pool_30_o               |         2200 |   16806 |    16385 |       16804 |             0 |     4737 |     90000 |         16807 | t
+ 16809 |      73834496 | deep_100k_build_90_prt_64_pool_30_o_embedding_idx |         2200 |       0 |    16385 |       16809 |             0 |     9013 |     90000 |             0 | f
+
+Time: 1.863 ms
+Index Hit Ratio for shared_buffers=16411852B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_o |        80982 |         18028 |           81.79
+
+Time: 4.537 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_o ...
+Insert Time: 
+Timing is on.
+ 16804 |      38846464 | deep_100k_build_90_prt_64_pool_30_o               |         2200 |   16806 |    16385 |       16804 |             0 |     4737 |     90000 |         16807 | t
+ 16809 |      73834496 | deep_100k_build_90_prt_64_pool_30_o_embedding_idx |         2200 |       0 |    16385 |       16809 |             0 |     9013 |     90000 |             0 | f
+
+Time: 1.592 ms
+Index Hit Ratio for shared_buffers=16411852B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_o |        80982 |         18030 |           81.79
+
+Time: 4.369 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_o ...
+Insert Time: 
+Timing is on.
+ 16816 |      38862848 | deep_100k_build_90_prt_64_pool_30_o               |         2200 |   16818 |    16385 |       16816 |             0 |     4739 |     90000 |         16819 | t
+ 16821 |      73744384 | deep_100k_build_90_prt_64_pool_30_o_embedding_idx |         2200 |       0 |    16385 |       16821 |             0 |     9002 |     90000 |             0 | f
+
+Time: 1.845 ms
+Index Hit Ratio for shared_buffers=16411852B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_o |        80990 |         18006 |           81.81
+
+Time: 4.383 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_o ...
+Insert Time: Inserted 10000 rows into deep_100k_build_90_prt_64_pool_30_o in 2392.69 seconds.
+Timing is on.
+ 16822 |      43171840 | deep_100k_build_90_prt_64_pool_30_o               |         2200 |   16824 |    16385 |       16822 |             0 |     5238 |     99510 |         16825 | t
+ 16827 |      82026496 | deep_100k_build_90_prt_64_pool_30_o_embedding_idx |         2200 |       0 |    16385 |       16827 |             0 |     9964 |     99510 |             0 | f
+
+Time: 7.680 ms
+Index Hit Ratio for shared_buffers=16411852B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_o |     25746835 |      33469649 |           43.48
+
+Time: 5.365 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_ov ...
+Insert Time: Inserted 10000 rows into deep_100k_build_90_prt_64_pool_30_ov in 2299.26 seconds.
+Timing is on.
+ 16847 |      43171840 | deep_100k_build_90_prt_64_pool_30_ov               |         2200 |   16849 |    16385 |       16847 |             0 |     5228 |     99318 |         16850 | t
+ 16852 |      82026496 | deep_100k_build_90_prt_64_pool_30_ov_embedding_idx |         2200 |       0 |    16385 |       16852 |             0 |     9945 |     99318 |             0 | f
+
+Time: 7.308 ms
+Index Hit Ratio for shared_buffers=16411852B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_ov |     26814865 |      32393745 |           45.29
+
+Time: 5.502 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_op ...
+Insert Time: Inserted 10000 rows into deep_100k_build_90_prt_64_pool_30_op in 532.00 seconds.
+Timing is on.
+ 16855 |      43180032 | deep_100k_build_90_prt_64_pool_30_op               |         2200 |   16857 |    16385 |       16855 |             0 |     4763 |     90476 |         16858 | t
+ 16860 |      82010112 | deep_100k_build_90_prt_64_pool_30_op_embedding_idx |         2200 |       0 |    16385 |       16860 |             0 |     9058 |     90476 |             0 | f
+
+Time: 7.351 ms
+Index Hit Ratio for shared_buffers=16411852B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_op |     43339005 |       7505548 |           85.24
+
+Time: 5.542 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_pt ...
+Insert deep_100k_build_90_prt_64_pool_30_pt ...
+Insert Time: Inserted 10000 rows into deep_100k_build_90_prt_64_pool_30_pt in 327.09 seconds.
+Timing is on.
+ 16809 |      43171840 | deep_100k_build_90_prt_64_pool_30_pt               |         2200 |   16811 |    16385 |       16809 |             0 |     4787 |     90943 |         16812 | t
+ 16814 |      82935808 | deep_100k_build_90_prt_64_pool_30_pt_embedding_idx |         2200 |       0 |    16385 |       16814 |             0 |     9211 |     90943 |             0 | f
+
+Time: 7.650 ms
+Index Hit Ratio for shared_buffers=16411852B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_pt |     46504208 |       4393234 |           91.37
+
+Time: 5.651 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_v ...
+Insert deep_100k_build_90_prt_64_pool_30_v ...
+Insert Time: 
+
+Index Hit Ratio for shared_buffers=16411852B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_v ...
+Insert Time: 
+
+Index Hit Ratio for shared_buffers=16411852B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_v ...
+Insert Time: Inserted 10000 rows into deep_100k_build_90_prt_64_pool_30_v in 347.28 seconds.
+Timing is on.
+ 16726 |      43171840 | deep_100k_build_90_prt_64_pool_30_v               |         2200 |   16728 |    16385 |       16726 |             0 |     4825 |     91666 |         16729 | t
+ 16731 |      82034688 | deep_100k_build_90_prt_64_pool_30_v_embedding_idx |         2200 |       0 |    16385 |       16731 |             0 |     9181 |     91666 |             0 | f
+
+Time: 7.122 ms
+Index Hit Ratio for shared_buffers=16411852B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_v |     26991412 |       1556052 |           94.55
+
+Time: 5.530 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_v ...
+Insert deep_100k_build_90_prt_64_pool_30_v ...
+Insert Time: Inserted 10000 rows into deep_100k_build_90_prt_64_pool_30_v in 337.85 seconds.
+Timing is on.
+ 16726 |      43163648 | deep_100k_build_90_prt_64_pool_30_v               |         2200 |   16728 |    16385 |       16726 |             0 |     4778 |     90000 |         16729 | t
+ 16731 |      83566592 | deep_100k_build_90_prt_64_pool_30_v_embedding_idx |         2200 |       0 |    16385 |       16731 |             0 |     9013 |     90000 |             0 | f
+
+Time: 7.444 ms
+Index Hit Ratio for shared_buffers=16411852B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_v |     27013278 |       1415477 |           95.02
+
+Time: 5.571 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_v ...
+Insert Time: Inserted 10000 rows into deep_100k_build_90_prt_64_pool_30_v in 319.58 seconds.
+Timing is on.
+ 16726 |      43171840 | deep_100k_build_90_prt_64_pool_30_v               |         2200 |   16728 |    16385 |       16726 |             0 |     4849 |     92119 |         16729 | t
+ 16731 |      82026496 | deep_100k_build_90_prt_64_pool_30_v_embedding_idx |         2200 |       0 |    16385 |       16731 |             0 |     9226 |     92119 |             0 | f
+
+Time: 7.312 ms
+Index Hit Ratio for shared_buffers=16411852B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_v |     27141194 |       1390870 |           95.13
+
+Time: 5.166 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_v ...
+Insert Time: Inserted 10000 rows into deep_100k_build_90_prt_64_pool_30_v in 313.64 seconds.
+Timing is on.
+ 16726 |      43171840 | deep_100k_build_90_prt_64_pool_30_v               |         2200 |   16728 |    16385 |       16726 |             0 |     4850 |     92138 |         16729 | t
+ 16731 |      83607552 | deep_100k_build_90_prt_64_pool_30_v_embedding_idx |         2200 |       0 |    16385 |       16731 |             0 |     9308 |     92138 |             0 | f
+
+Time: 7.261 ms
+Index Hit Ratio for shared_buffers=16411852B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_v |     27228018 |       1320972 |           95.37
+
+Time: 5.463 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_p ...
+Insert deep_100k_build_90_prt_64_pool_30_p ...
+Insert Time: Inserted 10000 rows into deep_100k_build_90_prt_64_pool_30_p in 150.06 seconds.
+Timing is on.
+ 16715 |      43171840 | deep_100k_build_90_prt_64_pool_30_p               |         2200 |   16717 |    16385 |       16715 |             0 |     4778 |     90000 |         16718 | t
+ 16725 |      82018304 | deep_100k_build_90_prt_64_pool_30_p_embedding_idx |         2200 |       0 |    16385 |       16725 |             0 |     9012 |     90000 |             0 | f
+
+Time: 7.014 ms
+Index Hit Ratio for shared_buffers=16411852B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_p |     28197919 |        345916 |           98.79
+
+Time: 4.967 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_p ...
+Insert Time: Inserted 10000 rows into deep_100k_build_90_prt_64_pool_30_p in 154.01 seconds.
+Timing is on.
+ 16715 |      43171840 | deep_100k_build_90_prt_64_pool_30_p               |         2200 |   16717 |    16385 |       16715 |             0 |     4778 |     90000 |         16718 | t
+ 16725 |      82960384 | deep_100k_build_90_prt_64_pool_30_p_embedding_idx |         2200 |       0 |    16385 |       16725 |             0 |     9012 |     90000 |             0 | f
+
+Time: 7.314 ms
+Index Hit Ratio for shared_buffers=16411852B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_p |     28220436 |        352094 |           98.77
+
+Time: 5.333 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_o ...
+Insert Time: Inserted 10000 rows into deep_100k_build_90_prt_64_pool_30_o in 842.80 seconds.
+Timing is on.
+ 16734 |      43171840 | deep_100k_build_90_prt_64_pool_30_o               |         2200 |   16736 |    16385 |       16734 |             0 |     5258 |     99888 |         16737 | t
+ 16739 |      82018304 | deep_100k_build_90_prt_64_pool_30_o_embedding_idx |         2200 |       0 |    16385 |       16739 |             0 |    10001 |     99888 |             0 | f
+
+Time: 7.387 ms
+Index Hit Ratio for shared_buffers=16411852B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_o |     20712468 |       7855023 |           72.50
+
+Time: 5.485 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_ov ...
+Insert Time: Inserted 10000 rows into deep_100k_build_90_prt_64_pool_30_ov in 835.77 seconds.
+Timing is on.
+ 16734 |      43171840 | deep_100k_build_90_prt_64_pool_30_ov               |         2200 |   16736 |    16385 |       16734 |             0 |     5260 |     99934 |         16737 | t
+ 16739 |      82018304 | deep_100k_build_90_prt_64_pool_30_ov_embedding_idx |         2200 |       0 |    16385 |       16739 |             0 |    10006 |     99934 |             0 | f
+
+Time: 7.210 ms
+Index Hit Ratio for shared_buffers=16411852B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_ov |     20925741 |       7576366 |           73.42
+
+Time: 5.131 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_op ...
+Insert Time: Inserted 10000 rows into deep_100k_build_90_prt_64_pool_30_op in 237.33 seconds.
+Timing is on.
+ 16741 |      43171840 | deep_100k_build_90_prt_64_pool_30_op               |         2200 |   16743 |    16385 |       16741 |             0 |     5231 |     99389 |         16744 | t
+ 16746 |      82018304 | deep_100k_build_90_prt_64_pool_30_op_embedding_idx |         2200 |       0 |    16385 |       16746 |             0 |     9957 |     99389 |             0 | f
+
+Time: 7.314 ms
+Index Hit Ratio for shared_buffers=16411852B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_op |     27314155 |       1234911 |           95.67
+
+Time: 5.193 ms
+---------------------------------
+
+Insert deep_1m_build_95_prt_64_pool_30_o ...
+Insert Time: 
+Timing is on.
+ 16733 |     409960448 | deep_1m_build_95_prt_64_pool_30_o               |         2200 |   16735 |    16385 |       16733 |             0 |    50026 |    950000 |         16736 | t
+ 16741 |     779018240 | deep_1m_build_95_prt_64_pool_30_o_embedding_idx |         2200 |       0 |    16385 |       16741 |             0 |    95095 |    950000 |             0 | f
+
+Time: 1.870 ms
+Index Hit Ratio for shared_buffers=778247782B (95%), Build Ratio=95%, Pool Ratio=pool_30:
+Timing is on.
+ deep_1m_build_95_prt_64_pool_30_o |       879948 |        285627 |           75.49
+
+Time: 4.521 ms
+---------------------------------
+
+Insert deep_1m_build_95_prt_64_pool_30_op ...
+Insert Time: 
+Timing is on.
+ 16742 |     409960448 | deep_1m_build_95_prt_64_pool_30_op               |         2200 |   16744 |    16385 |       16742 |             0 |    50026 |    950019 |         16745 | t
+ 16747 |     779108352 | deep_1m_build_95_prt_64_pool_30_op_embedding_idx |         2200 |       0 |    16385 |       16747 |             0 |    95106 |    950019 |             0 | f
+
+Time: 1.775 ms
+Index Hit Ratio for shared_buffers=778247782B (95%), Build Ratio=95%, Pool Ratio=pool_30:
+Timing is on.
+ deep_1m_build_95_prt_64_pool_30_op |       861912 |        285575 |           75.11
+
+Time: 4.489 ms
+---------------------------------
+
+Insert deep_100k_build_95_prt_64_pool_30_tt ...
+Insert Time: Inserted 5000 rows into deep_100k_build_95_prt_64_pool_30_tt in 27.42 seconds.
+Timing is on.
+ 16755 |      43163648 | deep_100k_build_95_prt_64_pool_30_tt               |         2200 |   16757 |    16385 |       16755 |             0 |     5034 |     95000 |         16758 | t
+ 16760 |      82018304 | deep_100k_build_95_prt_64_pool_30_tt_embedding_idx |         2200 |       0 |    16385 |       16760 |             0 |     9512 |     95000 |             0 | f
+
+Time: 1.833 ms
+Index Hit Ratio for shared_buffers=778247782B (95%), Build Ratio=95%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_95_prt_64_pool_30_tt |     14244336 |         90621 |           99.37
+
+Time: 4.570 ms
+---------------------------------
+
+Insert deep_1m_build_95_prt_64_pool_30_o ...
+Insert Time: 
+Timing is on.
+ 16733 |     409960448 | deep_1m_build_95_prt_64_pool_30_o               |         2200 |   16735 |    16385 |       16733 |             0 |    50026 |    950000 |         16736 | t
+ 16741 |     779018240 | deep_1m_build_95_prt_64_pool_30_o_embedding_idx |         2200 |       0 |    16385 |       16741 |             0 |    95095 |    950000 |             0 | f
+
+Time: 1.953 ms
+Index Hit Ratio for shared_buffers=778247782B (95%), Build Ratio=95%, Pool Ratio=pool_30:
+Timing is on.
+ deep_1m_build_95_prt_64_pool_30_o |       884201 |        285992 |           75.56
+
+Time: 4.534 ms
+---------------------------------
+
+Insert deep_1m_build_95_prt_64_pool_30_o ...
+Insert Time: 
+Timing is on.
+ 16733 |     409960448 | deep_1m_build_95_prt_64_pool_30_o               |         2200 |   16735 |    16385 |       16733 |             0 |    50026 |    950000 |         16736 | t
+ 16741 |     779018240 | deep_1m_build_95_prt_64_pool_30_o_embedding_idx |         2200 |       0 |    16385 |       16741 |             0 |    95095 |    950000 |             0 | f
+
+Time: 1.859 ms
+Index Hit Ratio for shared_buffers=778247782B (95%), Build Ratio=95%, Pool Ratio=pool_30:
+Timing is on.
+ deep_1m_build_95_prt_64_pool_30_o |       888459 |        286344 |           75.63
+
+Time: 4.761 ms
+---------------------------------
+
+Insert deep_1m_build_95_prt_64_pool_5_o ...
+Insert Time: 
+Timing is on.
+ 16761 |     409944064 | deep_1m_build_95_prt_64_pool_5_o               |         2200 |   16763 |    16385 |       16761 |             0 |    50026 |    950000 |         16764 | t
+ 16766 |     779026432 | deep_1m_build_95_prt_64_pool_5_o_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |    95096 |    950000 |             0 | f
+
+Time: 1.759 ms
+Index Hit Ratio for shared_buffers=778247782B (95%), Build Ratio=95%, Pool Ratio=pool_5:
+Timing is on.
+ deep_1m_build_95_prt_64_pool_5_o |       877805 |        284992 |           75.49
+
+Time: 4.712 ms
+---------------------------------
+
+Insert deep_1m_build_95_prt_64_pool_1_o ...
+Insert Time: 
+Timing is on.
+ 16769 |     409944064 | deep_1m_build_95_prt_64_pool_1_o               |         2200 |   16771 |    16385 |       16769 |             0 |    50026 |    950000 |         16772 | t
+ 16774 |     779001856 | deep_1m_build_95_prt_64_pool_1_o_embedding_idx |         2200 |       0 |    16385 |       16774 |             0 |    95093 |    950000 |             0 | f
+
+Time: 1.920 ms
+Index Hit Ratio for shared_buffers=778247782B (95%), Build Ratio=95%, Pool Ratio=pool_1:
+Timing is on.
+ deep_1m_build_95_prt_64_pool_1_o |       863663 |        285102 |           75.18
+
+Time: 4.694 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_to ...
+Insert deep_100k_build_90_prt_64_pool_30_to ...
+Insert Time: Inserted 1000 rows into deep_100k_build_90_prt_64_pool_30_to in 98.81 seconds.
+Timing is on.
+ 16810 |      39297024 | deep_100k_build_90_prt_64_pool_30_to               |         2200 |   16812 |    16385 |       16810 |             0 |     4766 |     90541 |         16813 | t
+ 16815 |      76767232 | deep_100k_build_90_prt_64_pool_30_to_embedding_idx |         2200 |       0 |    16385 |       16815 |             0 |     9293 |     90541 |             0 | f
+
+Time: 7.243 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_to |      4571780 |       1409445 |           76.44
+
+Time: 5.204 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_to ...
+Insert deep_100k_build_90_prt_64_pool_30_to ...
+Insert Time: Inserted 3000 rows into deep_100k_build_90_prt_64_pool_30_to in 309.74 seconds.
+Timing is on.
+ 16840 |      40157184 | deep_100k_build_90_prt_64_pool_30_to               |         2200 |   16842 |    16385 |       16840 |             0 |     4765 |     90515 |         16843 | t
+ 16845 |      76283904 | deep_100k_build_90_prt_64_pool_30_to_embedding_idx |         2200 |       0 |    16385 |       16845 |             0 |     9064 |     90515 |             0 | f
+
+Time: 7.450 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_to |     13492005 |       4292028 |           75.87
+
+Time: 5.500 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_tl ...
+Insert Time: Inserted 3000 rows into deep_100k_build_90_prt_64_pool_30_tl in 299.65 seconds.
+Timing is on.
+ 16834 |      40148992 | deep_100k_build_90_prt_64_pool_30_tl               |         2200 |   16836 |    16385 |       16834 |             0 |     4739 |     90000 |         16837 | t
+ 16839 |      78053376 | deep_100k_build_90_prt_64_pool_30_tl_embedding_idx |         2200 |       0 |    16385 |       16839 |             0 |     9013 |     90000 |             0 | f
+
+Time: 7.573 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_tl |     13563434 |       4225110 |           76.25
+
+Time: 5.519 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_tl2 ...
+Insert Time: Inserted 3000 rows into deep_100k_build_90_prt_64_pool_30_tl2 in 151.87 seconds.
+Timing is on.
+ 16855 |      40157184 | deep_100k_build_90_prt_64_pool_30_tl2               |         2200 |   16857 |    16385 |       16855 |             0 |     4798 |     91150 |         16858 | t
+ 16860 |      78053376 | deep_100k_build_90_prt_64_pool_30_tl2_embedding_idx |         2200 |       0 |    16385 |       16860 |             0 |     9388 |     91150 |             0 | f
+
+Time: 7.580 ms
+Index Hit Ratio for shared_buffers=41017344B (50%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_tl2 |     15697342 |       2060792 |           88.40
+
+Time: 5.640 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_tl3 ...
+Insert Time: 
+Timing is on.
+
+Time: 1.441 ms
+Index Hit Ratio for shared_buffers=65627750B (80%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+
+Time: 4.483 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_tl3 ...
+Insert Time: Inserted 3000 rows into deep_100k_build_90_prt_64_pool_30_tl3 in 44.23 seconds.
+Timing is on.
+ 16884 |      40140800 | deep_100k_build_90_prt_64_pool_30_tl3               |         2200 |   16886 |    16385 |       16884 |             0 |     4750 |     90000 |         16887 | t
+ 16889 |      78045184 | deep_100k_build_90_prt_64_pool_30_tl3_embedding_idx |         2200 |       0 |    16385 |       16889 |             0 |     9014 |     90000 |             0 | f
+
+Time: 7.399 ms
+Index Hit Ratio for shared_buffers=65627750B (80%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_tl3 |     17259314 |        525348 |           97.05
+
+Time: 5.552 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_tl4 ...
+Insert Time: Inserted 3000 rows into deep_100k_build_90_prt_64_pool_30_tl4 in 7.88 seconds.
+Timing is on.
+ 16873 |      40148992 | deep_100k_build_90_prt_64_pool_30_tl4               |         2200 |   16875 |    16385 |       16873 |             0 |     4739 |     90000 |         16876 | t
+ 16878 |      78045184 | deep_100k_build_90_prt_64_pool_30_tl4_embedding_idx |         2200 |       0 |    16385 |       16878 |             0 |     9012 |     90000 |             0 | f
+
+Time: 2.006 ms
+Index Hit Ratio for shared_buffers=82034688B (100%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_tl4 |     17781158 |         27036 |           99.85
+
+Time: 4.522 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_to2 ...
+Insert Time: Inserted 3000 rows into deep_100k_build_90_prt_64_pool_30_to2 in 151.66 seconds.
+Timing is on.
+ 16849 |      40148992 | deep_100k_build_90_prt_64_pool_30_to2               |         2200 |   16851 |    16385 |       16849 |             0 |     4739 |     90000 |         16852 | t
+ 16854 |      76275712 | deep_100k_build_90_prt_64_pool_30_to2_embedding_idx |         2200 |       0 |    16385 |       16854 |             0 |     9011 |     90000 |             0 | f
+
+Time: 7.508 ms
+Index Hit Ratio for shared_buffers=41017344B (50%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_to2 |     15748914 |       2051580 |           88.47
+
+Time: 5.656 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_to3 ...
+Insert Time: Inserted 3000 rows into deep_100k_build_90_prt_64_pool_30_to3 in 40.81 seconds.
+Timing is on.
+ 16861 |      40148992 | deep_100k_build_90_prt_64_pool_30_to3               |         2200 |   16863 |    16385 |       16861 |             0 |     4739 |     90000 |         16864 | t
+ 16866 |      76308480 | deep_100k_build_90_prt_64_pool_30_to3_embedding_idx |         2200 |       0 |    16385 |       16866 |             0 |     9015 |     90000 |             0 | f
+
+Time: 7.330 ms
+Index Hit Ratio for shared_buffers=65627750B (80%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_to3 |     17285352 |        485433 |           97.27
+
+Time: 5.747 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_to4 ...
+Insert Time: Inserted 3000 rows into deep_100k_build_90_prt_64_pool_30_to4 in 7.81 seconds.
+Timing is on.
+ 16867 |      40148992 | deep_100k_build_90_prt_64_pool_30_to4               |         2200 |   16869 |    16385 |       16867 |             0 |     4739 |     90000 |         16870 | t
+ 16872 |      76300288 | deep_100k_build_90_prt_64_pool_30_to4_embedding_idx |         2200 |       0 |    16385 |       16872 |             0 |     9013 |     90000 |             0 | f
+
+Time: 2.061 ms
+Index Hit Ratio for shared_buffers=82034688B (100%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_to4 |     17718931 |         27038 |           99.85
+
+Time: 4.588 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t1 ...
+Insert Time: 
+
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t1 ...
+Insert Time: 
+Timing is on.
+ 16747 |      39182336 | deep_100k_build_90_prt_64_pool_30_t1               |         2200 |   16749 |    16385 |       16747 |             0 |     4778 |     90000 |         16750 | t
+ 16752 |      73826304 | deep_100k_build_90_prt_64_pool_30_t1_embedding_idx |         2200 |       0 |    16385 |       16752 |             0 |     9012 |     90000 |             0 | f
+
+Time: 6.246 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t1 |            0 |             0 |                
+
+Time: 4.431 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t1 ...
+Insert Time: 
+Timing is on.
+ 16747 |      39182336 | deep_100k_build_90_prt_64_pool_30_t1               |         2200 |   16749 |    16385 |       16747 |             0 |     4778 |     90000 |         16750 | t
+ 16752 |      73826304 | deep_100k_build_90_prt_64_pool_30_t1_embedding_idx |         2200 |       0 |    16385 |       16752 |             0 |     9012 |     90000 |             0 | f
+
+Time: 7.347 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t1 |            0 |             0 |                
+
+Time: 4.432 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t1 ...
+Insert deep_100k_build_90_prt_64_pool_30_t1 ...
+Insert deep_100k_build_90_prt_64_pool_30_t1 ...
+Insert Time: Inserted 3000 rows into deep_100k_build_90_prt_64_pool_30_t1 in 100.77 seconds.
+Timing is on.
+ 16747 |      40173568 | deep_100k_build_90_prt_64_pool_30_t1               |         2200 |   16749 |    16385 |       16747 |             0 |     4778 |     90000 |         16750 | t
+ 16752 |      78053376 | deep_100k_build_90_prt_64_pool_30_t1_embedding_idx |         2200 |       0 |    16385 |       16752 |             0 |     9012 |     90000 |             0 | f
+
+Time: 6.662 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t1 |      8170152 |        399354 |           95.34
+
+Time: 5.058 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t2 ...
+Insert Time: Inserted 3000 rows into deep_100k_build_90_prt_64_pool_30_t2 in 324.26 seconds.
+Timing is on.
+ 16754 |      40157184 | deep_100k_build_90_prt_64_pool_30_t2               |         2200 |   16756 |    16385 |       16754 |             0 |     4764 |     90506 |         16757 | t
+ 16759 |      77963264 | deep_100k_build_90_prt_64_pool_30_t2_embedding_idx |         2200 |       0 |    16385 |       16759 |             0 |     9285 |     90506 |             0 | f
+
+Time: 6.845 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t2 |     13546975 |       4228649 |           76.21
+
+Time: 5.071 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 3000 rows into deep_100k_build_90_prt_64_pool_30_t3 in 316.51 seconds.
+Timing is on.
+ 16761 |      40157184 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78004224 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 6.719 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |     13560856 |       4239365 |           76.18
+
+Time: 5.126 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into deep_100k_build_90_prt_64_pool_30_t3 in 0.16 seconds.
+Timing is on.
+ 16761 |      40157184 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78004224 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.843 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |     13563636 |       4239378 |           76.19
+
+Time: 6.593 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16761 |      40157184 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78004224 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 6.580 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |            0 |             0 |                
+
+Time: 4.703 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16761 |      40157184 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78004224 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 6.620 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |            0 |             0 |                
+
+Time: 4.611 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16761 |      40157184 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78004224 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 6.587 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |            0 |             0 |                
+
+Time: 4.579 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16761 |      40157184 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78004224 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 6.497 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |            0 |             0 |                
+
+Time: 4.571 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16761 |      40157184 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78004224 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 6.621 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |            0 |             0 |                
+
+Time: 4.591 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16761 |      40157184 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78004224 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 6.516 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |            0 |             0 |                
+
+Time: 4.515 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into deep_100k_build_90_prt_64_pool_30_t3 in 0.06 seconds.
+Timing is on.
+ 16761 |      40157184 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 4.639 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |         2478 |           334 |           88.12
+
+Time: 4.846 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into deep_100k_build_90_prt_64_pool_30_t3 in 0.06 seconds.
+Timing is on.
+ 16761 |      40157184 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 2.171 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |         4970 |           432 |           92.00
+
+Time: 4.649 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16761 |      40157184 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 6.809 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |            0 |             0 |                
+
+Time: 4.739 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into deep_100k_build_90_prt_64_pool_30_t3 in 0.17 seconds.
+Timing is on.
+ 16761 |      40157184 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 8.251 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |         3374 |          1384 |           70.91
+
+Time: 5.255 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into deep_100k_build_90_prt_64_pool_30_t3 in 0.06 seconds.
+Timing is on.
+ 16761 |      40157184 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 3.499 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |         5938 |          1619 |           78.58
+
+Time: 4.681 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into deep_100k_build_90_prt_64_pool_30_t3 in 0.06 seconds.
+Timing is on.
+ 16761 |      40157184 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 3.817 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |         8505 |          1848 |           82.15
+
+Time: 4.796 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into deep_100k_build_90_prt_64_pool_30_t3 in 0.04 seconds.
+Timing is on.
+ 16761 |      40165376 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 3.705 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |         8912 |          1856 |           82.76
+
+Time: 4.863 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into deep_100k_build_90_prt_64_pool_30_t3 in 0.03 seconds.
+Timing is on.
+ 16761 |      40165376 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.817 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        11678 |          1880 |           86.13
+
+Time: 4.625 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into deep_100k_build_90_prt_64_pool_30_t3 in 0.02 seconds.
+Timing is on.
+ 16761 |      40165376 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.704 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        12074 |          1901 |           86.40
+
+Time: 4.549 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16761 |      40165376 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 6.644 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |            0 |             0 |                
+
+Time: 4.593 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into deep_100k_build_90_prt_64_pool_30_t3 in 0.03 seconds.
+Timing is on.
+ 16761 |      40165376 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.952 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |         2555 |            56 |           97.86
+
+Time: 4.993 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into deep_100k_build_90_prt_64_pool_30_t3 in 0.03 seconds.
+Timing is on.
+ 16761 |      40165376 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.808 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |         2766 |            65 |           97.70
+
+Time: 4.651 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into deep_100k_build_90_prt_64_pool_30_t3 in 0.04 seconds.
+Timing is on.
+ 16761 |      40165376 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.807 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |         5317 |           128 |           97.65
+
+Time: 5.043 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16761 |      40165376 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 6.786 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |            0 |             0 |                
+
+Time: 4.733 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into deep_100k_build_90_prt_64_pool_30_t3 in 0.03 seconds.
+Timing is on.
+ 16761 |      40165376 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.875 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |         2673 |            34 |           98.74
+
+Time: 4.726 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into deep_100k_build_90_prt_64_pool_30_t3 in 0.03 seconds.
+Timing is on.
+ 16761 |      40165376 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.845 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |         5310 |            92 |           98.30
+
+Time: 4.656 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into deep_100k_build_90_prt_64_pool_30_t3 in 0.04 seconds.
+Timing is on.
+ 16761 |      40165376 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.799 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |         8010 |           101 |           98.75
+
+Time: 4.520 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16761 |      40165376 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.781 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |         8318 |           106 |           98.74
+
+Time: 4.740 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16761 |      40165376 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.988 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |         8633 |           114 |           98.70
+
+Time: 4.700 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16761 |      40165376 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 6.769 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |            0 |             0 |                
+
+Time: 4.803 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16761 |      40165376 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.907 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |          306 |            11 |           96.53
+
+Time: 4.561 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16761 |      40165376 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 2.046 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |          617 |            19 |           97.01
+
+Time: 5.038 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into deep_100k_build_90_prt_64_pool_30_t3 in 0.08 seconds.
+Timing is on.
+ 16761 |      40165376 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 3.964 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |         3069 |           266 |           92.02
+
+Time: 4.706 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16761 |      40165376 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 6.795 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |            0 |             0 |                
+
+Time: 4.968 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16761 |      40165376 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.727 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |          305 |            14 |           95.61
+
+Time: 4.716 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16761 |      40165376 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.729 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |          610 |            28 |           95.61
+
+Time: 4.625 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16761 |      40165376 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.857 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |          915 |            42 |           95.61
+
+Time: 4.781 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16761 |      40165376 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 6.586 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |            0 |             0 |                
+
+Time: 5.087 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into deep_100k_build_90_prt_64_pool_30_t3 in 0.07 seconds.
+Timing is on.
+ 16761 |      40165376 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.734 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |         2763 |            20 |           99.28
+
+Time: 4.595 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16761 |      40165376 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.687 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |         3064 |            36 |           98.84
+
+Time: 4.580 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16761 |      40173568 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.629 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |         3408 |            59 |           98.30
+
+Time: 4.454 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into deep_100k_build_90_prt_64_pool_30_t3 in 0.06 seconds.
+Timing is on.
+ 16761 |      40173568 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.762 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |         6150 |            91 |           98.54
+
+Time: 4.593 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16761 |      40173568 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.803 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |         7257 |           623 |           92.09
+
+Time: 4.643 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16761 |      40173568 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.681 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |         7649 |           628 |           92.41
+
+Time: 4.587 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16761 |      40173568 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.797 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |         8043 |           635 |           92.68
+
+Time: 4.662 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16761 |      40173568 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.802 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |         8437 |           642 |           92.93
+
+Time: 4.700 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16761 |      40173568 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.790 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |         8831 |           649 |           93.15
+
+Time: 4.485 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16761 |      40173568 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.731 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |         9225 |           656 |           93.36
+
+Time: 4.584 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16761 |      40173568 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.662 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |         9619 |           663 |           93.55
+
+Time: 4.563 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16761 |      40173568 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 2.187 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        10013 |           670 |           93.73
+
+Time: 4.708 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16761 |      40173568 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.892 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        10407 |           677 |           93.89
+
+Time: 4.651 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16761 |      40173568 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 2.008 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        10801 |           684 |           94.04
+
+Time: 4.632 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into deep_100k_build_90_prt_64_pool_30_t3 in 0.06 seconds.
+Timing is on.
+ 16761 |      40173568 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 2.021 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        13561 |           708 |           95.04
+
+Time: 4.851 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16761 |      40173568 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.720 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        13951 |           715 |           95.12
+
+Time: 4.637 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into deep_100k_build_90_prt_64_pool_30_t3 in 0.08 seconds.
+Timing is on.
+ 16761 |      40173568 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.705 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        16738 |           729 |           95.83
+
+Time: 4.536 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into deep_100k_build_90_prt_64_pool_30_t3 in 0.03 seconds.
+Timing is on.
+ 16761 |      40173568 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.600 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        17124 |           741 |           95.85
+
+Time: 4.365 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into deep_100k_build_90_prt_64_pool_30_t3 in 0.03 seconds.
+Timing is on.
+ 16761 |      40173568 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.880 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        17510 |           753 |           95.88
+
+Time: 4.720 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16761 |      40173568 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.819 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        17902 |           762 |           95.92
+
+Time: 4.636 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16761 |      40173568 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.823 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        18294 |           771 |           95.96
+
+Time: 4.543 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16761 |      40181760 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.852 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        18686 |           780 |           95.99
+
+Time: 4.871 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16761 |      40181760 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.696 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        19078 |           789 |           96.03
+
+Time: 4.567 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16761 |      40181760 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.812 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        19470 |           798 |           96.06
+
+Time: 4.638 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16761 |      40181760 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.725 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        19862 |           807 |           96.10
+
+Time: 4.587 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into deep_100k_build_90_prt_64_pool_30_t3 in 0.08 seconds.
+Timing is on.
+ 16761 |      40181760 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.905 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        22661 |           821 |           96.50
+
+Time: 4.705 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into deep_100k_build_90_prt_64_pool_30_t3 in 0.07 seconds.
+Timing is on.
+ 16761 |      40181760 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.683 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        23064 |           833 |           96.51
+
+Time: 4.599 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into deep_100k_build_90_prt_64_pool_30_t3 in 0.07 seconds.
+Timing is on.
+ 16761 |      40181760 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.906 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        23467 |           845 |           96.52
+
+Time: 4.489 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into deep_100k_build_90_prt_64_pool_30_t3 in 0.10 seconds.
+Timing is on.
+ 16761 |      40181760 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.818 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        26248 |           859 |           96.83
+
+Time: 4.616 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into deep_100k_build_90_prt_64_pool_30_t3 in 0.08 seconds.
+Timing is on.
+ 16761 |      40181760 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.794 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        26655 |           871 |           96.84
+
+Time: 4.716 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into deep_100k_build_90_prt_64_pool_30_t3 in 0.10 seconds.
+Timing is on.
+ 16761 |      40181760 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.783 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        29460 |           881 |           97.10
+
+Time: 4.650 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16761 |      40181760 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.881 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        29846 |           890 |           97.10
+
+Time: 4.628 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16761 |      40181760 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.676 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        30232 |           899 |           97.11
+
+Time: 4.656 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16761 |      40181760 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.914 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        30618 |           908 |           97.12
+
+Time: 4.772 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into deep_100k_build_90_prt_64_pool_30_t3 in 0.01 seconds.
+Timing is on.
+ 16761 |      40181760 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.822 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        30643 |           951 |           96.99
+
+Time: 4.868 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into deep_100k_build_90_prt_64_pool_30_t3 in 0.09 seconds.
+Timing is on.
+ 16761 |      40181760 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.880 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        31049 |           960 |           97.00
+
+Time: 4.589 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into deep_100k_build_90_prt_64_pool_30_t3 in 0.12 seconds.
+Timing is on.
+ 16761 |      40181760 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.625 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        31455 |           969 |           97.01
+
+Time: 4.480 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into deep_100k_build_90_prt_64_pool_30_t3 in 0.12 seconds.
+Timing is on.
+ 16761 |      40181760 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.836 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        31861 |           978 |           97.02
+
+Time: 4.994 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into deep_100k_build_90_prt_64_pool_30_t3 in 0.03 seconds.
+Timing is on.
+ 16761 |      40181760 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.779 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        31899 |           985 |           97.00
+
+Time: 4.591 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into deep_100k_build_90_prt_64_pool_30_t3 in 0.03 seconds.
+Timing is on.
+ 16761 |      40181760 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.834 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        32078 |          1236 |           96.29
+
+Time: 4.571 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into deep_100k_build_90_prt_64_pool_30_t3 in 0.03 seconds.
+Timing is on.
+ 16761 |      40189952 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.735 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        32257 |          1487 |           95.59
+
+Time: 4.552 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into deep_100k_build_90_prt_64_pool_30_t3 in 0.02 seconds.
+Timing is on.
+ 16761 |      40189952 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.864 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        32436 |          1738 |           94.91
+
+Time: 4.538 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into deep_100k_build_90_prt_64_pool_30_t3 in 0.03 seconds.
+Timing is on.
+ 16761 |      40189952 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.786 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        32615 |          1989 |           94.25
+
+Time: 4.542 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into deep_100k_build_90_prt_64_pool_30_t3 in 0.03 seconds.
+Timing is on.
+ 16761 |      40189952 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 2.081 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        32794 |          2240 |           93.61
+
+Time: 6.458 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into deep_100k_build_90_prt_64_pool_30_t3 in 0.03 seconds.
+Timing is on.
+ 16761 |      40189952 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 2.980 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        32974 |          2491 |           92.98
+
+Time: 4.643 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into deep_100k_build_90_prt_64_pool_30_t3 in 0.03 seconds.
+Timing is on.
+ 16761 |      40189952 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.754 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        33154 |          2742 |           92.36
+
+Time: 4.525 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into deep_100k_build_90_prt_64_pool_30_t3 in 0.12 seconds.
+Timing is on.
+ 16761 |      40189952 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.890 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        34782 |          3956 |           89.79
+
+Time: 4.581 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16761 |      40189952 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.787 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        35168 |          3965 |           89.87
+
+Time: 4.799 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16761 |      40189952 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.781 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        35554 |          3974 |           89.95
+
+Time: 5.247 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16761 |      40189952 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.756 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        35940 |          3983 |           90.02
+
+Time: 4.593 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16761 |      40189952 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.766 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        36247 |          3991 |           90.08
+
+Time: 4.509 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16761 |      40189952 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.778 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        36603 |          4000 |           90.15
+
+Time: 4.585 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16761 |      40189952 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.890 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        36979 |          4009 |           90.22
+
+Time: 4.496 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16761 |      40189952 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.745 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        37345 |          4018 |           90.29
+
+Time: 4.579 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16761 |      40189952 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.739 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        37348 |          4023 |           90.28
+
+Time: 4.391 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16761 |      40189952 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.831 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        37714 |          4032 |           90.34
+
+Time: 4.738 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16761 |      40189952 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.882 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        38080 |          4041 |           90.41
+
+Time: 4.728 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16761 |      40189952 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.918 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        38446 |          4050 |           90.47
+
+Time: 4.561 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16761 |      40189952 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.703 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        38449 |          4055 |           90.46
+
+Time: 4.373 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16761 |      40198144 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.709 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        38452 |          4060 |           90.45
+
+Time: 4.462 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16761 |      40198144 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.696 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        38818 |          4069 |           90.51
+
+Time: 4.715 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into deep_100k_build_90_prt_64_pool_30_t3 in 0.04 seconds.
+Timing is on.
+ 16761 |      40198144 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.778 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        39206 |          4077 |           90.58
+
+Time: 4.592 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16761 |      40198144 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 3.623 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        39892 |          4172 |           90.53
+
+Time: 4.916 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16761 |      40198144 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.697 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        40269 |          4180 |           90.60
+
+Time: 4.758 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into deep_100k_build_90_prt_64_pool_30_t3 in 0.04 seconds.
+Timing is on.
+ 16761 |      40198144 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.705 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        40658 |          4188 |           90.66
+
+Time: 4.555 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into deep_100k_build_90_prt_64_pool_30_t3 in 0.03 seconds.
+Timing is on.
+ 16761 |      40198144 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.684 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        41047 |          4196 |           90.73
+
+Time: 4.502 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into deep_100k_build_90_prt_64_pool_30_t3 in 0.04 seconds.
+Timing is on.
+ 16761 |      40198144 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.945 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        41436 |          4204 |           90.79
+
+Time: 4.641 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into deep_100k_build_90_prt_64_pool_30_t3 in 0.05 seconds.
+Timing is on.
+ 16761 |      40198144 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.922 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        41825 |          4212 |           90.85
+
+Time: 4.501 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into deep_100k_build_90_prt_64_pool_30_t3 in 0.06 seconds.
+Timing is on.
+ 16761 |      40198144 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 2.104 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        42214 |          4220 |           90.91
+
+Time: 5.394 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into deep_100k_build_90_prt_64_pool_30_t3 in 0.06 seconds.
+Timing is on.
+ 16761 |      40198144 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.735 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        44946 |          4230 |           91.40
+
+Time: 4.420 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into deep_100k_build_90_prt_64_pool_30_t3 in 0.04 seconds.
+Timing is on.
+ 16761 |      40198144 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.915 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        45335 |          4238 |           91.45
+
+Time: 4.904 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into deep_100k_build_90_prt_64_pool_30_t3 in 0.05 seconds.
+Timing is on.
+ 16761 |      40198144 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.791 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        45723 |          4246 |           91.50
+
+Time: 4.772 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16761 |      40198144 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 3.877 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        46110 |          4254 |           91.55
+
+Time: 4.985 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into deep_100k_build_90_prt_64_pool_30_t3 in 0.05 seconds.
+Timing is on.
+ 16761 |      40198144 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.682 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        48883 |          4280 |           91.95
+
+Time: 4.491 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into deep_100k_build_90_prt_64_pool_30_t3 in 0.04 seconds.
+Timing is on.
+ 16761 |      40198144 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.698 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        49257 |          4302 |           91.97
+
+Time: 4.540 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into deep_100k_build_90_prt_64_pool_30_t3 in 0.03 seconds.
+Timing is on.
+ 16761 |      40198144 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.761 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        49631 |          4324 |           91.99
+
+Time: 4.595 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into deep_100k_build_90_prt_64_pool_30_t3 in 0.04 seconds.
+Timing is on.
+ 16761 |      40198144 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.783 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        50005 |          4346 |           92.00
+
+Time: 4.577 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into deep_100k_build_90_prt_64_pool_30_t3 in 0.05 seconds.
+Timing is on.
+ 16761 |      40198144 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.932 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        50390 |          4377 |           92.01
+
+Time: 4.660 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into deep_100k_build_90_prt_64_pool_30_t3 in 0.04 seconds.
+Timing is on.
+ 16761 |      40206336 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.699 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        50775 |          4408 |           92.01
+
+Time: 4.615 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16761 |      40206336 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.815 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        51130 |          4428 |           92.03
+
+Time: 4.558 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16761 |      40206336 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.985 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        51485 |          4448 |           92.05
+
+Time: 4.594 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into deep_100k_build_90_prt_64_pool_30_t3 in 0.08 seconds.
+Timing is on.
+ 16761 |      40206336 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 1.726 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |        52366 |          5228 |           90.92
+
+Time: 4.558 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 15 rows into deep_100k_build_90_prt_64_pool_30_t3 in 1.74 seconds.
+Timing is on.
+ 16761 |      40206336 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 7.658 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |       117902 |         23333 |           83.48
+
+Time: 5.491 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 15 rows into deep_100k_build_90_prt_64_pool_30_t3 in 0.71 seconds.
+Timing is on.
+ 16761 |      40214528 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78012416 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 8.101 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |       157895 |         25381 |           86.15
+
+Time: 5.759 ms
+---------------------------------
+
+Insert deep_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 50 rows into deep_100k_build_90_prt_64_pool_30_t3 in 1.87 seconds.
+Timing is on.
+ 16761 |      40239104 | deep_100k_build_90_prt_64_pool_30_t3               |         2200 |   16763 |    16385 |       16761 |             0 |     4765 |     90516 |         16764 | t
+ 16766 |      78053376 | deep_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       16766 |             0 |     9271 |     90516 |             0 | f
+
+Time: 7.563 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ deep_100k_build_90_prt_64_pool_30_t3 |       293504 |         32937 |           89.91
+
+Time: 5.543 ms
+---------------------------------
+
+Insert dbp_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 50 rows into dbp_100k_build_90_prt_64_pool_30_t3 in 11.44 seconds.
+Timing is on.
+ 16768 |     737943552 | dbp_100k_build_90_prt_64_pool_30_t3               |         2200 |   16770 |    16385 |       16768 |             0 |    90006 |     90000 |         16771 | t
+ 24961 |     737705984 | dbp_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       24961 |             0 |    90002 |     90000 |             0 | f
+
+Time: 7.599 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ dbp_100k_build_90_prt_64_pool_30_t3 |        67858 |        345514 |           16.42
+
+Time: 5.439 ms
+---------------------------------
+
+Insert dbp_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 50 rows into dbp_100k_build_90_prt_64_pool_30_t3 in 26.18 seconds.
+Timing is on.
+ 16768 |     738353152 | dbp_100k_build_90_prt_64_pool_30_t3               |         2200 |   16770 |    16385 |       16768 |             0 |    90006 |     90000 |         16771 | t
+ 24961 |     738115584 | dbp_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       24961 |             0 |    90002 |     90000 |             0 | f
+
+Time: 7.622 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ dbp_100k_build_90_prt_64_pool_30_t3 |       131124 |        644153 |           16.91
+
+Time: 5.358 ms
+---------------------------------
+
+Insert dbp_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16768 |     738361344 | dbp_100k_build_90_prt_64_pool_30_t3               |         2200 |   16770 |    16385 |       16768 |             0 |    90006 |     90000 |         16771 | t
+ 24961 |     738115584 | dbp_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       24961 |             0 |    90002 |     90000 |             0 | f
+
+Time: 3.776 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ dbp_100k_build_90_prt_64_pool_30_t3 |       131273 |        644326 |           16.93
+
+Time: 4.768 ms
+---------------------------------
+
+Insert dbp_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16768 |     738369536 | dbp_100k_build_90_prt_64_pool_30_t3               |         2200 |   16770 |    16385 |       16768 |             0 |    90006 |     90000 |         16771 | t
+ 24961 |     738115584 | dbp_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       24961 |             0 |    90002 |     90000 |             0 | f
+
+Time: 5.506 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ dbp_100k_build_90_prt_64_pool_30_t3 |       131408 |        644593 |           16.93
+
+Time: 4.764 ms
+---------------------------------
+
+Insert dbp_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16768 |     738377728 | dbp_100k_build_90_prt_64_pool_30_t3               |         2200 |   16770 |    16385 |       16768 |             0 |    90006 |     90000 |         16771 | t
+ 24961 |     738115584 | dbp_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       24961 |             0 |    90002 |     90000 |             0 | f
+
+Time: 5.509 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ dbp_100k_build_90_prt_64_pool_30_t3 |       131542 |        644871 |           16.94
+
+Time: 4.856 ms
+---------------------------------
+
+Insert dbp_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16768 |     738385920 | dbp_100k_build_90_prt_64_pool_30_t3               |         2200 |   16770 |    16385 |       16768 |             0 |    90006 |     90000 |         16771 | t
+ 24961 |     738115584 | dbp_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       24961 |             0 |    90002 |     90000 |             0 | f
+
+Time: 5.496 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ dbp_100k_build_90_prt_64_pool_30_t3 |       131676 |        645149 |           16.95
+
+Time: 5.004 ms
+---------------------------------
+
+Insert dbp_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16768 |     738394112 | dbp_100k_build_90_prt_64_pool_30_t3               |         2200 |   16770 |    16385 |       16768 |             0 |    90006 |     90000 |         16771 | t
+ 24961 |     738115584 | dbp_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       24961 |             0 |    90002 |     90000 |             0 | f
+
+Time: 8.740 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ dbp_100k_build_90_prt_64_pool_30_t3 |            0 |             0 |                
+
+Time: 8.367 ms
+---------------------------------
+
+Insert dbp_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16768 |     738402304 | dbp_100k_build_90_prt_64_pool_30_t3               |         2200 |   16770 |    16385 |       16768 |             0 |    90006 |     90000 |         16771 | t
+ 24961 |     738115584 | dbp_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       24961 |             0 |    90002 |     90000 |             0 | f
+
+Time: 9.552 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ dbp_100k_build_90_prt_64_pool_30_t3 |            0 |             0 |                
+
+Time: 8.103 ms
+---------------------------------
+
+Insert dbp_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16768 |     738410496 | dbp_100k_build_90_prt_64_pool_30_t3               |         2200 |   16770 |    16385 |       16768 |             0 |    90006 |     90000 |         16771 | t
+ 24961 |     738115584 | dbp_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       24961 |             0 |    90002 |     90000 |             0 | f
+
+Time: 29.947 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ dbp_100k_build_90_prt_64_pool_30_t3 |            0 |             0 |                
+
+Time: 14.719 ms
+---------------------------------
+
+Insert dbp_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into dbp_100k_build_90_prt_64_pool_30_t3 in 0.64 seconds.
+Timing is on.
+ 16768 |     738418688 | dbp_100k_build_90_prt_64_pool_30_t3               |         2200 |   16770 |    16385 |       16768 |             0 |    90006 |     90000 |         16771 | t
+ 24961 |     738123776 | dbp_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       24961 |             0 |    90002 |     90000 |             0 | f
+
+Time: 9.077 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ dbp_100k_build_90_prt_64_pool_30_t3 |          891 |          1925 |           31.64
+
+Time: 8.578 ms
+---------------------------------
+
+Insert dbp_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into dbp_100k_build_90_prt_64_pool_30_t3 in 0.14 seconds.
+Timing is on.
+ 16768 |     738426880 | dbp_100k_build_90_prt_64_pool_30_t3               |         2200 |   16770 |    16385 |       16768 |             0 |    90006 |     90000 |         16771 | t
+ 24961 |     738123776 | dbp_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       24961 |             0 |    90002 |     90000 |             0 | f
+
+Time: 7.072 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ dbp_100k_build_90_prt_64_pool_30_t3 |         1018 |          2221 |           31.43
+
+Time: 7.749 ms
+---------------------------------
+
+Insert dbp_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into dbp_100k_build_90_prt_64_pool_30_t3 in 0.13 seconds.
+Timing is on.
+ 16768 |     738435072 | dbp_100k_build_90_prt_64_pool_30_t3               |         2200 |   16770 |    16385 |       16768 |             0 |    90006 |     90000 |         16771 | t
+ 24961 |     738123776 | dbp_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       24961 |             0 |    90002 |     90000 |             0 | f
+
+Time: 7.128 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ dbp_100k_build_90_prt_64_pool_30_t3 |         1145 |          2515 |           31.28
+
+Time: 7.883 ms
+---------------------------------
+
+Insert dbp_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into dbp_100k_build_90_prt_64_pool_30_t3 in 0.09 seconds.
+Timing is on.
+ 16768 |     738443264 | dbp_100k_build_90_prt_64_pool_30_t3               |         2200 |   16770 |    16385 |       16768 |             0 |    90006 |     90000 |         16771 | t
+ 24961 |     738123776 | dbp_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       24961 |             0 |    90002 |     90000 |             0 | f
+
+Time: 6.792 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ dbp_100k_build_90_prt_64_pool_30_t3 |         1272 |          2807 |           31.18
+
+Time: 7.955 ms
+---------------------------------
+
+Insert dbp_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16768 |     738451456 | dbp_100k_build_90_prt_64_pool_30_t3               |         2200 |   16770 |    16385 |       16768 |             0 |    90006 |     90000 |         16771 | t
+ 24961 |     738123776 | dbp_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       24961 |             0 |    90002 |     90000 |             0 | f
+
+Time: 8.693 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ dbp_100k_build_90_prt_64_pool_30_t3 |            0 |             0 |                
+
+Time: 8.212 ms
+---------------------------------
+
+Insert dbp_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16768 |     738459648 | dbp_100k_build_90_prt_64_pool_30_t3               |         2200 |   16770 |    16385 |       16768 |             0 |    90006 |     90000 |         16771 | t
+ 24961 |     738123776 | dbp_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       24961 |             0 |    90002 |     90000 |             0 | f
+
+Time: 8.871 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ dbp_100k_build_90_prt_64_pool_30_t3 |            0 |             0 |                
+
+Time: 8.067 ms
+---------------------------------
+
+Insert dbp_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into dbp_100k_build_90_prt_64_pool_30_t3 in 0.09 seconds.
+Timing is on.
+ 16768 |     738467840 | dbp_100k_build_90_prt_64_pool_30_t3               |         2200 |   16770 |    16385 |       16768 |             0 |    90006 |     90000 |         16771 | t
+ 24961 |     738123776 | dbp_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       24961 |             0 |    90002 |     90000 |             0 | f
+
+Time: 7.111 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ dbp_100k_build_90_prt_64_pool_30_t3 |          127 |           296 |           30.02
+
+Time: 7.907 ms
+---------------------------------
+
+Insert dbp_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into dbp_100k_build_90_prt_64_pool_30_t3 in 0.40 seconds.
+Timing is on.
+ 16768 |     738476032 | dbp_100k_build_90_prt_64_pool_30_t3               |         2200 |   16770 |    16385 |       16768 |             0 |    90006 |     90000 |         16771 | t
+ 24961 |     738123776 | dbp_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       24961 |             0 |    90002 |     90000 |             0 | f
+
+Time: 7.224 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ dbp_100k_build_90_prt_64_pool_30_t3 |          259 |          5342 |            4.62
+
+Time: 8.092 ms
+---------------------------------
+
+Insert dbp_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Insert dbp_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+
+---------------------------------
+
+Insert dbp_100k_build_90_prt_64_pool_30_t3 ...
+Insert dbp_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16768 |     738500608 | dbp_100k_build_90_prt_64_pool_30_t3               |         2200 |   16770 |    16385 |       16768 |             0 |    90006 |     90000 |         16771 | t
+ 24961 |     738123776 | dbp_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       24961 |             0 |    90002 |     90000 |             0 | f
+
+Time: 8.911 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ dbp_100k_build_90_prt_64_pool_30_t3 |            0 |             0 |                
+
+Time: 8.035 ms
+---------------------------------
+
+Insert dbp_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16768 |     738508800 | dbp_100k_build_90_prt_64_pool_30_t3               |         2200 |   16770 |    16385 |       16768 |             0 |    90006 |     90000 |         16771 | t
+ 24961 |     738123776 | dbp_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       24961 |             0 |    90002 |     90000 |             0 | f
+
+Time: 9.044 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ dbp_100k_build_90_prt_64_pool_30_t3 |            0 |             0 |                
+
+Time: 8.345 ms
+---------------------------------
+
+Insert dbp_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16768 |     738516992 | dbp_100k_build_90_prt_64_pool_30_t3               |         2200 |   16770 |    16385 |       16768 |             0 |    90006 |     90000 |         16771 | t
+ 24961 |     738123776 | dbp_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       24961 |             0 |    90002 |     90000 |             0 | f
+
+Time: 9.502 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ dbp_100k_build_90_prt_64_pool_30_t3 |            0 |             0 |                
+
+Time: 8.503 ms
+---------------------------------
+
+Insert dbp_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16768 |     738525184 | dbp_100k_build_90_prt_64_pool_30_t3               |         2200 |   16770 |    16385 |       16768 |             0 |    90006 |     90000 |         16771 | t
+ 24961 |     738123776 | dbp_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       24961 |             0 |    90002 |     90000 |             0 | f
+
+Time: 9.579 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ dbp_100k_build_90_prt_64_pool_30_t3 |            0 |             0 |                
+
+Time: 8.039 ms
+---------------------------------
+
+Insert dbp_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16768 |     738533376 | dbp_100k_build_90_prt_64_pool_30_t3               |         2200 |   16770 |    16385 |       16768 |             0 |    90006 |     90000 |         16771 | t
+ 24961 |     738123776 | dbp_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       24961 |             0 |    90002 |     90000 |             0 | f
+
+Time: 8.899 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ dbp_100k_build_90_prt_64_pool_30_t3 |            0 |             0 |                
+
+Time: 8.025 ms
+---------------------------------
+
+Insert dbp_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16768 |     738541568 | dbp_100k_build_90_prt_64_pool_30_t3               |         2200 |   16770 |    16385 |       16768 |             0 |    90006 |     90000 |         16771 | t
+ 24961 |     738123776 | dbp_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       24961 |             0 |    90002 |     90000 |             0 | f
+
+Time: 8.838 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ dbp_100k_build_90_prt_64_pool_30_t3 |            0 |             0 |                
+
+Time: 8.029 ms
+---------------------------------
+
+Insert dbp_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16768 |     738549760 | dbp_100k_build_90_prt_64_pool_30_t3               |         2200 |   16770 |    16385 |       16768 |             0 |    90006 |     90000 |         16771 | t
+ 24961 |     738123776 | dbp_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       24961 |             0 |    90002 |     90000 |             0 | f
+
+Time: 8.816 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ dbp_100k_build_90_prt_64_pool_30_t3 |            0 |             0 |                
+
+Time: 7.818 ms
+---------------------------------
+
+Insert dbp_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into dbp_100k_build_90_prt_64_pool_30_t3 in 2.13 seconds.
+Timing is on.
+ 16768 |     738557952 | dbp_100k_build_90_prt_64_pool_30_t3               |         2200 |   16770 |    16385 |       16768 |             0 |    90006 |     90000 |         16771 | t
+ 24961 |     738123776 | dbp_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       24961 |             0 |    90002 |     90000 |             0 | f
+
+Time: 7.145 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ dbp_100k_build_90_prt_64_pool_30_t3 |          126 |           287 |           30.51
+
+Time: 7.979 ms
+---------------------------------
+
+Insert dbp_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into dbp_100k_build_90_prt_64_pool_30_t3 in 0.22 seconds.
+Timing is on.
+ 16768 |     738566144 | dbp_100k_build_90_prt_64_pool_30_t3               |         2200 |   16770 |    16385 |       16768 |             0 |    90006 |     90000 |         16771 | t
+ 24961 |     738123776 | dbp_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       24961 |             0 |    90002 |     90000 |             0 | f
+
+Time: 7.175 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ dbp_100k_build_90_prt_64_pool_30_t3 |          252 |           574 |           30.51
+
+Time: 7.984 ms
+---------------------------------
+
+Insert dbp_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16768 |     738574336 | dbp_100k_build_90_prt_64_pool_30_t3               |         2200 |   16770 |    16385 |       16768 |             0 |    90006 |     90000 |         16771 | t
+ 24961 |     738123776 | dbp_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       24961 |             0 |    90002 |     90000 |             0 | f
+
+Time: 7.208 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ dbp_100k_build_90_prt_64_pool_30_t3 |          381 |           817 |           31.80
+
+Time: 7.993 ms
+---------------------------------
+
+Insert dbp_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16768 |     738582528 | dbp_100k_build_90_prt_64_pool_30_t3               |         2200 |   16770 |    16385 |       16768 |             0 |    90006 |     90000 |         16771 | t
+ 24961 |     738123776 | dbp_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       24961 |             0 |    90002 |     90000 |             0 | f
+
+Time: 8.685 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ dbp_100k_build_90_prt_64_pool_30_t3 |            0 |             0 |                
+
+Time: 8.037 ms
+---------------------------------
+
+Insert dbp_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16768 |     738590720 | dbp_100k_build_90_prt_64_pool_30_t3               |         2200 |   16770 |    16385 |       16768 |             0 |    90006 |     90000 |         16771 | t
+ 24961 |     738123776 | dbp_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       24961 |             0 |    90002 |     90000 |             0 | f
+
+Time: 9.260 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ dbp_100k_build_90_prt_64_pool_30_t3 |          140 |           182 |           43.48
+
+Time: 8.509 ms
+---------------------------------
+
+Insert dbp_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16768 |     738598912 | dbp_100k_build_90_prt_64_pool_30_t3               |         2200 |   16770 |    16385 |       16768 |             0 |    90006 |     90000 |         16771 | t
+ 24961 |     738123776 | dbp_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       24961 |             0 |    90002 |     90000 |             0 | f
+
+Time: 8.962 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ dbp_100k_build_90_prt_64_pool_30_t3 |            0 |             0 |                
+
+Time: 8.011 ms
+---------------------------------
+
+Insert dbp_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16768 |     738607104 | dbp_100k_build_90_prt_64_pool_30_t3               |         2200 |   16770 |    16385 |       16768 |             0 |    90006 |     90000 |         16771 | t
+ 24961 |     738123776 | dbp_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       24961 |             0 |    90002 |     90000 |             0 | f
+
+Time: 7.045 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ dbp_100k_build_90_prt_64_pool_30_t3 |          127 |           265 |           32.40
+
+Time: 7.989 ms
+---------------------------------
+
+Insert dbp_100k_build_90_prt_64_pool_30_t3 ...
+Insert dbp_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 1 rows into dbp_100k_build_90_prt_64_pool_30_t3 in 0.09 seconds.
+Timing is on.
+ 16768 |     739033088 | dbp_100k_build_90_prt_64_pool_30_t3               |         2200 |   16770 |    16385 |       16768 |             0 |    90006 |     90000 |         16771 | t
+ 24961 |     738140160 | dbp_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       24961 |             0 |    90002 |     90000 |             0 | f
+
+Time: 7.090 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ dbp_100k_build_90_prt_64_pool_30_t3 |        14003 |         19751 |           41.49
+
+Time: 8.022 ms
+---------------------------------
+
+Insert dbp_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: Inserted 50 rows into dbp_100k_build_90_prt_64_pool_30_t3 in 12.84 seconds.
+Timing is on.
+ 16768 |     739442688 | dbp_100k_build_90_prt_64_pool_30_t3               |         2200 |   16770 |    16385 |       16768 |             0 |    90006 |     90000 |         16771 | t
+ 24961 |     738541568 | dbp_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       24961 |             0 |    90002 |     90000 |             0 | f
+
+Time: 9.863 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ dbp_100k_build_90_prt_64_pool_30_t3 |        79471 |         94728 |           45.62
+
+Time: 9.517 ms
+---------------------------------
+
+Insert dbp_100k_build_90_prt_64_pool_30_t3 ...
+Insert Time: 
+Timing is on.
+ 16768 |     739467264 | dbp_100k_build_90_prt_64_pool_30_t3               |         2200 |   16770 |    16385 |       16768 |             0 |    90006 |     90000 |         16771 | t
+ 24961 |     738557952 | dbp_100k_build_90_prt_64_pool_30_t3_embedding_idx |         2200 |       0 |    16385 |       24961 |             0 |    90002 |     90000 |             0 | f
+
+Time: 9.358 ms
+Index Hit Ratio for shared_buffers=16406937B (20%), Build Ratio=90%, Pool Ratio=pool_30:
+Timing is on.
+ dbp_100k_build_90_prt_64_pool_30_t3 |        82721 |         97191 |           45.98
+
+Time: 8.458 ms
+---------------------------------
+

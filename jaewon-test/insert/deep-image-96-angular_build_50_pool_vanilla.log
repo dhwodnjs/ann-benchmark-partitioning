@@ -1,0 +1,30 @@
+Starting experiment with Build Ratio=50%, Pool Ratio=pool_vanilla ...
+Index Stats for Build Ratio=50%, Pool Ratio=pool_vanilla:
+ 321821 |      43171840 | items               |         2200 |  321823 |    16385 |      321821 |             0 |     5264 |    100000 |        321824 | t
+ 321826 |      71450624 | items_embedding_idx |         2200 |       0 |    16385 |      321826 |             0 |     8722 |    100000 |             0 | f
+Build Time: Built index on items in 18.08 seconds, Insert Time: Inserted 50000 rows into items in 250.17 seconds.
+Testing with shared_buffers = 7145062B (10%), Build Ratio=50%, Pool Ratio=pool_vanilla}
+Search completed in 21.65 seconds.
+Index Hit Ratio for shared_buffers=7145062B (10%), Build Ratio=50%, Pool Ratio=pool_vanilla:
+ items               |      3001942 |       5488574 |           35.36
+---------------------------------
+Testing with shared_buffers = 14290124B (20%), Build Ratio=50%, Pool Ratio=pool_vanilla}
+Search completed in 20.73 seconds.
+Index Hit Ratio for shared_buffers=14290124B (20%), Build Ratio=50%, Pool Ratio=pool_vanilla:
+ items               |      3711919 |       4778597 |           43.72
+---------------------------------
+Testing with shared_buffers = 21435187B (30%), Build Ratio=50%, Pool Ratio=pool_vanilla}
+Search completed in 19.73 seconds.
+Index Hit Ratio for shared_buffers=21435187B (30%), Build Ratio=50%, Pool Ratio=pool_vanilla:
+ items               |      4363316 |       4127200 |           51.39
+---------------------------------
+Testing with shared_buffers = 28580249B (40%), Build Ratio=50%, Pool Ratio=pool_vanilla}
+Search completed in 18.91 seconds.
+Index Hit Ratio for shared_buffers=28580249B (40%), Build Ratio=50%, Pool Ratio=pool_vanilla:
+ items               |      5001655 |       3488861 |           58.91
+---------------------------------
+Testing with shared_buffers = 35725312B (50%), Build Ratio=50%, Pool Ratio=pool_vanilla}
+Search completed in 17.94 seconds.
+Index Hit Ratio for shared_buffers=35725312B (50%), Build Ratio=50%, Pool Ratio=pool_vanilla:
+ items               |      5626461 |       2864055 |           66.27
+---------------------------------

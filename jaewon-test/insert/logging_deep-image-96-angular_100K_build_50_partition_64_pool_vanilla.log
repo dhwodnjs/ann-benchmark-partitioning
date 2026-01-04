@@ -1,0 +1,23 @@
+Starting experiment with Build Ratio=50%, Pool Ratio=pool_vanilla, PARTITION SIZE=64 ...
+Index Stats for Build Ratio=50%, Pool Ratio=pool_vanilla:
+ 388051 |       4358144 | items               |         2200 |  388053 |    16385 |      388051 |             0 |      528 |     10000 |        388054 | t
+ 388056 |       7282688 | items_embedding_idx |         2200 |       0 |    16385 |      388056 |             0 |      889 |     10000 |             0 | f
+Build Time: Built index on items in 4.04 seconds, Insert Time: Inserted 5000 rows into items in 18.21 seconds.
+Testing with shared_buffers = 14322892B (20%), Build Ratio=50%, Pool Ratio=pool_vanilla}
+Search completed in 7.19 seconds.
+[[8851, 4099, 2066, 3087, 3820], [122, 7464, 1667, 4414, 8631], [8845, 7295, 5109, 6143, 5853], [7062, 1384, 5853, 7284, 8184], [9809, 845, 6651, 3286, 793], [8656, 4343, 9959, 5560, 969], [5992, 8415, 7292, 1833, 5283], [4066, 3563, 6999, 8935, 4034], [3943, 5624, 4112, 8154, 4378], [3224, 1162, 119, 18, 3049]]
+Index Hit Ratio for shared_buffers=14322892B (20%), Build Ratio=50%, Pool Ratio=pool_vanilla:
+ items               |      6474118 |           888 |           99.99
+---------------------------------
+Testing with shared_buffers = 35807232B (50%), Build Ratio=50%, Pool Ratio=pool_vanilla}
+Search completed in 7.12 seconds.
+[[8851, 4099, 2066, 3087, 3820], [122, 7464, 1667, 4414, 8631], [8845, 7295, 5109, 6143, 5853], [7062, 1384, 5853, 7284, 8184], [9809, 845, 6651, 3286, 793], [8656, 4343, 9959, 5560, 969], [5992, 8415, 7292, 1833, 5283], [4066, 3563, 6999, 8935, 4034], [3943, 5624, 4112, 8154, 4378], [3224, 1162, 119, 18, 3049]]
+Index Hit Ratio for shared_buffers=35807232B (50%), Build Ratio=50%, Pool Ratio=pool_vanilla:
+ items               |      6474118 |           888 |           99.99
+---------------------------------
+Testing with shared_buffers = 42968678B (60%), Build Ratio=50%, Pool Ratio=pool_vanilla}
+Search completed in 7.17 seconds.
+[[8851, 4099, 2066, 3087, 3820], [122, 7464, 1667, 4414, 8631], [8845, 7295, 5109, 6143, 5853], [7062, 1384, 5853, 7284, 8184], [9809, 845, 6651, 3286, 793], [8656, 4343, 9959, 5560, 969], [5992, 8415, 7292, 1833, 5283], [4066, 3563, 6999, 8935, 4034], [3943, 5624, 4112, 8154, 4378], [3224, 1162, 119, 18, 3049]]
+Index Hit Ratio for shared_buffers=42968678B (60%), Build Ratio=50%, Pool Ratio=pool_vanilla:
+ items               |      6474118 |           888 |           99.99
+---------------------------------

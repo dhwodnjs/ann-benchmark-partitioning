@@ -1,0 +1,30 @@
+Starting experiment with Build Ratio=80%, Pool Ratio=pool_30 ...
+Index Stats for Build Ratio=80%, Pool Ratio=pool_30:
+ 288100 |      43171840 | items               |         2200 |  288102 |    16385 |      288100 |             0 |     5264 |    100000 |        288103 | t
+ 288105 |      73039872 | items_embedding_idx |         2200 |       0 |    16385 |      288105 |             0 |     8916 |    100000 |             0 | f
+Build Time: Built index on items in 27.40 seconds, Insert Time: Inserted 20000 rows into items in 102.17 seconds.
+Testing with shared_buffers = 7152435B (10%), Build Ratio=80%, Pool Ratio=pool_30
+Search completed in 20.18 seconds.
+Index Hit Ratio for shared_buffers=7152435B (10%), Build Ratio=80%, Pool Ratio=pool_30:
+ items               |      4422626 |       4053596 |           52.18
+---------------------------------
+Testing with shared_buffers = 14304870B (20%), Build Ratio=80%, Pool Ratio=pool_30
+Search completed in 19.66 seconds.
+Index Hit Ratio for shared_buffers=14304870B (20%), Build Ratio=80%, Pool Ratio=pool_30:
+ items               |      4959366 |       3516856 |           58.51
+---------------------------------
+Testing with shared_buffers = 21457305B (30%), Build Ratio=80%, Pool Ratio=pool_30
+Search completed in 18.67 seconds.
+Index Hit Ratio for shared_buffers=21457305B (30%), Build Ratio=80%, Pool Ratio=pool_30:
+ items               |      5449238 |       3026984 |           64.29
+---------------------------------
+Testing with shared_buffers = 28609740B (40%), Build Ratio=80%, Pool Ratio=pool_30
+Search completed in 17.64 seconds.
+Index Hit Ratio for shared_buffers=28609740B (40%), Build Ratio=80%, Pool Ratio=pool_30:
+ items               |      5926519 |       2549703 |           69.92
+---------------------------------
+Testing with shared_buffers = 35762176B (50%), Build Ratio=80%, Pool Ratio=pool_30
+Search completed in 16.67 seconds.
+Index Hit Ratio for shared_buffers=35762176B (50%), Build Ratio=80%, Pool Ratio=pool_30:
+ items               |      6390704 |       2085518 |           75.40
+---------------------------------

@@ -1,0 +1,30 @@
+Starting experiment with Build Ratio=60%, Pool Ratio=pool_10 ...
+Index Stats for Build Ratio=60%, Pool Ratio=pool_10:
+ 288247 |      43171840 | items               |         2200 |  288249 |    16385 |      288247 |             0 |     5264 |    100000 |        288250 | t
+ 288252 |      71901184 | items_embedding_idx |         2200 |       0 |    16385 |      288252 |             0 |     8777 |    100000 |             0 | f
+Build Time: Built index on items in 18.66 seconds, Insert Time: Inserted 40000 rows into items in 198.03 seconds.
+Testing with shared_buffers = 7152435B (10%), Build Ratio=60%, Pool Ratio=pool_10
+Search completed in 19.81 seconds.
+Index Hit Ratio for shared_buffers=7152435B (10%), Build Ratio=60%, Pool Ratio=pool_10:
+ items               |      4013127 |       4482263 |           47.24
+---------------------------------
+Testing with shared_buffers = 14304870B (20%), Build Ratio=60%, Pool Ratio=pool_10
+Search completed in 18.80 seconds.
+Index Hit Ratio for shared_buffers=14304870B (20%), Build Ratio=60%, Pool Ratio=pool_10:
+ items               |      4603201 |       3892189 |           54.18
+---------------------------------
+Testing with shared_buffers = 21457305B (30%), Build Ratio=60%, Pool Ratio=pool_10
+Search completed in 18.12 seconds.
+Index Hit Ratio for shared_buffers=21457305B (30%), Build Ratio=60%, Pool Ratio=pool_10:
+ items               |      5141232 |       3354158 |           60.52
+---------------------------------
+Testing with shared_buffers = 28609740B (40%), Build Ratio=60%, Pool Ratio=pool_10
+Search completed in 17.29 seconds.
+Index Hit Ratio for shared_buffers=28609740B (40%), Build Ratio=60%, Pool Ratio=pool_10:
+ items               |      5669170 |       2826220 |           66.73
+---------------------------------
+Testing with shared_buffers = 35762176B (50%), Build Ratio=60%, Pool Ratio=pool_10
+Search completed in 16.42 seconds.
+Index Hit Ratio for shared_buffers=35762176B (50%), Build Ratio=60%, Pool Ratio=pool_10:
+ items               |      6183564 |       2311826 |           72.79
+---------------------------------

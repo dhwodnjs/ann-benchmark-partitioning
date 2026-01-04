@@ -1,0 +1,324 @@
+2025-03-05 12:09:45.247 KST [2309781] LOG:  starting PostgreSQL 17.2 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, 64-bit
+2025-03-05 12:09:45.247 KST [2309781] LOG:  listening on IPv4 address "127.0.0.1", port 8008
+2025-03-05 12:09:45.248 KST [2309781] LOG:  listening on Unix socket "/tmp/.s.PGSQL.8008"
+2025-03-05 12:09:45.250 KST [2309784] LOG:  database system was shut down at 2025-03-05 12:03:46 KST
+2025-03-05 12:09:45.252 KST [2309781] LOG:  database system is ready to accept connections
+2025-03-05 12:09:48.565 KST [2309781] LOG:  received fast shutdown request
+2025-03-05 12:09:48.565 KST [2309781] LOG:  aborting any active transactions
+2025-03-05 12:09:48.565 KST [2309781] LOG:  background worker "logical replication launcher" (PID 2309787) exited with exit code 1
+2025-03-05 12:09:48.566 KST [2309782] LOG:  shutting down
+2025-03-05 12:09:48.566 KST [2309782] LOG:  checkpoint starting: shutdown immediate
+2025-03-05 12:09:48.569 KST [2309782] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.003 s, sync=0.001 s, total=0.004 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=14/A9D015E8, redo lsn=14/A9D015E8
+2025-03-05 12:09:48.577 KST [2309781] LOG:  database system is shut down
+2025-03-05 12:09:51.696 KST [2309902] LOG:  starting PostgreSQL 17.2 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, 64-bit
+2025-03-05 12:09:51.696 KST [2309902] LOG:  listening on IPv4 address "127.0.0.1", port 8008
+2025-03-05 12:09:51.697 KST [2309902] LOG:  listening on Unix socket "/tmp/.s.PGSQL.8008"
+2025-03-05 12:09:51.699 KST [2309905] LOG:  database system was shut down at 2025-03-05 12:09:48 KST
+2025-03-05 12:09:51.701 KST [2309902] LOG:  database system is ready to accept connections
+2025-03-05 12:09:55.001 KST [2309902] LOG:  received fast shutdown request
+2025-03-05 12:09:55.001 KST [2309902] LOG:  aborting any active transactions
+2025-03-05 12:09:55.002 KST [2309902] LOG:  background worker "logical replication launcher" (PID 2309908) exited with exit code 1
+2025-03-05 12:09:55.002 KST [2309903] LOG:  shutting down
+2025-03-05 12:09:55.002 KST [2309903] LOG:  checkpoint starting: shutdown immediate
+2025-03-05 12:09:55.008 KST [2309903] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.005 s, sync=0.001 s, total=0.006 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=14/A9D01660, redo lsn=14/A9D01660
+2025-03-05 12:09:55.012 KST [2309902] LOG:  database system is shut down
+2025-03-05 12:10:29.088 KST [2310180] LOG:  starting PostgreSQL 17.2 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, 64-bit
+2025-03-05 12:10:29.088 KST [2310180] LOG:  listening on IPv4 address "127.0.0.1", port 8008
+2025-03-05 12:10:29.089 KST [2310180] LOG:  listening on Unix socket "/tmp/.s.PGSQL.8008"
+2025-03-05 12:10:29.091 KST [2310183] LOG:  database system was shut down at 2025-03-05 12:09:55 KST
+2025-03-05 12:10:29.093 KST [2310180] LOG:  database system is ready to accept connections
+2025-03-05 12:10:48.712 KST [2310180] LOG:  received fast shutdown request
+2025-03-05 12:10:48.712 KST [2310180] LOG:  aborting any active transactions
+2025-03-05 12:10:48.713 KST [2310180] LOG:  background worker "logical replication launcher" (PID 2310186) exited with exit code 1
+2025-03-05 12:10:48.713 KST [2310181] LOG:  shutting down
+2025-03-05 12:10:48.713 KST [2310181] LOG:  checkpoint starting: shutdown immediate
+2025-03-05 12:10:48.718 KST [2310181] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.004 s, sync=0.001 s, total=0.005 s; sync files=3, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=14/A9D01710, redo lsn=14/A9D01710
+2025-03-05 12:10:48.733 KST [2310180] LOG:  database system is shut down
+2025-03-05 12:10:51.844 KST [2310420] LOG:  starting PostgreSQL 17.2 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, 64-bit
+2025-03-05 12:10:51.844 KST [2310420] LOG:  listening on IPv4 address "127.0.0.1", port 8008
+2025-03-05 12:10:51.845 KST [2310420] LOG:  listening on Unix socket "/tmp/.s.PGSQL.8008"
+2025-03-05 12:10:51.847 KST [2310423] LOG:  database system was shut down at 2025-03-05 12:10:48 KST
+2025-03-05 12:10:51.849 KST [2310420] LOG:  database system is ready to accept connections
+2025-03-05 12:11:10.882 KST [2310420] LOG:  received fast shutdown request
+2025-03-05 12:11:10.882 KST [2310420] LOG:  aborting any active transactions
+2025-03-05 12:11:10.883 KST [2310420] LOG:  background worker "logical replication launcher" (PID 2310426) exited with exit code 1
+2025-03-05 12:11:10.883 KST [2310421] LOG:  shutting down
+2025-03-05 12:11:10.883 KST [2310421] LOG:  checkpoint starting: shutdown immediate
+2025-03-05 12:11:10.888 KST [2310421] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.005 s, sync=0.001 s, total=0.006 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=14/A9D017C0, redo lsn=14/A9D017C0
+2025-03-05 12:11:10.906 KST [2310420] LOG:  database system is shut down
+2025-03-05 12:11:53.778 KST [2310773] LOG:  starting PostgreSQL 17.2 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, 64-bit
+2025-03-05 12:11:53.778 KST [2310773] LOG:  listening on IPv4 address "127.0.0.1", port 8008
+2025-03-05 12:11:53.778 KST [2310773] LOG:  listening on Unix socket "/tmp/.s.PGSQL.8008"
+2025-03-05 12:11:53.781 KST [2310776] LOG:  database system was shut down at 2025-03-05 12:11:10 KST
+2025-03-05 12:11:53.783 KST [2310773] LOG:  database system is ready to accept connections
+2025-03-05 12:11:53.856 KST [2310773] LOG:  received fast shutdown request
+2025-03-05 12:11:53.856 KST [2310773] LOG:  aborting any active transactions
+2025-03-05 12:11:53.856 KST [2310773] LOG:  background worker "logical replication launcher" (PID 2310779) exited with exit code 1
+2025-03-05 12:11:53.856 KST [2310774] LOG:  shutting down
+2025-03-05 12:11:53.857 KST [2310774] LOG:  checkpoint starting: shutdown immediate
+2025-03-05 12:11:53.858 KST [2310774] LOG:  checkpoint complete: wrote 3 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.002 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=14/A9D01838, redo lsn=14/A9D01838
+2025-03-05 12:11:53.859 KST [2310773] LOG:  database system is shut down
+2025-03-05 12:12:08.966 KST [2310897] LOG:  starting PostgreSQL 17.2 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, 64-bit
+2025-03-05 12:12:08.966 KST [2310897] LOG:  listening on IPv4 address "127.0.0.1", port 8008
+2025-03-05 12:12:08.967 KST [2310897] LOG:  listening on Unix socket "/tmp/.s.PGSQL.8008"
+2025-03-05 12:12:08.969 KST [2310900] LOG:  database system was shut down at 2025-03-05 12:11:53 KST
+2025-03-05 12:12:08.971 KST [2310897] LOG:  database system is ready to accept connections
+2025-03-05 12:12:47.715 KST [2310897] LOG:  received fast shutdown request
+2025-03-05 12:12:47.715 KST [2310897] LOG:  aborting any active transactions
+2025-03-05 12:12:47.715 KST [2310897] LOG:  background worker "logical replication launcher" (PID 2310903) exited with exit code 1
+2025-03-05 12:12:47.716 KST [2310898] LOG:  shutting down
+2025-03-05 12:12:47.716 KST [2310898] LOG:  checkpoint starting: shutdown immediate
+2025-03-05 12:12:47.717 KST [2310898] LOG:  checkpoint complete: wrote 3 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.002 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=14/A9D018E8, redo lsn=14/A9D018E8
+2025-03-05 12:12:47.719 KST [2310897] LOG:  database system is shut down
+2025-03-05 12:12:50.830 KST [2311168] LOG:  starting PostgreSQL 17.2 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, 64-bit
+2025-03-05 12:12:50.831 KST [2311168] LOG:  listening on IPv4 address "127.0.0.1", port 8008
+2025-03-05 12:12:50.831 KST [2311168] LOG:  listening on Unix socket "/tmp/.s.PGSQL.8008"
+2025-03-05 12:12:50.834 KST [2311171] LOG:  database system was shut down at 2025-03-05 12:12:47 KST
+2025-03-05 12:12:50.836 KST [2311168] LOG:  database system is ready to accept connections
+2025-03-05 12:13:27.738 KST [2311168] LOG:  received fast shutdown request
+2025-03-05 12:13:27.738 KST [2311168] LOG:  aborting any active transactions
+2025-03-05 12:13:27.739 KST [2311168] LOG:  background worker "logical replication launcher" (PID 2311174) exited with exit code 1
+2025-03-05 12:13:27.739 KST [2311169] LOG:  shutting down
+2025-03-05 12:13:27.739 KST [2311169] LOG:  checkpoint starting: shutdown immediate
+2025-03-05 12:13:27.740 KST [2311169] LOG:  checkpoint complete: wrote 3 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.002 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=14/A9D01998, redo lsn=14/A9D01998
+2025-03-05 12:13:27.744 KST [2311168] LOG:  database system is shut down
+2025-03-05 12:13:30.854 KST [2311430] LOG:  starting PostgreSQL 17.2 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, 64-bit
+2025-03-05 12:13:30.854 KST [2311430] LOG:  listening on IPv4 address "127.0.0.1", port 8008
+2025-03-05 12:13:30.855 KST [2311430] LOG:  listening on Unix socket "/tmp/.s.PGSQL.8008"
+2025-03-05 12:13:30.857 KST [2311433] LOG:  database system was shut down at 2025-03-05 12:13:27 KST
+2025-03-05 12:13:30.859 KST [2311430] LOG:  database system is ready to accept connections
+2025-03-05 12:14:04.219 KST [2311430] LOG:  received fast shutdown request
+2025-03-05 12:14:04.220 KST [2311430] LOG:  aborting any active transactions
+2025-03-05 12:14:04.220 KST [2311430] LOG:  background worker "logical replication launcher" (PID 2311436) exited with exit code 1
+2025-03-05 12:14:04.220 KST [2311431] LOG:  shutting down
+2025-03-05 12:14:04.221 KST [2311431] LOG:  checkpoint starting: shutdown immediate
+2025-03-05 12:14:04.222 KST [2311431] LOG:  checkpoint complete: wrote 3 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.002 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=14/A9D01A48, redo lsn=14/A9D01A48
+2025-03-05 12:14:04.236 KST [2311430] LOG:  database system is shut down
+2025-03-05 12:14:07.333 KST [2311676] LOG:  starting PostgreSQL 17.2 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, 64-bit
+2025-03-05 12:14:07.333 KST [2311676] LOG:  listening on IPv4 address "127.0.0.1", port 8008
+2025-03-05 12:14:07.333 KST [2311676] LOG:  listening on Unix socket "/tmp/.s.PGSQL.8008"
+2025-03-05 12:14:07.336 KST [2311679] LOG:  database system was shut down at 2025-03-05 12:14:04 KST
+2025-03-05 12:14:07.338 KST [2311676] LOG:  database system is ready to accept connections
+2025-03-05 12:14:39.634 KST [2311676] LOG:  received fast shutdown request
+2025-03-05 12:14:39.634 KST [2311676] LOG:  aborting any active transactions
+2025-03-05 12:14:39.635 KST [2311676] LOG:  background worker "logical replication launcher" (PID 2311682) exited with exit code 1
+2025-03-05 12:14:39.635 KST [2311677] LOG:  shutting down
+2025-03-05 12:14:39.635 KST [2311677] LOG:  checkpoint starting: shutdown immediate
+2025-03-05 12:14:39.636 KST [2311677] LOG:  checkpoint complete: wrote 3 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.002 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=14/A9D01AF8, redo lsn=14/A9D01AF8
+2025-03-05 12:14:39.639 KST [2311676] LOG:  database system is shut down
+2025-03-05 12:14:42.748 KST [2311911] LOG:  starting PostgreSQL 17.2 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, 64-bit
+2025-03-05 12:14:42.749 KST [2311911] LOG:  listening on IPv4 address "127.0.0.1", port 8008
+2025-03-05 12:14:42.749 KST [2311911] LOG:  listening on Unix socket "/tmp/.s.PGSQL.8008"
+2025-03-05 12:14:42.751 KST [2311914] LOG:  database system was shut down at 2025-03-05 12:14:39 KST
+2025-03-05 12:14:42.753 KST [2311911] LOG:  database system is ready to accept connections
+2025-03-05 12:15:13.350 KST [2311911] LOG:  received fast shutdown request
+2025-03-05 12:15:13.351 KST [2311911] LOG:  aborting any active transactions
+2025-03-05 12:15:13.351 KST [2311911] LOG:  background worker "logical replication launcher" (PID 2311917) exited with exit code 1
+2025-03-05 12:15:13.352 KST [2311912] LOG:  shutting down
+2025-03-05 12:15:13.352 KST [2311912] LOG:  checkpoint starting: shutdown immediate
+2025-03-05 12:15:13.353 KST [2311912] LOG:  checkpoint complete: wrote 3 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.002 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=14/A9D01BA8, redo lsn=14/A9D01BA8
+2025-03-05 12:15:13.363 KST [2311911] LOG:  database system is shut down
+2025-03-05 12:15:16.465 KST [2312140] LOG:  starting PostgreSQL 17.2 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, 64-bit
+2025-03-05 12:15:16.465 KST [2312140] LOG:  listening on IPv4 address "127.0.0.1", port 8008
+2025-03-05 12:15:16.466 KST [2312140] LOG:  listening on Unix socket "/tmp/.s.PGSQL.8008"
+2025-03-05 12:15:16.468 KST [2312143] LOG:  database system was shut down at 2025-03-05 12:15:13 KST
+2025-03-05 12:15:16.470 KST [2312140] LOG:  database system is ready to accept connections
+2025-03-05 12:15:43.661 KST [2312140] LOG:  received fast shutdown request
+2025-03-05 12:15:43.661 KST [2312140] LOG:  aborting any active transactions
+2025-03-05 12:15:43.662 KST [2312140] LOG:  background worker "logical replication launcher" (PID 2312146) exited with exit code 1
+2025-03-05 12:15:43.662 KST [2312141] LOG:  shutting down
+2025-03-05 12:15:43.663 KST [2312141] LOG:  checkpoint starting: shutdown immediate
+2025-03-05 12:15:43.664 KST [2312141] LOG:  checkpoint complete: wrote 3 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.002 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=14/A9D01C58, redo lsn=14/A9D01C58
+2025-03-05 12:15:43.678 KST [2312140] LOG:  database system is shut down
+2025-03-05 14:04:40.449 KST [2324417] LOG:  starting PostgreSQL 17.2 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, 64-bit
+2025-03-05 14:04:40.449 KST [2324417] LOG:  listening on IPv4 address "127.0.0.1", port 8008
+2025-03-05 14:04:40.450 KST [2324417] LOG:  listening on Unix socket "/tmp/.s.PGSQL.8008"
+2025-03-05 14:04:40.452 KST [2324420] LOG:  database system was shut down at 2025-03-05 12:15:43 KST
+2025-03-05 14:04:40.455 KST [2324417] LOG:  database system is ready to accept connections
+2025-03-05 14:04:44.538 KST [2324417] LOG:  received fast shutdown request
+2025-03-05 14:04:44.538 KST [2324417] LOG:  aborting any active transactions
+2025-03-05 14:04:44.539 KST [2324417] LOG:  background worker "logical replication launcher" (PID 2324423) exited with exit code 1
+2025-03-05 14:04:44.539 KST [2324418] LOG:  shutting down
+2025-03-05 14:04:44.539 KST [2324418] LOG:  checkpoint starting: shutdown immediate
+2025-03-05 14:04:44.540 KST [2324418] LOG:  checkpoint complete: wrote 3 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.001 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=14/A9D01CD0, redo lsn=14/A9D01CD0
+2025-03-05 14:04:44.542 KST [2324417] LOG:  database system is shut down
+2025-03-05 14:04:47.652 KST [2324552] LOG:  starting PostgreSQL 17.2 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, 64-bit
+2025-03-05 14:04:47.653 KST [2324552] LOG:  listening on IPv4 address "127.0.0.1", port 8008
+2025-03-05 14:04:47.653 KST [2324552] LOG:  listening on Unix socket "/tmp/.s.PGSQL.8008"
+2025-03-05 14:04:47.655 KST [2324555] LOG:  database system was shut down at 2025-03-05 14:04:44 KST
+2025-03-05 14:04:47.658 KST [2324552] LOG:  database system is ready to accept connections
+2025-03-05 14:04:51.846 KST [2324552] LOG:  received fast shutdown request
+2025-03-05 14:04:51.847 KST [2324552] LOG:  aborting any active transactions
+2025-03-05 14:04:51.847 KST [2324552] LOG:  background worker "logical replication launcher" (PID 2324558) exited with exit code 1
+2025-03-05 14:04:51.847 KST [2324553] LOG:  shutting down
+2025-03-05 14:04:51.847 KST [2324553] LOG:  checkpoint starting: shutdown immediate
+2025-03-05 14:04:51.848 KST [2324553] LOG:  checkpoint complete: wrote 3 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.002 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=14/A9D01D48, redo lsn=14/A9D01D48
+2025-03-05 14:04:51.850 KST [2324552] LOG:  database system is shut down
+2025-03-05 14:04:54.960 KST [2324708] LOG:  starting PostgreSQL 17.2 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, 64-bit
+2025-03-05 14:04:54.960 KST [2324708] LOG:  listening on IPv4 address "127.0.0.1", port 8008
+2025-03-05 14:04:54.961 KST [2324708] LOG:  listening on Unix socket "/tmp/.s.PGSQL.8008"
+2025-03-05 14:04:54.963 KST [2324711] LOG:  database system was shut down at 2025-03-05 14:04:51 KST
+2025-03-05 14:04:54.965 KST [2324708] LOG:  database system is ready to accept connections
+2025-03-05 14:04:59.107 KST [2324708] LOG:  received fast shutdown request
+2025-03-05 14:04:59.107 KST [2324708] LOG:  aborting any active transactions
+2025-03-05 14:04:59.108 KST [2324708] LOG:  background worker "logical replication launcher" (PID 2324714) exited with exit code 1
+2025-03-05 14:04:59.108 KST [2324709] LOG:  shutting down
+2025-03-05 14:04:59.109 KST [2324709] LOG:  checkpoint starting: shutdown immediate
+2025-03-05 14:04:59.110 KST [2324709] LOG:  checkpoint complete: wrote 3 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.002 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=14/A9D01DC0, redo lsn=14/A9D01DC0
+2025-03-05 14:04:59.112 KST [2324708] LOG:  database system is shut down
+2025-03-05 14:05:02.220 KST [2324858] LOG:  starting PostgreSQL 17.2 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, 64-bit
+2025-03-05 14:05:02.220 KST [2324858] LOG:  listening on IPv4 address "127.0.0.1", port 8008
+2025-03-05 14:05:02.221 KST [2324858] LOG:  listening on Unix socket "/tmp/.s.PGSQL.8008"
+2025-03-05 14:05:02.223 KST [2324861] LOG:  database system was shut down at 2025-03-05 14:04:59 KST
+2025-03-05 14:05:02.225 KST [2324858] LOG:  database system is ready to accept connections
+2025-03-05 14:05:06.370 KST [2324858] LOG:  received fast shutdown request
+2025-03-05 14:05:06.370 KST [2324858] LOG:  aborting any active transactions
+2025-03-05 14:05:06.371 KST [2324858] LOG:  background worker "logical replication launcher" (PID 2324864) exited with exit code 1
+2025-03-05 14:05:06.371 KST [2324859] LOG:  shutting down
+2025-03-05 14:05:06.371 KST [2324859] LOG:  checkpoint starting: shutdown immediate
+2025-03-05 14:05:06.372 KST [2324859] LOG:  checkpoint complete: wrote 3 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.001 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=14/A9D01E38, redo lsn=14/A9D01E38
+2025-03-05 14:05:06.374 KST [2324858] LOG:  database system is shut down
+2025-03-05 14:05:09.484 KST [2325022] LOG:  starting PostgreSQL 17.2 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, 64-bit
+2025-03-05 14:05:09.484 KST [2325022] LOG:  listening on IPv4 address "127.0.0.1", port 8008
+2025-03-05 14:05:09.485 KST [2325022] LOG:  listening on Unix socket "/tmp/.s.PGSQL.8008"
+2025-03-05 14:05:09.487 KST [2325025] LOG:  database system was shut down at 2025-03-05 14:05:06 KST
+2025-03-05 14:05:09.489 KST [2325022] LOG:  database system is ready to accept connections
+2025-03-05 14:05:13.632 KST [2325022] LOG:  received fast shutdown request
+2025-03-05 14:05:13.632 KST [2325022] LOG:  aborting any active transactions
+2025-03-05 14:05:13.633 KST [2325022] LOG:  background worker "logical replication launcher" (PID 2325028) exited with exit code 1
+2025-03-05 14:05:13.633 KST [2325023] LOG:  shutting down
+2025-03-05 14:05:13.633 KST [2325023] LOG:  checkpoint starting: shutdown immediate
+2025-03-05 14:05:13.634 KST [2325023] LOG:  checkpoint complete: wrote 3 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.002 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=14/A9D01EB0, redo lsn=14/A9D01EB0
+2025-03-05 14:05:13.636 KST [2325022] LOG:  database system is shut down
+2025-03-05 14:05:16.745 KST [2325146] LOG:  starting PostgreSQL 17.2 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, 64-bit
+2025-03-05 14:05:16.745 KST [2325146] LOG:  listening on IPv4 address "127.0.0.1", port 8008
+2025-03-05 14:05:16.746 KST [2325146] LOG:  listening on Unix socket "/tmp/.s.PGSQL.8008"
+2025-03-05 14:05:16.748 KST [2325149] LOG:  database system was shut down at 2025-03-05 14:05:13 KST
+2025-03-05 14:05:16.750 KST [2325146] LOG:  database system is ready to accept connections
+2025-03-05 14:05:20.902 KST [2325146] LOG:  received fast shutdown request
+2025-03-05 14:05:20.903 KST [2325146] LOG:  aborting any active transactions
+2025-03-05 14:05:20.903 KST [2325146] LOG:  background worker "logical replication launcher" (PID 2325152) exited with exit code 1
+2025-03-05 14:05:20.903 KST [2325147] LOG:  shutting down
+2025-03-05 14:05:20.903 KST [2325147] LOG:  checkpoint starting: shutdown immediate
+2025-03-05 14:05:20.904 KST [2325147] LOG:  checkpoint complete: wrote 3 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.001 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=14/A9D01F28, redo lsn=14/A9D01F28
+2025-03-05 14:05:20.909 KST [2325146] LOG:  database system is shut down
+2025-03-05 15:52:34.765 KST [2364915] LOG:  starting PostgreSQL 17.2 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, 64-bit
+2025-03-05 15:52:34.765 KST [2364915] LOG:  listening on IPv4 address "127.0.0.1", port 8008
+2025-03-05 15:52:34.766 KST [2364915] LOG:  listening on Unix socket "/tmp/.s.PGSQL.8008"
+2025-03-05 15:52:34.768 KST [2364918] LOG:  database system was shut down at 2025-03-05 15:51:57 KST
+2025-03-05 15:52:34.770 KST [2364915] LOG:  database system is ready to accept connections
+2025-03-05 15:52:39.316 KST [2364915] LOG:  received fast shutdown request
+2025-03-05 15:52:39.316 KST [2364915] LOG:  aborting any active transactions
+2025-03-05 15:52:39.316 KST [2364915] LOG:  background worker "logical replication launcher" (PID 2364921) exited with exit code 1
+2025-03-05 15:52:39.317 KST [2364916] LOG:  shutting down
+2025-03-05 15:52:39.317 KST [2364916] LOG:  checkpoint starting: shutdown immediate
+2025-03-05 15:52:39.319 KST [2364916] LOG:  checkpoint complete: wrote 70 buffers (6.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.002 s, total=0.003 s; sync files=5, longest=0.002 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=15/1FDD0E90, redo lsn=15/1FDD0E90
+2025-03-05 15:52:39.320 KST [2364915] LOG:  database system is shut down
+2025-03-05 15:52:42.428 KST [2365026] LOG:  starting PostgreSQL 17.2 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, 64-bit
+2025-03-05 15:52:42.428 KST [2365026] LOG:  listening on IPv4 address "127.0.0.1", port 8008
+2025-03-05 15:52:42.429 KST [2365026] LOG:  listening on Unix socket "/tmp/.s.PGSQL.8008"
+2025-03-05 15:52:42.431 KST [2365029] LOG:  database system was shut down at 2025-03-05 15:52:39 KST
+2025-03-05 15:52:42.433 KST [2365026] LOG:  database system is ready to accept connections
+2025-03-05 15:52:46.923 KST [2365026] LOG:  received fast shutdown request
+2025-03-05 15:52:46.923 KST [2365026] LOG:  aborting any active transactions
+2025-03-05 15:52:46.923 KST [2365026] LOG:  background worker "logical replication launcher" (PID 2365032) exited with exit code 1
+2025-03-05 15:52:46.924 KST [2365027] LOG:  shutting down
+2025-03-05 15:52:46.924 KST [2365027] LOG:  checkpoint starting: shutdown immediate
+2025-03-05 15:52:46.925 KST [2365027] LOG:  checkpoint complete: wrote 3 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.002 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=15/1FDD0F08, redo lsn=15/1FDD0F08
+2025-03-05 15:52:46.926 KST [2365026] LOG:  database system is shut down
+2025-03-05 15:52:50.039 KST [2365167] LOG:  starting PostgreSQL 17.2 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, 64-bit
+2025-03-05 15:52:50.039 KST [2365167] LOG:  listening on IPv4 address "127.0.0.1", port 8008
+2025-03-05 15:52:50.040 KST [2365167] LOG:  listening on Unix socket "/tmp/.s.PGSQL.8008"
+2025-03-05 15:52:50.042 KST [2365170] LOG:  database system was shut down at 2025-03-05 15:52:46 KST
+2025-03-05 15:52:50.044 KST [2365167] LOG:  database system is ready to accept connections
+2025-03-05 15:52:54.539 KST [2365167] LOG:  received fast shutdown request
+2025-03-05 15:52:54.539 KST [2365167] LOG:  aborting any active transactions
+2025-03-05 15:52:54.539 KST [2365167] LOG:  background worker "logical replication launcher" (PID 2365173) exited with exit code 1
+2025-03-05 15:52:54.539 KST [2365168] LOG:  shutting down
+2025-03-05 15:52:54.540 KST [2365168] LOG:  checkpoint starting: shutdown immediate
+2025-03-05 15:52:54.540 KST [2365168] LOG:  checkpoint complete: wrote 3 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.001 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=15/1FDD0F80, redo lsn=15/1FDD0F80
+2025-03-05 15:52:54.542 KST [2365167] LOG:  database system is shut down
+2025-03-05 15:52:57.651 KST [2365289] LOG:  starting PostgreSQL 17.2 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, 64-bit
+2025-03-05 15:52:57.651 KST [2365289] LOG:  listening on IPv4 address "127.0.0.1", port 8008
+2025-03-05 15:52:57.652 KST [2365289] LOG:  listening on Unix socket "/tmp/.s.PGSQL.8008"
+2025-03-05 15:52:57.655 KST [2365292] LOG:  database system was shut down at 2025-03-05 15:52:54 KST
+2025-03-05 15:52:57.657 KST [2365289] LOG:  database system is ready to accept connections
+2025-03-05 15:53:01.799 KST [2365289] LOG:  received fast shutdown request
+2025-03-05 15:53:01.799 KST [2365289] LOG:  aborting any active transactions
+2025-03-05 15:53:01.800 KST [2365289] LOG:  background worker "logical replication launcher" (PID 2365295) exited with exit code 1
+2025-03-05 15:53:01.800 KST [2365290] LOG:  shutting down
+2025-03-05 15:53:01.800 KST [2365290] LOG:  checkpoint starting: shutdown immediate
+2025-03-05 15:53:01.801 KST [2365290] LOG:  checkpoint complete: wrote 4 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.002 s; sync files=3, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=15/1FDD0FF8, redo lsn=15/1FDD0FF8
+2025-03-05 15:53:01.806 KST [2365289] LOG:  database system is shut down
+2025-03-05 15:53:04.913 KST [2365439] LOG:  starting PostgreSQL 17.2 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, 64-bit
+2025-03-05 15:53:04.914 KST [2365439] LOG:  listening on IPv4 address "127.0.0.1", port 8008
+2025-03-05 15:53:04.915 KST [2365439] LOG:  listening on Unix socket "/tmp/.s.PGSQL.8008"
+2025-03-05 15:53:04.917 KST [2365442] LOG:  database system was shut down at 2025-03-05 15:53:01 KST
+2025-03-05 15:53:04.919 KST [2365439] LOG:  database system is ready to accept connections
+2025-03-05 15:53:09.069 KST [2365439] LOG:  received fast shutdown request
+2025-03-05 15:53:09.069 KST [2365439] LOG:  aborting any active transactions
+2025-03-05 15:53:09.070 KST [2365439] LOG:  background worker "logical replication launcher" (PID 2365445) exited with exit code 1
+2025-03-05 15:53:09.070 KST [2365440] LOG:  shutting down
+2025-03-05 15:53:09.070 KST [2365440] LOG:  checkpoint starting: shutdown immediate
+2025-03-05 15:53:09.071 KST [2365440] LOG:  checkpoint complete: wrote 3 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.002 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=15/1FDD1070, redo lsn=15/1FDD1070
+2025-03-05 15:53:09.074 KST [2365439] LOG:  database system is shut down
+2025-03-05 15:53:12.184 KST [2365537] LOG:  starting PostgreSQL 17.2 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, 64-bit
+2025-03-05 15:53:12.185 KST [2365537] LOG:  listening on IPv4 address "127.0.0.1", port 8008
+2025-03-05 15:53:12.185 KST [2365537] LOG:  listening on Unix socket "/tmp/.s.PGSQL.8008"
+2025-03-05 15:53:12.187 KST [2365540] LOG:  database system was shut down at 2025-03-05 15:53:09 KST
+2025-03-05 15:53:12.189 KST [2365537] LOG:  database system is ready to accept connections
+2025-03-05 15:53:16.337 KST [2365537] LOG:  received fast shutdown request
+2025-03-05 15:53:16.338 KST [2365537] LOG:  aborting any active transactions
+2025-03-05 15:53:16.338 KST [2365537] LOG:  background worker "logical replication launcher" (PID 2365543) exited with exit code 1
+2025-03-05 15:53:16.338 KST [2365538] LOG:  shutting down
+2025-03-05 15:53:16.339 KST [2365538] LOG:  checkpoint starting: shutdown immediate
+2025-03-05 15:53:16.340 KST [2365538] LOG:  checkpoint complete: wrote 3 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.001 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=15/1FDD10E8, redo lsn=15/1FDD10E8
+2025-03-05 15:53:16.344 KST [2365537] LOG:  database system is shut down
+2025-03-05 15:55:04.442 KST [2366693] LOG:  starting PostgreSQL 17.2 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, 64-bit
+2025-03-05 15:55:04.442 KST [2366693] LOG:  listening on IPv4 address "127.0.0.1", port 8008
+2025-03-05 15:55:04.442 KST [2366693] LOG:  listening on Unix socket "/tmp/.s.PGSQL.8008"
+2025-03-05 15:55:04.444 KST [2366696] LOG:  database system was shut down at 2025-03-05 15:55:01 KST
+2025-03-05 15:55:04.446 KST [2366693] LOG:  database system is ready to accept connections
+2025-03-05 15:55:08.570 KST [2366693] LOG:  received fast shutdown request
+2025-03-05 15:55:08.570 KST [2366693] LOG:  aborting any active transactions
+2025-03-05 15:55:08.570 KST [2366693] LOG:  background worker "logical replication launcher" (PID 2366699) exited with exit code 1
+2025-03-05 15:55:08.571 KST [2366694] LOG:  shutting down
+2025-03-05 15:55:08.571 KST [2366694] LOG:  checkpoint starting: shutdown immediate
+2025-03-05 15:55:08.572 KST [2366694] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.002 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=15/1FDD1210, redo lsn=15/1FDD1210
+2025-03-05 15:55:08.574 KST [2366693] LOG:  database system is shut down
+2025-03-05 15:55:11.690 KST [2366808] LOG:  starting PostgreSQL 17.2 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, 64-bit
+2025-03-05 15:55:11.690 KST [2366808] LOG:  listening on IPv4 address "127.0.0.1", port 8008
+2025-03-05 15:55:11.690 KST [2366808] LOG:  listening on Unix socket "/tmp/.s.PGSQL.8008"
+2025-03-05 15:55:11.692 KST [2366811] LOG:  database system was shut down at 2025-03-05 15:55:08 KST
+2025-03-05 15:55:11.694 KST [2366808] LOG:  database system is ready to accept connections
+2025-03-05 15:55:15.774 KST [2366808] LOG:  received fast shutdown request
+2025-03-05 15:55:15.775 KST [2366808] LOG:  aborting any active transactions
+2025-03-05 15:55:15.775 KST [2366808] LOG:  background worker "logical replication launcher" (PID 2366814) exited with exit code 1
+2025-03-05 15:55:15.776 KST [2366809] LOG:  shutting down
+2025-03-05 15:55:15.776 KST [2366809] LOG:  checkpoint starting: shutdown immediate
+2025-03-05 15:55:15.778 KST [2366809] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.002 s, sync=0.001 s, total=0.002 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=15/1FDD1288, redo lsn=15/1FDD1288
+2025-03-05 15:55:15.786 KST [2366808] LOG:  database system is shut down
+2025-03-05 15:55:18.900 KST [2367042] LOG:  starting PostgreSQL 17.2 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, 64-bit
+2025-03-05 15:55:18.900 KST [2367042] LOG:  listening on IPv4 address "127.0.0.1", port 8008
+2025-03-05 15:55:18.901 KST [2367042] LOG:  listening on Unix socket "/tmp/.s.PGSQL.8008"
+2025-03-05 15:55:18.903 KST [2367045] LOG:  database system was shut down at 2025-03-05 15:55:15 KST
+2025-03-05 15:55:18.905 KST [2367042] LOG:  database system is ready to accept connections
+2025-03-05 15:55:22.966 KST [2367042] LOG:  received fast shutdown request
+2025-03-05 15:55:22.967 KST [2367042] LOG:  aborting any active transactions
+2025-03-05 15:55:22.968 KST [2367042] LOG:  background worker "logical replication launcher" (PID 2367048) exited with exit code 1
+2025-03-05 15:55:22.968 KST [2367043] LOG:  shutting down
+2025-03-05 15:55:22.968 KST [2367043] LOG:  checkpoint starting: shutdown immediate
+2025-03-05 15:55:22.970 KST [2367043] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.002 s, sync=0.001 s, total=0.003 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=15/1FDD1300, redo lsn=15/1FDD1300
+2025-03-05 15:55:22.983 KST [2367042] LOG:  database system is shut down
+2025-03-05 15:59:28.449 KST [2368496] LOG:  starting PostgreSQL 17.2 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, 64-bit
+2025-03-05 15:59:28.449 KST [2368496] LOG:  listening on IPv4 address "127.0.0.1", port 8008
+2025-03-05 15:59:28.450 KST [2368496] LOG:  listening on Unix socket "/tmp/.s.PGSQL.8008"
+2025-03-05 15:59:28.452 KST [2368499] LOG:  database system was shut down at 2025-03-05 15:55:22 KST
+2025-03-05 15:59:28.454 KST [2368496] LOG:  database system is ready to accept connections
+2025-03-05 16:00:11.641 KST [2368496] LOG:  received fast shutdown request
+2025-03-05 16:00:11.641 KST [2368496] LOG:  aborting any active transactions
+2025-03-05 16:00:11.641 KST [2368496] LOG:  background worker "logical replication launcher" (PID 2368502) exited with exit code 1
+2025-03-05 16:00:11.642 KST [2368497] LOG:  shutting down
+2025-03-05 16:00:11.642 KST [2368497] LOG:  checkpoint starting: shutdown immediate
+2025-03-05 16:00:11.643 KST [2368497] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.002 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=15/1FDD13B0, redo lsn=15/1FDD13B0
+2025-03-05 16:00:11.650 KST [2368496] LOG:  database system is shut down

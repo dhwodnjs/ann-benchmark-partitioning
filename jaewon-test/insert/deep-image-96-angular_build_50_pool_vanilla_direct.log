@@ -1,0 +1,5 @@
+Starting experiment with Build Ratio=50%, Pool Ratio=pool_vanilla ...
+Index Stats for Build Ratio=50%, Pool Ratio=pool_vanilla:
+ 321878 |      43171840 | items               |         2200 |  321880 |    16385 |      321878 |             0 |     5264 |    100000 |        321881 | t
+ 321883 |      73261056 | items_embedding_idx |         2200 |       0 |    16385 |      321883 |             0 |     8943 |    100000 |             0 | f
+Build Time: Built index on items in 18.99 seconds, Insert Time: Inserted 50000 rows into items in 2137.33 seconds.

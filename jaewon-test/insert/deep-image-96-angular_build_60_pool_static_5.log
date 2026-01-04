@@ -1,0 +1,29 @@
+Index Stats for Build Ratio=60%, Pool Ratio=pool_static_5:
+ 288319 |      26042368 | items               |         2200 |  288321 |    16385 |      288319 |             0 |     3175 |     60025 |        288322 | t
+ 288324 |      43057152 | items_embedding_idx |         2200 |       0 |    16385 |      288324 |             0 |     5256 |     60025 |             0 | f
+Build Time: Built index on items in 19.23 seconds, Insert Time: 
+Testing with shared_buffers = 7152435B (10%), Build Ratio=60%, Pool Ratio=pool_static_5}
+Search completed in 15.76 seconds.
+Index Hit Ratio for shared_buffers=7152435B (10%), Build Ratio=60%, Pool Ratio=pool_static_5:
+ items               |      4700152 |       3307757 |           58.69
+---------------------------------
+Testing with shared_buffers = 14304870B (20%), Build Ratio=60%, Pool Ratio=pool_static_5}
+Search completed in 14.64 seconds.
+Index Hit Ratio for shared_buffers=14304870B (20%), Build Ratio=60%, Pool Ratio=pool_static_5:
+ items               |      5447271 |       2560638 |           68.02
+---------------------------------
+Testing with shared_buffers = 21457305B (30%), Build Ratio=60%, Pool Ratio=pool_static_5}
+Search completed in 13.54 seconds.
+Index Hit Ratio for shared_buffers=21457305B (30%), Build Ratio=60%, Pool Ratio=pool_static_5:
+ items               |      6152841 |       1855068 |           76.83
+---------------------------------
+Testing with shared_buffers = 28609740B (40%), Build Ratio=60%, Pool Ratio=pool_static_5}
+Search completed in 12.17 seconds.
+Index Hit Ratio for shared_buffers=28609740B (40%), Build Ratio=60%, Pool Ratio=pool_static_5:
+ items               |      6819616 |       1188293 |           85.16
+---------------------------------
+Testing with shared_buffers = 35762176B (50%), Build Ratio=60%, Pool Ratio=pool_static_5}
+Search completed in 10.66 seconds.
+Index Hit Ratio for shared_buffers=35762176B (50%), Build Ratio=60%, Pool Ratio=pool_static_5:
+ items               |      7429940 |        577969 |           92.78
+---------------------------------

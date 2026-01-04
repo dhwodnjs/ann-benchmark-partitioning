@@ -1,0 +1,9 @@
+Index Stats for Data Ratio=100%, Table = items:
+ 197424 |      43294720 | items               |         2200 |  197426 |    16385 |      197424 |             0 |     5280 |    100000 |        197427 | t
+ 197429 |      71557120 | items_embedding_idx |         2200 |       0 |    16385 |      197429 |             0 |     8735 |    100000 |             0 | f
+Build Time: Built index on items in 82.85 seconds, Insert Time: Inserted 0 rows into items in 0.01 seconds.
+Testing with shared_buffers = 42949017B (60%), Data Ratio = 100%, Table = items
+Search completed in 15.98 seconds.
+Index Hit Ratio for shared_buffers=42949017B (60%), Data Ratio=100%, Table = items:
+ items               |      6236951 |       2234336 |           73.62
+---------------------------------

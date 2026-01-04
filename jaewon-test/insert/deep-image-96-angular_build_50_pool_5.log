@@ -1,0 +1,30 @@
+Starting experiment with Build Ratio=50%, Pool Ratio=pool_5 ...
+Index Stats for Build Ratio=50%, Pool Ratio=pool_5:
+ 288424 |      43171840 | items               |         2200 |  288426 |    16385 |      288424 |             0 |     5264 |    100000 |        288427 | t
+ 288429 |      71696384 | items_embedding_idx |         2200 |       0 |    16385 |      288429 |             0 |     8752 |    100000 |             0 | f
+Build Time: Built index on items in 15.53 seconds, Insert Time: Inserted 50000 rows into items in 247.95 seconds.
+Testing with shared_buffers = 7152435B (10%), Build Ratio=50%, Pool Ratio=pool_5
+Search completed in 20.33 seconds.
+Index Hit Ratio for shared_buffers=7152435B (10%), Build Ratio=50%, Pool Ratio=pool_5:
+ items               |      3595173 |       4926614 |           42.19
+---------------------------------
+Testing with shared_buffers = 14304870B (20%), Build Ratio=50%, Pool Ratio=pool_5
+Search completed in 19.22 seconds.
+Index Hit Ratio for shared_buffers=14304870B (20%), Build Ratio=50%, Pool Ratio=pool_5:
+ items               |      4257217 |       4264570 |           49.96
+---------------------------------
+Testing with shared_buffers = 21457305B (30%), Build Ratio=50%, Pool Ratio=pool_5
+Search completed in 18.57 seconds.
+Index Hit Ratio for shared_buffers=21457305B (30%), Build Ratio=50%, Pool Ratio=pool_5:
+ items               |      4841123 |       3680664 |           56.81
+---------------------------------
+Testing with shared_buffers = 28609740B (40%), Build Ratio=50%, Pool Ratio=pool_5
+Search completed in 17.46 seconds.
+Index Hit Ratio for shared_buffers=28609740B (40%), Build Ratio=50%, Pool Ratio=pool_5:
+ items               |      5413601 |       3108186 |           63.53
+---------------------------------
+Testing with shared_buffers = 35762176B (50%), Build Ratio=50%, Pool Ratio=pool_5
+Search completed in 16.71 seconds.
+Index Hit Ratio for shared_buffers=35762176B (50%), Build Ratio=50%, Pool Ratio=pool_5:
+ items               |      5975224 |       2546563 |           70.12
+---------------------------------

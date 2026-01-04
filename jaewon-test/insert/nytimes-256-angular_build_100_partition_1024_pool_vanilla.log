@@ -1,0 +1,20 @@
+Starting experiment with Build Ratio=100%, Pool Ratio=pool_vanilla, PARTITION SIZE=1024 ...
+Index Stats for Build Ratio=100%, Pool Ratio=pool_vanilla:
+ 338504 |     117497856 | items               |         2200 |  338506 |    16385 |      338504 |             0 |    14336 |    100000 |        338507 | t
+ 338509 |     127639552 | items_embedding_idx |         2200 |       0 |    16385 |      338509 |             0 |    15581 |    100000 |             0 | f
+Build Time: Built index on items in 82.61 seconds, Insert Time: Inserted 0 rows into items in 0.00 seconds.
+Testing with shared_buffers = 25529548B (20%), Build Ratio=100%, Pool Ratio=pool_vanilla}
+Search completed in 35.47 seconds.
+Index Hit Ratio for shared_buffers=25529548B (20%), Build Ratio=100%, Pool Ratio=pool_vanilla:
+ items               |      4018163 |       7856859 |           33.84
+---------------------------------
+Testing with shared_buffers = 63823872B (50%), Build Ratio=100%, Pool Ratio=pool_vanilla}
+Search completed in 31.27 seconds.
+Index Hit Ratio for shared_buffers=63823872B (50%), Build Ratio=100%, Pool Ratio=pool_vanilla:
+ items               |      7250088 |       4624934 |           61.05
+---------------------------------
+Testing with shared_buffers = 76588646B (60%), Build Ratio=100%, Pool Ratio=pool_vanilla}
+Search completed in 29.75 seconds.
+Index Hit Ratio for shared_buffers=76588646B (60%), Build Ratio=100%, Pool Ratio=pool_vanilla:
+ items               |      8264928 |       3610094 |           69.60
+---------------------------------
